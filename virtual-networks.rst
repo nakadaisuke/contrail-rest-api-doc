@@ -2,82 +2,81 @@
 virtual-networks
 ====================
 
- Put here  description of attribute 
+Virtual networks include Virtual-network,Subnet,Routing instance, Route target, VXLAN Network Identifier and so on. 
 
 virtual-networks Attributes
 ====
 
 .. csv-table::
-   :header: Attribute, Parent, Type,Required,CRUD, Default Value, Validation Constraints, Notes
-   :widths: 10, 10, 10, 7, 7, 10, 10, 20
+   :header: Attribute, Parent, Type,No,CRUD, def, valid, Notes
+   :widths: 10, 10, 8, 3, 4, 9, 10, 20
    :delim: " 
 
-   virtual_network_properties " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   network_id " virtual_network_properties" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   vxlan_network_identifier " virtual_network_properties" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   forwarding_mode " virtual_network_properties" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   allow_transit " virtual_network_properties" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   virtual_machine_interface_back_refs " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   to " virtual_machine_interface_back_refs" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   href " virtual_machine_interface_back_refs" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   attr " virtual_machine_interface_back_refs" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   uuid " virtual_machine_interface_back_refs" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   display_name " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   is_shared " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   router_external " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   parent_href " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   parent_type " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   uuid " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   name " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   href " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   id_perms " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   enable " id_perms" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   description " id_perms" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   created " id_perms" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   user_visible " id_perms" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   last_modified " id_perms" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   permissions " id_perms" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   owner " permissions" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   owner_access " permissions" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   other_access " permissions" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   group " permissions" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   group_access " permissions" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   uuid " id_perms" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   uuid_mslong " uuid" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   uuid_lslong " uuid" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   fq_name " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   instance_ip_back_refs " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   to " instance_ip_back_refs" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   href " instance_ip_back_refs" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   attr " instance_ip_back_refs" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   uuid " instance_ip_back_refs" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   routing_instances " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   to " routing_instances" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   href " routing_instances" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   uuid " routing_instances" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   network_ipam_refs " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   to " network_ipam_refs" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   href " network_ipam_refs" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   attr " network_ipam_refs" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   ipam_subnets " attr" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   subnet " ipam_subnets" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   ip_prefix " subnet" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   ip_prefix_len " subnet" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   dns_server_address " ipam_subnets" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   enable_dhcp " ipam_subnets" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   default_gateway " ipam_subnets" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   dns_nameservers " ipam_subnets" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   allocation_pools " ipam_subnets" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   start " allocation_pools" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   end " allocation_pools" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   subnet_uuid " ipam_subnets" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   dhcp_option_list " ipam_subnets" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   host_routes " ipam_subnets" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   addr_from_start " ipam_subnets" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   subnet_name " ipam_subnets" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   host_routes " attr" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   uuid " network_ipam_refs" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
-   parent_uuid " virtual-network" Type "Required " CRUD " Default Value " Validation Constraints " ABCDE12345ABCDE12345ABCDE12345
+   display_name " virtual-network" string "No " CR " generated " N/A " Display name
+   fq_name " virtual-network" list(str) "Yes " CR " N/A " Valid full query name form <domain>,<tenant>,<name>" The full query name of this attribute
+   id_perms " virtual-network" N/A "No " CR "generated " N/A " The root of id_perms
+   created " id_perms" datetime "No " R " generated " N/A " The date time of created date of this attribute 
+   description " id_perms" string "No " CRU " null " N/A " Description of this attribute
+   enable " id_perms" bool "No " CRU " true "{true | false} " Specifies whethere this attribute is enable or not 
+   last_modified " id_perms" datetime "No " R " generated " N/A " The date time of modified date of this attribute  
+   permissions " id_perms" list(dict) "No " CRU " generated " N/A " The owner and access level
+   group " permissions" string "No " CRU " generated " N/A " The group of this attribute
+   group_access " permissions" int "No " CRU " generated " Valid access range 0-7 " Access type of group 
+   other_access " permissions" int "No " CRU " generated " Valid access range 0-7 " Access type of others
+   owner " permissions" string "No " CRU " generated " N/A  " The name of the ownter of this attribute
+   owner_access " permissions" int "No " CRU " generated " Valid access range 0-7 " Access type of the ownter
+   user_visible " id_perms" bool "No " CRU " true "{true | false} " Specifies whethere this attribute is visible by user or not 
+   uuid " id_perms" uuid-str "No " R " generated " N/A " The UUID of id_perms attribute  
+   uuid_lslong " uuid" int "No " R " generated " N/A " for internal use
+   uuid_mslong " uuid" int "No " R " generated " N/A " For internal use 
+   instance_ip_back_refs " virtual-network" N/A "No " C " generated " N/A " The instance IP which belongs to this network 
+   attr " instance_ip_back_refs" string "No " R " generated " N/A " The attribute of this instance IP
+   href " instance_ip_back_refs" string "No " R " generated " N/A " The URI of this instance IP 
+   to " instance_ip_back_refs" uuid-str "No " R " generated " N/A " The UUID of this instance IP 
+   uuid " instance_ip_back_refs" uuid-str "No " R " generated " N/A " The UUID of this instance IP 
+   is_sha<name> " virtual-network" bool "No " CRU " false " {true | false} " Specifies whether the network resource can be accessed by any tenant or not
+   name " virtual-network" string "No " CRU " generated " N/A " The name of virtual-network 
+   network_ipam_refs " virtual-network" N/A "Yes " CR " generated " N/A " The root of network_ipam_refs
+   attr " network_ipam_refs" N/A "No " CRUD " N/A " generated " The root of attributes
+   host_routes " attr" list(route table) "No " CRU " [] " Valid route table type " The host route list
+   ipam_subnets " attr" N/A "No " CRD " [] " N/A " The root of ipam_subnets
+   addr_from_start " ipam_subnets" bool "No " CRU " true " {true | false} " Specifies whehter the network allocation start from low value or high value
+   allocation_pools " ipam_subnets" list(dict) "No " CRU " [] " N/A " The IP address pool
+   end " allocation_pools" string "No " CRUD " null " Valid IP address " The end of IP address of allocation pool
+   start " allocation_pools" string "No " CRUD " null " Valid IP address " The start of IP address of allocation pool
+   default_gateway " ipam_subnets" string "No " CRUD " first address in cidr " Valid IP address " The dafault gateway
+   dhcp_option_list " ipam_subnets" string "No " CRU " null " N/A " For internal use
+   dns_nameservers " ipam_subnets" list(str) "No " CRU " [] " Valid IP address " The list of DNS servers
+   dns_server_address " ipam_subnets" string "No " CRUD " generated " Valid IP address " The DNS proxy IP address
+   enable_dhcp " ipam_subnets" bool "No " CRU " true " {true | false} " Specifies whether DHCP is enable or not 
+   host_routes " ipam_subnets" list(str) "No " CRUD " null " Valit list of IP address " The list of route which is published by DHCP server
+   subnet " ipam_subnets" N/A "No " CRD " generated " N/A " The root of subnet
+   ip_prefix " subnet" string "No " CRD " null " Valid network address " The network address of the subnet
+   ip_prefix_len " subnet" int "No " CRD " null " Valid IP prefix " The prefix of the subnet
+   subnet_name " ipam_subnets" string "No " CRUD " null " N/A " The name of subnet
+   subnet_uuid " ipam_subnets" uuid-str "No " CR " generated " N/A " The UUID of the subnet
+   href " network_ipam_refs" string "No " R " generated " N/A " The URI of this IPAM
+   to " network_ipam_refs" list(str) "Yes " CR " N/A  "  Valid IPAM form <domain>,<tenant>,<IPAM>  " The IPAM which belongs to this subnet
+   uuid " network_ipam_refs" uuid-str "No " R " generated " N/A " The UUID of network IPAM
+   parent_href " virtual-network" string "No " R " generated " N/A " The URI of parent attribute 
+   parent_type " virtual-network" string "Yes " CR " project " Valid parent name " The parent attribute 
+   parent_uuid " virtual-network" uuid-str "No " R " generated " N/A " The UUID of parent attribute 
+   router_external " virtual-network" bool "No " CRU " false "{true | false}  " Specifies whether the network resouse can be allocated on External network 
+   routing_instances " virtual-network" string "No " R " generated " generated " The root of routing_instances
+   href " routing_instances" string "No " R " generated " N/A " The URI of the routing_instances
+   to " routing_instances" list(str) "No " R " generated " N/A " The location of routeing instance
+   uuid " routing_instances" uuid-str "No " R " generated " N/A " The uuid of routing instance
+   uuid " virtual-network" uuid-str "No " R " generated " N/A " The UUID of virtual-network 
+   virtual_machine_interface_back_refs " virtual-network" string "N/A " R " generated " N/A  " The root of virtual_machine_interface_back_refs  
+   attr " virtual_machine_interface_back_refs" string "No " R " generated " N/A " Refer attribure of the interface 
+   href " virtual_machine_interface_back_refs" string "No " R " generated " N/A " Refer URI of the interface
+   to " virtual_machine_interface_back_refs" list(str) "No " R " generated " N/A " Refer tenant which the interface allocates
+   uuid " virtual_machine_interface_back_refs" uuid-str "No " R " generated " N/A " Refer UUID of the interface 
+   virtual_network_properties " virtual-network" string "N/A " CR " generated " N/A " The root of Virtual network properties 
+   allow_transit " virtual_network_properties" bool "No " CRU " null " N/A " Virtula network is either Transit or not 
+   forwarding_mode " virtual_network_properties" string "No " CRU " null " {l2_l3 | l2} " Forwarding mode for virtual-network 
+   network_id " virtual_network_properties" int "No " R " generated "N/A " A unique id for the network, auto generated 
+   vxlan_network_identifier " virtual_network_properties" Int "No " CRU " null " Valid VNI range " VNI for the network, configu<name> by user 
 
 virtual-networks JSON  
 ====
@@ -88,18 +87,18 @@ virtual-networks JSON
 
   {
       "virtual-network": {
-          "display_name": "red", 
+          "display_name": "<name>", 
           "fq_name": [
               "default-domain", 
               "demo", 
-              "red"
+              "<name>"
           ], 
-          "href": "http://172.27.113.85:8082/virtual-network/9af87932-f066-4199-bfb9-56be22ff6ada", 
+          "href": "http://<API-SERVER>/virtual-network/<UUID>", 
           "id_perms": {
-              "created": "2014-12-17T07:03:46.699445", 
+              "created": "<DATE>", 
               "description": null, 
               "enable": true, 
-              "last_modified": "2014-12-17T07:03:48.273541", 
+              "last_modified": "<DATE>", 
               "permissions": {
                   "group": "admin", 
                   "group_access": 7, 
@@ -109,22 +108,22 @@ virtual-networks JSON
               }, 
               "user_visible": true, 
               "uuid": {
-                  "uuid_lslong": 13815168706566646490, 
-                  "uuid_mslong": 11166808535753703833
+                  "uuid_lslong": <INTEGER>, 
+                  "uuid_mslong": <INTEGER>
               }
           }, 
           "instance_ip_back_refs": [
               {
                   "attr": null, 
-                  "href": "http://172.27.113.85:8082/instance-ip/fe515e13-a4b0-41da-beb2-6b0c463b3861", 
+                  "href": "http://<API-SERVER>/instance-ip/<UUID>", 
                   "to": [
-                      "fe515e13-a4b0-41da-beb2-6b0c463b3861"
+                      "<UUID>"
                   ], 
-                  "uuid": "fe515e13-a4b0-41da-beb2-6b0c463b3861"
+                  "uuid": "<UUID>"
               }
           ], 
-          "is_shared": false, 
-          "name": "red", 
+          "is_sha<name>": false, 
+          "name": "<name>", 
           "network_ipam_refs": [
               {
                   "attr": {
@@ -134,67 +133,67 @@ virtual-networks JSON
                               "addr_from_start": true, 
                               "allocation_pools": [
                                   {
-                                      "end": "10.0.255.254", 
-                                      "start": "10.0.0.2"
+                                      "end": "<IP_ADDRESS>", 
+                                      "start": "<IP_ADDRESS>"
                                   }
                               ], 
-                              "default_gateway": "10.0.0.1", 
+                              "default_gateway": "<IP_ADDRESS>", 
                               "dhcp_option_list": null, 
                               "dns_nameservers": [], 
-                              "dns_server_address": "10.0.0.2", 
+                              "dns_server_address": "<IP_ADDRESS>", 
                               "enable_dhcp": true, 
                               "host_routes": null, 
                               "subnet": {
-                                  "ip_prefix": "10.0.0.0", 
-                                  "ip_prefix_len": 16
+                                  "ip_prefix": "<IP_ADDRESS>", 
+                                  "ip_prefix_len": <PREFIX> 
                               }, 
                               "subnet_name": "", 
-                              "subnet_uuid": "636c2541-f911-4aca-941f-6a0d0e972c54"
+                              "subnet_uuid": "<UUID>"
                           }
                       ]
                   }, 
-                  "href": "http://172.27.113.85:8082/network-ipam/b81f0b37-8304-42ea-94a0-c15be022c5d6", 
+                  "href": "http://<API-SERVER>/network-ipam/<UUID>", 
                   "to": [
                       "default-domain", 
                       "default-project", 
                       "default-network-ipam"
                   ], 
-                  "uuid": "b81f0b37-8304-42ea-94a0-c15be022c5d6"
+                  "uuid": "<UUID>"
               }
           ], 
-          "parent_href": "http://172.27.113.85:8082/project/6365594c-2af6-46ab-9517-e818559266f0", 
+          "parent_href": "http://<API-SERVER>/project/<UUID>", 
           "parent_type": "project", 
-          "parent_uuid": "6365594c-2af6-46ab-9517-e818559266f0", 
+          "parent_uuid": "<UUID>", 
           "router_external": false, 
           "routing_instances": [
               {
-                  "href": "http://172.27.113.85:8082/routing-instance/808698d9-dc1d-4e2f-83d0-c267023d78a8", 
+                  "href": "http://<API-SERVER>/routing-instance/<UUID>", 
                   "to": [
                       "default-domain", 
                       "demo", 
-                      "red", 
-                      "red"
+                      "<name>", 
+                      "<name>"
                   ], 
-                  "uuid": "808698d9-dc1d-4e2f-83d0-c267023d78a8"
+                  "uuid": "<UUID>"
               }
           ], 
-          "uuid": "9af87932-f066-4199-bfb9-56be22ff6ada", 
+          "uuid": "<UUID>", 
           "virtual_machine_interface_back_refs": [
               {
                   "attr": null, 
-                  "href": "http://172.27.113.85:8082/virtual-machine-interface/db38d4ef-b0f6-4129-ba05-8caa386f30bf", 
+                  "href": "http://<API-SERVER>/virtual-machine-interface/<UUID>", 
                   "to": [
                       "default-domain", 
                       "demo", 
-                      "db38d4ef-b0f6-4129-ba05-8caa386f30bf"
+                      "<UUID>"
                   ], 
-                  "uuid": "db38d4ef-b0f6-4129-ba05-8caa386f30bf"
+                  "uuid": "<UUID>"
               }
           ], 
           "virtual_network_properties": {
               "allow_transit": null, 
               "forwarding_mode": null, 
-              "network_id": 9, 
+              "network_id": <INTEGER>, 
               "vxlan_network_identifier": null
           }
       }

@@ -11,7 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
    
-   test_table
+   virtual-networks.rst 
 
 
 Indices and tables
