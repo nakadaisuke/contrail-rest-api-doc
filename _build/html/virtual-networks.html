@@ -1,0 +1,963 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>virtual-networks &mdash; test 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="test 1.0 documentation" href="index.html" />
+    <link rel="next" title="virtual-router" href="virtual-routers.html" />
+    <link rel="prev" title="virtual-machine" href="virtual-machines.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="virtual-routers.html" title="virtual-router"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="virtual-machines.html" title="virtual-machine"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">test 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="virtual-networks">
+<h1>virtual-networks<a class="headerlink" href="#virtual-networks" title="Permalink to this headline">¶</a></h1>
+<p>Virtual networks include Virtual-network,Subnet,Routing instance, Route target, VXLAN Network Identifier and so on.</p>
+<div class="section" id="virtual-networks-attributes">
+<h2>virtual-networks Attributes<a class="headerlink" href="#virtual-networks-attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="14%" />
+<col width="11%" />
+<col width="4%" />
+<col width="5%" />
+<col width="12%" />
+<col width="14%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Attribute</th>
+<th class="head">Parent</th>
+<th class="head">Type</th>
+<th class="head">Required</th>
+<th class="head">CRUD</th>
+<th class="head">Default Value</th>
+<th class="head">Validation Constraints</th>
+<th class="head">Notes</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>display_name</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>Display name</td>
+</tr>
+<tr class="row-odd"><td>fq_name</td>
+<td>virtual-network</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CR</td>
+<td>N/A</td>
+<td>Valid full query name form &lt;domain&gt;,&lt;tenant&gt;,&lt;name&gt;</td>
+<td>The full query name of this attribute</td>
+</tr>
+<tr class="row-even"><td>id_perms</td>
+<td>virtual-network</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of id_perms</td>
+</tr>
+<tr class="row-odd"><td>created</td>
+<td>id_perms</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of created date of this attribute</td>
+</tr>
+<tr class="row-even"><td>description</td>
+<td>id_perms</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>Description of this attribute</td>
+</tr>
+<tr class="row-odd"><td>enable</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true | false}</td>
+<td>Specifies whethere this attribute is enable or not</td>
+</tr>
+<tr class="row-even"><td>last_modified</td>
+<td>id_perms</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of modified date of this attribute</td>
+</tr>
+<tr class="row-odd"><td>permissions</td>
+<td>id_perms</td>
+<td>list(dict)</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The owner and access level</td>
+</tr>
+<tr class="row-even"><td>group</td>
+<td>permissions</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The group of this attribute</td>
+</tr>
+<tr class="row-odd"><td>group_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>Valid access range 0-7</td>
+<td>Access type of group</td>
+</tr>
+<tr class="row-even"><td>other_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>Valid access range 0-7</td>
+<td>Access type of others</td>
+</tr>
+<tr class="row-odd"><td>owner</td>
+<td>permissions</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of the ownter of this attribute</td>
+</tr>
+<tr class="row-even"><td>owner_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>Valid access range 0-7</td>
+<td>Access type of the ownter</td>
+</tr>
+<tr class="row-odd"><td>user_visible</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true | false}</td>
+<td>Specifies whethere this attribute is visible by user or not</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>for internal use</td>
+</tr>
+<tr class="row-even"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-odd"><td>instance_ip_back_refs</td>
+<td>virtual-network</td>
+<td>N/A</td>
+<td>No</td>
+<td>C</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The instance IP which belongs to this network</td>
+</tr>
+<tr class="row-even"><td>attr</td>
+<td>instance_ip_back_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The attribute of this attribute</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>instance_ip_back_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>instance_ip_back_refs</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>Valid list</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>instance_ip_back_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>is_sha&lt;name&gt;</td>
+<td>virtual-network</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>false</td>
+<td>{true | false}</td>
+<td>Specifies whether the network resource can be accessed by any tenant or not</td>
+</tr>
+<tr class="row-odd"><td>name</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of virtual-network</td>
+</tr>
+<tr class="row-even"><td>network_ipam_refs</td>
+<td>virtual-network</td>
+<td>N/A</td>
+<td>Yes</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of network_ipam_refs</td>
+</tr>
+<tr class="row-odd"><td>attr</td>
+<td>network_ipam_refs</td>
+<td>N/A</td>
+<td>No</td>
+<td>CRUD</td>
+<td>N/A</td>
+<td>generated</td>
+<td>The root of attributes</td>
+</tr>
+<tr class="row-even"><td>host_routes</td>
+<td>attr</td>
+<td>list(route table)</td>
+<td>No</td>
+<td>CRU</td>
+<td>[]</td>
+<td>Valid route table type</td>
+<td>The host route list</td>
+</tr>
+<tr class="row-odd"><td>ipam_subnets</td>
+<td>attr</td>
+<td>N/A</td>
+<td>No</td>
+<td>CRD</td>
+<td>[]</td>
+<td>N/A</td>
+<td>The root of ipam_subnets</td>
+</tr>
+<tr class="row-even"><td>addr_from_start</td>
+<td>ipam_subnets</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true | false}</td>
+<td>Specifies whehter the network allocation start from low value or high value</td>
+</tr>
+<tr class="row-odd"><td>allocation_pools</td>
+<td>ipam_subnets</td>
+<td>list(dict)</td>
+<td>No</td>
+<td>CRU</td>
+<td>[]</td>
+<td>N/A</td>
+<td>The IP address pool</td>
+</tr>
+<tr class="row-even"><td>end</td>
+<td>allocation_pools</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>Valid IP address</td>
+<td>The end of IP address of allocation pool</td>
+</tr>
+<tr class="row-odd"><td>start</td>
+<td>allocation_pools</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>Valid IP address</td>
+<td>The start of IP address of allocation pool</td>
+</tr>
+<tr class="row-even"><td>default_gateway</td>
+<td>ipam_subnets</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>first address in cidr</td>
+<td>Valid IP address</td>
+<td>The dafault gateway</td>
+</tr>
+<tr class="row-odd"><td>dhcp_option_list</td>
+<td>ipam_subnets</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-even"><td>dns_nameservers</td>
+<td>ipam_subnets</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRU</td>
+<td>[]</td>
+<td>Valid IP address</td>
+<td>The list of DNS servers</td>
+</tr>
+<tr class="row-odd"><td>dns_server_address</td>
+<td>ipam_subnets</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>generated</td>
+<td>Valid IP address</td>
+<td>The DNS proxy IP address</td>
+</tr>
+<tr class="row-even"><td>enable_dhcp</td>
+<td>ipam_subnets</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true | false}</td>
+<td>Specifies whether DHCP is enable or not</td>
+</tr>
+<tr class="row-odd"><td>host_routes</td>
+<td>ipam_subnets</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>Valit list of IP address</td>
+<td>The list of route which is published by DHCP server</td>
+</tr>
+<tr class="row-even"><td>subnet</td>
+<td>ipam_subnets</td>
+<td>N/A</td>
+<td>No</td>
+<td>CRD</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of subnet</td>
+</tr>
+<tr class="row-odd"><td>ip_prefix</td>
+<td>subnet</td>
+<td>string</td>
+<td>No</td>
+<td>CRD</td>
+<td>null</td>
+<td>Valid network address</td>
+<td>The network address of the subnet</td>
+</tr>
+<tr class="row-even"><td>ip_prefix_len</td>
+<td>subnet</td>
+<td>int</td>
+<td>No</td>
+<td>CRD</td>
+<td>null</td>
+<td>Valid IP prefix</td>
+<td>The prefix of the subnet</td>
+</tr>
+<tr class="row-odd"><td>subnet_name</td>
+<td>ipam_subnets</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>N/A</td>
+<td>The name of subnet</td>
+</tr>
+<tr class="row-even"><td>subnet_uuid</td>
+<td>ipam_subnets</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>network_ipam_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>network_ipam_refs</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CR</td>
+<td>N/A</td>
+<td>Valid IPAM form &lt;domain&gt;,&lt;tenant&gt;,&lt;IPAM&gt;</td>
+<td>The IPAM which belongs to this subnet</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>network_ipam_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>parent_href</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_type</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>null</td>
+<td>Valid parent name</td>
+<td>The parent attribute</td>
+</tr>
+<tr class="row-even"><td>parent_uuid</td>
+<td>virtual-network</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>router_external</td>
+<td>virtual-network</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>false</td>
+<td>{true | false}</td>
+<td>Specifies whether the network resouse can be allocated on External network</td>
+</tr>
+<tr class="row-even"><td>routing_instances</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>generated</td>
+<td>The root of routing_instances</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>routing_instances</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>routing_instances</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The location of routeing instance</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>routing_instances</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The uuid of routing instance</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>virtual-network</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>virtual_machine_interface_back_refs</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>N/A</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of virtual_machine_interface_back_refs</td>
+</tr>
+<tr class="row-even"><td>attr</td>
+<td>virtual_machine_interface_back_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>Refer attribure of the interface</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>virtual_machine_interface_back_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>Refer URI of the interface</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>virtual_machine_interface_back_refs</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>Refer tenant which the interface allocates</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>virtual_machine_interface_back_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>Refer UUID of the interface</td>
+</tr>
+<tr class="row-even"><td>virtual_network_properties</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>N/A</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of Virtual network properties</td>
+</tr>
+<tr class="row-odd"><td>allow_transit</td>
+<td>virtual_network_properties</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>Virtula network is either Transit or not</td>
+</tr>
+<tr class="row-even"><td>forwarding_mode</td>
+<td>virtual_network_properties</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>{l2_l3 | l2}</td>
+<td>Forwarding mode for virtual-network</td>
+</tr>
+<tr class="row-odd"><td>network_id</td>
+<td>virtual_network_properties</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>A unique id for the network, auto generated</td>
+</tr>
+<tr class="row-even"><td>vxlan_network_identifier</td>
+<td>virtual_network_properties</td>
+<td>Int</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid VNI range</td>
+<td>VNI for the network, configu&lt;name&gt; by user</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="virtual-networks-json">
+<h2>virtual-networks JSON<a class="headerlink" href="#virtual-networks-json" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113</pre></div></td><td class="code"><div class="highlight"><pre>{
+    &quot;virtual-network&quot;: {
+        &quot;display_name&quot;: &quot;&lt;name&gt;&quot;,
+        &quot;fq_name&quot;: [
+            &quot;default-domain&quot;,
+            &quot;demo&quot;,
+            &quot;&lt;name&gt;&quot;
+        ],
+        &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/virtual-network/&lt;UUID&gt;&quot;,
+        &quot;id_perms&quot;: {
+            &quot;created&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;last_modified&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;permissions&quot;: {
+                &quot;group&quot;: &quot;admin&quot;,
+                &quot;group_access&quot;: 7,
+                &quot;other_access&quot;: 7,
+                &quot;owner&quot;: &quot;admin&quot;,
+                &quot;owner_access&quot;: 7
+            },
+            &quot;user_visible&quot;: true,
+            &quot;uuid&quot;: {
+                &quot;uuid_lslong&quot;: &lt;INTEGER&gt;,
+                &quot;uuid_mslong&quot;: &lt;INTEGER&gt;
+            }
+        },
+        &quot;instance_ip_back_refs&quot;: [
+            {
+                &quot;attr&quot;: null,
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/instance-ip/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;UUID&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            }
+        ],
+        &quot;is_shared&quot;: false,
+        &quot;name&quot;: &quot;&lt;name&gt;&quot;,
+        &quot;network_ipam_refs&quot;: [
+            {
+                &quot;attr&quot;: {
+                    &quot;host_routes&quot;: null,
+                    &quot;ipam_subnets&quot;: [
+                        {
+                            &quot;addr_from_start&quot;: true,
+                            &quot;allocation_pools&quot;: [
+                                {
+                                    &quot;end&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+                                    &quot;start&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;
+                                }
+                            ],
+                            &quot;default_gateway&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+                            &quot;dhcp_option_list&quot;: null,
+                            &quot;dns_nameservers&quot;: [],
+                            &quot;dns_server_address&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+                            &quot;enable_dhcp&quot;: true,
+                            &quot;host_routes&quot;: null,
+                            &quot;subnet&quot;: {
+                                &quot;ip_prefix&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+                                &quot;ip_prefix_len&quot;: &lt;PREFIX&gt;
+                            },
+                            &quot;subnet_name&quot;: &quot;&quot;,
+                            &quot;subnet_uuid&quot;: &quot;&lt;UUID&gt;&quot;
+                        }
+                    ]
+                },
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/network-ipam/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;default-domain&quot;,
+                    &quot;default-project&quot;,
+                    &quot;default-network-ipam&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            }
+        ],
+        &quot;parent_href&quot;: &quot;http://&lt;API-SERVER&gt;/project/&lt;UUID&gt;&quot;,
+        &quot;parent_type&quot;: &quot;project&quot;,
+        &quot;parent_uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;router_external&quot;: false,
+        &quot;routing_instances&quot;: [
+            {
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/routing-instance/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;PROJECT&gt;&quot;,
+                    &quot;&lt;name&gt;&quot;,
+                    &quot;&lt;name&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            }
+        ],
+        &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;virtual_machine_interface_back_refs&quot;: [
+            {
+                &quot;attr&quot;: null,
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/virtual-machine-interface/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;PROJECT&gt;&quot;,
+                    &quot;&lt;UUID&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            }
+        ],
+        &quot;virtual_network_properties&quot;: {
+            &quot;allow_transit&quot;: null,
+            &quot;forwarding_mode&quot;: null,
+            &quot;network_id&quot;: &lt;INTEGER&gt;,
+            &quot;vxlan_network_identifier&quot;: null
+        }
+    }
+}
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">virtual-networks</a><ul>
+<li><a class="reference internal" href="#virtual-networks-attributes">virtual-networks Attributes</a></li>
+<li><a class="reference internal" href="#virtual-networks-json">virtual-networks JSON</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="virtual-machines.html"
+                        title="previous chapter">virtual-machine</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="virtual-routers.html"
+                        title="next chapter">virtual-router</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/virtual-networks.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="virtual-routers.html" title="virtual-router"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="virtual-machines.html" title="virtual-machine"
+             >previous</a> |</li>
+        <li><a href="index.html">test 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, test.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

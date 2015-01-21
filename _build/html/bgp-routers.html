@@ -1,0 +1,755 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>bgp-router &mdash; test 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="test 1.0 documentation" href="index.html" />
+    <link rel="next" title="domain" href="domains.html" />
+    <link rel="prev" title="access-control-list" href="access-control-lists.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="domains.html" title="domain"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="access-control-lists.html" title="access-control-list"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">test 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="bgp-router">
+<h1>bgp-router<a class="headerlink" href="#bgp-router" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div>Put here  description of attribute</div></blockquote>
+<div class="section" id="bgp-routers-attributes">
+<h2>bgp-routers Attributes<a class="headerlink" href="#bgp-routers-attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="14%" />
+<col width="11%" />
+<col width="4%" />
+<col width="5%" />
+<col width="12%" />
+<col width="14%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Attribute</th>
+<th class="head">Parent</th>
+<th class="head">Type</th>
+<th class="head">Required</th>
+<th class="head">CRUD</th>
+<th class="head">Default Value</th>
+<th class="head">Validation Constraints</th>
+<th class="head">Notes</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>bgp_router_parameters</td>
+<td>bgp-router</td>
+<td>N/A</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of bgp_router_parameters</td>
+</tr>
+<tr class="row-odd"><td>address</td>
+<td>bgp_router_parameters</td>
+<td>String</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid IP address</td>
+<td>The BGP router IP address</td>
+</tr>
+<tr class="row-even"><td>address_families</td>
+<td>bgp_router_parameters</td>
+<td>N/A</td>
+<td>Yes</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of addres_families</td>
+</tr>
+<tr class="row-odd"><td>family</td>
+<td>address_families</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>{inet-vpn|inet6-vpn|route-target|e-vpn|erm-vpn}</td>
+<td>Set BGP address families</td>
+</tr>
+<tr class="row-even"><td>autonomous_system</td>
+<td>bgp_router_parameters</td>
+<td>integer</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid range of AS</td>
+<td>The peer AS number</td>
+</tr>
+<tr class="row-odd"><td>hold_time</td>
+<td>bgp_router_parameters</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The hold time of BGP</td>
+</tr>
+<tr class="row-even"><td>identifier</td>
+<td>bgp_router_parameters</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid IP address</td>
+<td>BGP router ID</td>
+</tr>
+<tr class="row-odd"><td>port</td>
+<td>bgp_router_parameters</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>1-65535</td>
+<td>The port of BGP</td>
+</tr>
+<tr class="row-even"><td>vendor</td>
+<td>bgp_router_parameters</td>
+<td>string</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The vender name</td>
+</tr>
+<tr class="row-odd"><td>bgp_router_refs</td>
+<td>bgp-router</td>
+<td>N/A</td>
+<td>No</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of bgp_router_refs</td>
+</tr>
+<tr class="row-even"><td>attr</td>
+<td>bgp_router_refs</td>
+<td>N/A</td>
+<td>No</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of attr</td>
+</tr>
+<tr class="row-odd"><td>session</td>
+<td>attr</td>
+<td>N/A</td>
+<td>No</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of session</td>
+</tr>
+<tr class="row-even"><td>attributes</td>
+<td>session</td>
+<td>N/A</td>
+<td>No</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of attributes</td>
+</tr>
+<tr class="row-odd"><td>address_families</td>
+<td>attributes</td>
+<td>N/A</td>
+<td>No</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of addres_families</td>
+</tr>
+<tr class="row-even"><td>family</td>
+<td>address_families</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>[]</td>
+<td>{inet-vpn|inet6-vpn|route-target|e-vpn|erm-vpn}</td>
+<td>Set BGP address families</td>
+</tr>
+<tr class="row-odd"><td>bgp_router</td>
+<td>attributes</td>
+<td>N/A</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>N/A</td>
+<td>Internal use</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>session</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>bgp_router_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>genereted</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>bgp_router_refs</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>Valid to form &lt;domain&gt;&lt;project&gt;&lt;network&gt;&lt;routing instance&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>bgp_router_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>display_name</td>
+<td>bgp-router</td>
+<td>tring</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>Display name</td>
+</tr>
+<tr class="row-odd"><td>fq_name</td>
+<td>bgp-router</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CR</td>
+<td>N/A</td>
+<td>Valid full query name form &lt;domain&gt;,&lt;tenant&gt;,&lt;name&gt;</td>
+<td>The full query name of this attribute</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>bgp-router</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-odd"><td>id_perms</td>
+<td>virtual-network</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of id_perms</td>
+</tr>
+<tr class="row-even"><td>created</td>
+<td>id_perms</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of created date of this attribute</td>
+</tr>
+<tr class="row-odd"><td>description</td>
+<td>id_perms</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>Description of this attribute</td>
+</tr>
+<tr class="row-even"><td>enable</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true | false}</td>
+<td>Specifies whethere this attribute is enable or not</td>
+</tr>
+<tr class="row-odd"><td>last_modified</td>
+<td>id_perms</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of modified date of this attribute</td>
+</tr>
+<tr class="row-even"><td>permissions</td>
+<td>id_perms</td>
+<td>list(dict)</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The owner and access level</td>
+</tr>
+<tr class="row-odd"><td>group</td>
+<td>permissions</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The group of this attribute</td>
+</tr>
+<tr class="row-even"><td>group_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>Valid access range 0-7</td>
+<td>Access type of group</td>
+</tr>
+<tr class="row-odd"><td>other_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>Valid access range 0-7</td>
+<td>Access type of others</td>
+</tr>
+<tr class="row-even"><td>owner</td>
+<td>permissions</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of the ownter of this attribute</td>
+</tr>
+<tr class="row-odd"><td>owner_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>Valid access range 0-7</td>
+<td>Access type of the ownter</td>
+</tr>
+<tr class="row-even"><td>user_visible</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true | false}</td>
+<td>Specifies whethere this attribute is visible by user or not</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>for internal use</td>
+</tr>
+<tr class="row-odd"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-even"><td>name</td>
+<td>bgp-router</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of virtual-network</td>
+</tr>
+<tr class="row-odd"><td>parent_href</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of parent attribute</td>
+</tr>
+<tr class="row-even"><td>parent_type</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>null</td>
+<td>Valid parent name</td>
+<td>The parent attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_uuid</td>
+<td>virtual-network</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="bgp-routers-json">
+<h2>bgp-routers JSON<a class="headerlink" href="#bgp-routers-json" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112</pre></div></td><td class="code"><div class="highlight"><pre>{
+    &quot;bgp-router&quot;: {
+        &quot;bgp_router_parameters&quot;: {
+            &quot;address&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+            &quot;address_families&quot;: {
+                &quot;family&quot;: [
+                    &quot;route-target&quot;,
+                    &quot;inet-vpn&quot;,
+                    &quot;inet6-vpn&quot;,
+                    &quot;e-vpn&quot;,
+                    &quot;erm-vpn&quot;
+                ]
+            },
+            &quot;autonomous_system&quot;: &lt;AS NUMBER&gt;,
+            &quot;hold_time&quot;: 90,
+            &quot;identifier&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+            &quot;port&quot;: 179,
+            &quot;vendor&quot;: &quot;contrail&quot;
+        },
+        &quot;bgp_router_refs&quot;: [
+            {
+                &quot;attr&quot;: {
+                    &quot;session&quot;: [
+                        {
+                            &quot;attributes&quot;: [
+                                {
+                                    &quot;address_families&quot;: {
+                                        &quot;family&quot;: [
+                                            &quot;inet-vpn&quot;,
+                                            &quot;inet6-vpn&quot;,
+                                            &quot;route-target&quot;,
+                                            &quot;e-vpn&quot;
+                                        ]
+                                    },
+                                    &quot;bgp_router&quot;: null
+                                }
+                            ],
+                            &quot;uuid&quot;: null
+                        }
+                    ]
+                },
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/bgp-router/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;PROJECT&gt;&quot;,
+                    &quot;&lt;NETWORK&gt;&quot;,
+                    &quot;&lt;ROUTING INSTANCE&gt;&quot;,
+                    &quot;&lt;NAME&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            },
+            {
+                &quot;attr&quot;: {
+                    &quot;session&quot;: [
+                        {
+                            &quot;attributes&quot;: [
+                                {
+                                    &quot;address_families&quot;: {
+                                        &quot;family&quot;: []
+                                    },
+                                    &quot;bgp_router&quot;: null
+                                }
+                            ],
+                            &quot;uuid&quot;: null
+                        }
+                    ]
+                },
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/bgp-router/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;PROJECT&gt;&quot;,
+                    &quot;&lt;NETWORK&gt;&quot;,
+                    &quot;&lt;ROUTING INSTANCE&gt;&quot;,
+                    &quot;&lt;NAME&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            }
+        ],
+        &quot;display_name&quot;: &quot;&lt;NAME&gt;&quot;,
+        &quot;fq_name&quot;: [
+            &quot;&lt;DOMAIN&gt;&quot;,
+            &quot;&lt;PROJECT&gt;&quot;,
+            &quot;&lt;NETWORK&gt;&quot;,
+            &quot;&lt;ROUTING INSTANCE&gt;&quot;,
+            &quot;&lt;NAME&gt;&quot;
+        ],
+        &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/bgp-router/&lt;UUID&gt;&quot;,
+        &quot;id_perms&quot;: {
+            &quot;created&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;last_modified&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;permissions&quot;: {
+                &quot;group&quot;: &quot;admin&quot;,
+                &quot;group_access&quot;: 7,
+                &quot;other_access&quot;: 7,
+                &quot;owner&quot;: &quot;admin&quot;,
+                &quot;owner_access&quot;: 7
+            },
+            &quot;user_visible&quot;: true,
+            &quot;uuid&quot;: {
+                &quot;uuid_lslong&quot;: 12825287036609496247,
+                &quot;uuid_mslong&quot;: 16195309315277015226
+            }
+        },
+        &quot;name&quot;: &quot;&lt;NAME&gt;1&quot;,
+        &quot;parent_href&quot;: &quot;http://&lt;API-SERVER&gt;/routing-instance/&lt;UUID&gt;&quot;,
+        &quot;parent_type&quot;: &quot;routing-instance&quot;,
+        &quot;parent_uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+    }
+}
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">bgp-router</a><ul>
+<li><a class="reference internal" href="#bgp-routers-attributes">bgp-routers Attributes</a></li>
+<li><a class="reference internal" href="#bgp-routers-json">bgp-routers JSON</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="access-control-lists.html"
+                        title="previous chapter">access-control-list</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="domains.html"
+                        title="next chapter">domain</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/bgp-routers.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="domains.html" title="domain"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="access-control-lists.html" title="access-control-list"
+             >previous</a> |</li>
+        <li><a href="index.html">test 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, test.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
