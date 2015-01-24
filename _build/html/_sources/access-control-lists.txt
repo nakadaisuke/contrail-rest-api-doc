@@ -29,8 +29,8 @@ access-control-lists Attributes
    ip_prefix_len " subnet" integer "No " CRUD " null " Valid prefix rength " The prefix of IP address
    virtual_network " dst_address" string  "No " CRUD " null "Valid virtual network name " The virtual network attaching to ACL
    dst_port " match_condition" list(dict) "No " CRUD " null " N/A " The destination port range
-   end_port " dst_port" integer "No " CRU " null " 0-65535 " The end port of range
-   start_port " dst_port" integer "No " CRU " null " 0-65535 " The start port of range
+   end_port " dst_port" integer "No " CRU " null " -1-65535 " The end port of range
+   start_port " dst_port" integer "No " CRU " null " -1-65535 " The start port of range
    protocol " match_condition" string "No " CRU " any " {tcp|udp|icmp|any} " The protocol name
    src_address " match_condition" string "No " CRU " null " Valid IP address " The source address for ACL
    network_policy " src_address" string "No " CRU " null " {sequence|timer} " The network policy time
@@ -40,25 +40,25 @@ access-control-lists Attributes
    ip_prefix_len " subnet" integer "No " CRUD " null " Valid prefix rength " The prefix of IP address
    virtual_network " src_address" string  "No " CRUD " null "Valid virtual network name " The virtual network attaching to ACL
    src_port " match_condition" list(dict) "No " CRUD " null " N/A " The destination port range 
-   end_port " src_port" integer "No " CRU " null " 0-65535 " The end port of range
-   start_port " src_port" integer "No " CRU " null " 0-65535 " The start port of range
-   rule_uuid " acl_rule" uuid-str "No " CR " generated " N/A " The UUID of the rule
+   end_port " src_port" integer "No " CRU " null " -1-65535 " The end port of range
+   start_port " src_port" integer "No " CRU " null " -1-65535 " The start port of range
+   rule_uuid " acl_rule" uuid-str "No " CR " generated " N/A " The UUID of this attribute 
    dynamic " access_control_list_entries" bool "No " CRUD " null " {true|false} " Specifies whether access list is dynamic or not.
    display_name " access-control-list" string "No " CR " generated " N/A " Display name
-   fq_name " access-control-list" list(str) "Yes " CR " N/A " Valid full query name form <domain>,<tenant>,<name> " The full query name of this attribute
+   fq_name " access-control-list" list(str) "Yes " CR " [] " Valid full query name form <domain>,<tenant>,<name> " The full query name of this attribute
    href " access-control-list" string "No " R " generated " N/A " The URI of this instance IP
    id_perms " virtual-network" N/A "No " CR "generated " N/A " The root of id_perms
    created " id_perms" datetime "No " R " generated " N/A " The date time of created date of this attribute 
    description " id_perms" string "No " CRU " null " N/A " Description of this attribute
-   enable " id_perms" bool "No " CRU " true "{true | false} " Specifies whethere this attribute is enable or not 
+   enable " id_perms" bool "No " CRU " true "{true|false} " Specifies whethere this attribute is enable or not 
    last_modified " id_perms" datetime "No " R " generated " N/A " The date time of modified date of this attribute  
    permissions " id_perms" list(dict) "No " CRU " generated " N/A " The owner and access level
    group " permissions" string "No " CRU " generated " N/A " The group of this attribute
-   group_access " permissions" int "No " CRU " generated " Valid access range 0-7 " Access type of group 
-   other_access " permissions" int "No " CRU " generated " Valid access range 0-7 " Access type of others
+   group_access " permissions" int "No " CRU " generated " 0-7 " Access type of group 
+   other_access " permissions" int "No " CRU " generated " 0-7 " Access type of others
    owner " permissions" string "No " CRU " generated " N/A  " The name of the ownter of this attribute
-   owner_access " permissions" int "No " CRU " generated " Valid access range 0-7 " Access type of the ownter
-   user_visible " id_perms" bool "No " CRU " true "{true | false} " Specifies whethere this attribute is visible by user or not 
+   owner_access " permissions" int "No " CRU " generated " 0-7 " Access type of the ownter
+   user_visible " id_perms" bool "No " CRU " true "{true|false} " Specifies whethere this attribute is visible by user or not 
    uuid " id_perms" uuid-str "No " R " generated " N/A " The UUID of id_perms attribute  
    uuid_lslong " uuid" int "No " R " generated " N/A " for internal use
    uuid_mslong " uuid" int "No " R " generated " N/A " For internal use 

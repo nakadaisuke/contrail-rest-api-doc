@@ -24,7 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="test 1.0 documentation" href="index.html" />
-    <link rel="next" title="Welcome to test’s documentation!" href="index.html" />
+    <link rel="next" title="instance-ip" href="instance-ips.html" />
     <link rel="prev" title="global-system-config" href="global-system-configs.html" /> 
   </head>
   <body>
@@ -35,7 +35,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="index.html" title="Welcome to test’s documentation!"
+          <a href="instance-ips.html" title="instance-ip"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="global-system-configs.html" title="global-system-config"
@@ -52,7 +52,7 @@
   <div class="section" id="global-vrouter-config">
 <h1>global-vrouter-config<a class="headerlink" href="#global-vrouter-config" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div>Put here  description of attribute</div></blockquote>
+<div>global-vrouter-config includes vrouter global configuration, IP fablic service and so on</div></blockquote>
 <div class="section" id="global-vrouter-configs-attributes">
 <h2>global-vrouter-configs Attributes<a class="headerlink" href="#global-vrouter-configs-attributes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
@@ -80,315 +80,426 @@
 <tbody valign="top">
 <tr class="row-even"><td>display_name</td>
 <td>global-vrouter-config</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid</td>
-<td>global-vrouter-config</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>parent_uuid</td>
-<td>global-vrouter-config</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>parent_href</td>
-<td>global-vrouter-config</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>parent_type</td>
-<td>global-vrouter-config</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>linklocal_services</td>
-<td>global-vrouter-config</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>linklocal_service_entry</td>
-<td>linklocal_services</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>linklocal_service_name</td>
-<td>linklocal_service_entry</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>ip_fabric_service_ip</td>
-<td>linklocal_service_entry</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>linklocal_service_ip</td>
-<td>linklocal_service_entry</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>ip_fabric_service_port</td>
-<td>linklocal_service_entry</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>ip_fabric_DNS_service_name</td>
-<td>linklocal_service_entry</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>linklocal_service_port</td>
-<td>linklocal_service_entry</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>Display name</td>
 </tr>
 <tr class="row-odd"><td>encapsulation_priorities</td>
 <td>global-vrouter-config</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-even"><td>encapsulation</td>
 <td>encapsulation_priorities</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>href</td>
-<td>global-vrouter-config</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>id_perms</td>
-<td>global-vrouter-config</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>enable</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>description</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>created</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid_mslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid_lslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>user_visible</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>last_modified</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>permissions</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>owner</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>owner_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>other_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>group</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>group_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CRUD</td>
+<td>[]</td>
+<td>{VXLAN|MPLSoUDP|MPLSoGRE}</td>
+<td>The encapsulation protocol type</td>
 </tr>
 <tr class="row-odd"><td>fq_name</td>
 <td>global-vrouter-config</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CR</td>
+<td>[]</td>
+<td>Valid form &lt;system-config&gt;,&lt;name&gt;</td>
+<td>The full query name of this attribute</td>
 </tr>
-<tr class="row-even"><td>vxlan_network_identifier_mode</td>
+<tr class="row-even"><td>href</td>
 <td>global-vrouter-config</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
-<tr class="row-odd"><td>name</td>
+<tr class="row-odd"><td>id_perms</td>
 <td>global-vrouter-config</td>
-<td>Type</td>
-<td>Requ</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>created</td>
+<td>id_perms</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of created date of this attribute</td>
+</tr>
+<tr class="row-odd"><td>description</td>
+<td>id_perms</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>N/A</td>
+<td>Description of this attribute</td>
+</tr>
+<tr class="row-even"><td>enable</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is enable or not</td>
+</tr>
+<tr class="row-odd"><td>last_modified</td>
+<td>id_perms</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of modified date of this attribute</td>
+</tr>
+<tr class="row-even"><td>permissions</td>
+<td>id_perms</td>
+<td>list(dict)</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The owner and access level</td>
+</tr>
+<tr class="row-odd"><td>group</td>
+<td>permissions</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The group of this attribute</td>
+</tr>
+<tr class="row-even"><td>group_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>0-7</td>
+<td>Access type of group</td>
+</tr>
+<tr class="row-odd"><td>other_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>0-7</td>
+<td>Access type of others</td>
+</tr>
+<tr class="row-even"><td>owner</td>
+<td>permissions</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of the ownter of this attribute</td>
+</tr>
+<tr class="row-odd"><td>owner_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>0-7</td>
+<td>Access type of the ownter</td>
+</tr>
+<tr class="row-even"><td>user_visible</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is visible by user or not</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-odd"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-even"><td>linklocal_services</td>
+<td>global-vrouter-config</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>linklocal_service_entry</td>
+<td>linklocal_services</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>ip_fabric_DNS_service_name</td>
+<td>linklocal_service_entry</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>DNS service name</td>
+<td>The IP fabfic DNS service name</td>
+</tr>
+<tr class="row-odd"><td>ip_fabric_service_ip</td>
+<td>linklocal_service_entry</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>[]</td>
+<td>Valid IP address</td>
+<td>The list of IP fablic service IP</td>
+</tr>
+<tr class="row-even"><td>ip_fabric_service_port</td>
+<td>linklocal_service_entry</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>0-65535</td>
+<td>The linklocal service port</td>
+</tr>
+<tr class="row-odd"><td>linklocal_service_ip</td>
+<td>linklocal_service_entry</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid IP address</td>
+<td>The linklocal service IP</td>
+</tr>
+<tr class="row-even"><td>linklocal_service_name</td>
+<td>linklocal_service_entry</td>
+<td>string</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The linklocal service name</td>
+</tr>
+<tr class="row-odd"><td>linklocal_service_port</td>
+<td>linklocal_service_entry</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>0-65535</td>
+<td>The linklocal server port</td>
+</tr>
+<tr class="row-even"><td>name</td>
+<td>global-vrouter-config</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of thie attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_href</td>
+<td>global-vrouter-config</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>parent_type</td>
+<td>global-vrouter-config</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>null</td>
+<td>Valid parent name</td>
+<td>The parent attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_uuid</td>
+<td>global-vrouter-config</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>global-vrouter-config</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>vxlan_network_identifier_mode</td>
+<td>global-vrouter-config</td>
+<td>string</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>{configured|automatic}</td>
+<td>The VXLAN network identifier mode</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="global-vrouter-configs-json">
 <h2>global-vrouter-configs JSON<a class="headerlink" href="#global-vrouter-configs-json" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55</pre></div></td><td class="code"><div class="highlight"><pre>{
+    &quot;global-vrouter-config&quot;: {
+        &quot;display_name&quot;: &quot;&lt;NAME&gt;&quot;,
+        &quot;encapsulation_priorities&quot;: {
+            &quot;encapsulation&quot;: [
+                &quot;VXLAN&quot;,
+                &quot;MPLSoUDP&quot;,
+                &quot;MPLSoGRE&quot;
+            ]
+        },
+        &quot;fq_name&quot;: [
+            &quot;&lt;SYSTEM_CONFIG&gt;&quot;,
+            &quot;&lt;NAME&gt;&quot;
+        ],
+        &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/global-vrouter-config/&lt;UUID&gt;&quot;,
+        &quot;id_perms&quot;: {
+            &quot;created&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;last_modified&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;permissions&quot;: {
+                &quot;group&quot;: &quot;admin&quot;,
+                &quot;group_access&quot;: 7,
+                &quot;other_access&quot;: 7,
+                &quot;owner&quot;: &quot;admin&quot;,
+                &quot;owner_access&quot;: 7
+            },
+            &quot;user_visible&quot;: true,
+            &quot;uuid&quot;: {
+                &quot;uuid_lslong&quot;: 13396100387536944290,
+                &quot;uuid_mslong&quot;: 2550391563090019913
+            }
+        },
+        &quot;linklocal_services&quot;: {
+            &quot;linklocal_service_entry&quot;: [
+                {
+                    &quot;ip_fabric_DNS_service_name&quot;: &quot;&quot;,
+                    &quot;ip_fabric_service_ip&quot;: [
+                        &quot;&lt;IP_ADDRESS&gt;&quot;
+                    ],
+                    &quot;ip_fabric_service_port&quot;: &lt;PORT&gt;,
+                    &quot;linklocal_service_ip&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+                    &quot;linklocal_service_name&quot;: &quot;&lt;NAME&gt;&quot;,
+                    &quot;linklocal_service_port&quot;: &lt;PORT&gt;
+                }
+            ]
+        },
+        &quot;name&quot;: &quot;&lt;NAME&gt;&quot;,
+        &quot;parent_href&quot;: &quot;http://&lt;API-SERVER&gt;/global-system-config/&lt;UUID&gt;&quot;,
+        &quot;parent_type&quot;: &quot;global-system-config&quot;,
+        &quot;parent_uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;vxlan_network_identifier_mode&quot;: &quot;automatic&quot;
+    }
+}
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 
@@ -411,8 +522,8 @@
   <p class="topless"><a href="global-system-configs.html"
                         title="previous chapter">global-system-config</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="next chapter">Welcome to test&#8217;s documentation!</a></p>
+  <p class="topless"><a href="instance-ips.html"
+                        title="next chapter">instance-ip</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/global-vrouter-configs.txt"
@@ -442,7 +553,7 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="index.html" title="Welcome to test’s documentation!"
+          <a href="instance-ips.html" title="instance-ip"
              >next</a> |</li>
         <li class="right" >
           <a href="global-system-configs.html" title="global-system-config"

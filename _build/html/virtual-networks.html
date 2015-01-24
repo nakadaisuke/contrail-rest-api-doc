@@ -84,25 +84,25 @@
 <td>CR</td>
 <td>generated</td>
 <td>N/A</td>
-<td>Display name</td>
+<td>The display name</td>
 </tr>
 <tr class="row-odd"><td>fq_name</td>
 <td>virtual-network</td>
 <td>list(str)</td>
 <td>Yes</td>
 <td>CR</td>
-<td>N/A</td>
-<td>Valid full query name form &lt;domain&gt;,&lt;tenant&gt;,&lt;name&gt;</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;name&gt;</td>
 <td>The full query name of this attribute</td>
 </tr>
 <tr class="row-even"><td>id_perms</td>
 <td>virtual-network</td>
 <td>N/A</td>
 <td>No</td>
-<td>CR</td>
-<td>generated</td>
+<td>CRU</td>
 <td>N/A</td>
-<td>The root of id_perms</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-odd"><td>created</td>
 <td>id_perms</td>
@@ -120,7 +120,7 @@
 <td>CRU</td>
 <td>null</td>
 <td>N/A</td>
-<td>Description of this attribute</td>
+<td>The description of this attribute</td>
 </tr>
 <tr class="row-odd"><td>enable</td>
 <td>id_perms</td>
@@ -128,7 +128,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>true</td>
-<td>{true | false}</td>
+<td>{true|false}</td>
 <td>Specifies whethere this attribute is enable or not</td>
 </tr>
 <tr class="row-even"><td>last_modified</td>
@@ -164,8 +164,8 @@
 <td>No</td>
 <td>CRU</td>
 <td>generated</td>
-<td>Valid access range 0-7</td>
-<td>Access type of group</td>
+<td>0-7</td>
+<td>The access type of group</td>
 </tr>
 <tr class="row-even"><td>other_access</td>
 <td>permissions</td>
@@ -173,8 +173,8 @@
 <td>No</td>
 <td>CRU</td>
 <td>generated</td>
-<td>Valid access range 0-7</td>
-<td>Access type of others</td>
+<td>0-7</td>
+<td>The access type of others</td>
 </tr>
 <tr class="row-odd"><td>owner</td>
 <td>permissions</td>
@@ -191,8 +191,8 @@
 <td>No</td>
 <td>CRU</td>
 <td>generated</td>
-<td>Valid access range 0-7</td>
-<td>Access type of the ownter</td>
+<td>0-7</td>
+<td>The access type of the ownter</td>
 </tr>
 <tr class="row-odd"><td>user_visible</td>
 <td>id_perms</td>
@@ -200,7 +200,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>true</td>
-<td>{true | false}</td>
+<td>{true|false}</td>
 <td>Specifies whethere this attribute is visible by user or not</td>
 </tr>
 <tr class="row-even"><td>uuid</td>
@@ -219,7 +219,7 @@
 <td>R</td>
 <td>generated</td>
 <td>N/A</td>
-<td>for internal use</td>
+<td>For internal use</td>
 </tr>
 <tr class="row-even"><td>uuid_mslong</td>
 <td>uuid</td>
@@ -234,7 +234,7 @@
 <td>virtual-network</td>
 <td>N/A</td>
 <td>No</td>
-<td>C</td>
+<td>CRUD</td>
 <td>generated</td>
 <td>N/A</td>
 <td>The instance IP which belongs to this network</td>
@@ -246,7 +246,7 @@
 <td>R</td>
 <td>generated</td>
 <td>N/A</td>
-<td>The attribute of this attribute</td>
+<td>The attribute of this list</td>
 </tr>
 <tr class="row-odd"><td>href</td>
 <td>instance_ip_back_refs</td>
@@ -262,8 +262,8 @@
 <td>list(str)</td>
 <td>No</td>
 <td>CR</td>
-<td>generated</td>
-<td>Valid list</td>
+<td>[]</td>
+<td>Valid form &lt;uuid&gt;</td>
 <td>The list of this attribute</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
@@ -275,14 +275,14 @@
 <td>N/A</td>
 <td>The UUID of this attribute</td>
 </tr>
-<tr class="row-even"><td>is_sha&lt;name&gt;</td>
+<tr class="row-even"><td>is_shaerd</td>
 <td>virtual-network</td>
 <td>bool</td>
 <td>No</td>
 <td>CRU</td>
 <td>false</td>
-<td>{true | false}</td>
-<td>Specifies whether the network resource can be accessed by any tenant or not</td>
+<td>{true|false}</td>
+<td>Specifies whether the network resource can be accessed by any project or not</td>
 </tr>
 <tr class="row-odd"><td>name</td>
 <td>virtual-network</td>
@@ -291,25 +291,25 @@
 <td>CRU</td>
 <td>generated</td>
 <td>N/A</td>
-<td>The name of virtual-network</td>
+<td>The name of thie attribute</td>
 </tr>
 <tr class="row-even"><td>network_ipam_refs</td>
 <td>virtual-network</td>
 <td>N/A</td>
-<td>Yes</td>
+<td>No</td>
 <td>CR</td>
-<td>generated</td>
 <td>N/A</td>
-<td>The root of network_ipam_refs</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-odd"><td>attr</td>
 <td>network_ipam_refs</td>
 <td>N/A</td>
 <td>No</td>
 <td>CRUD</td>
+<td>null</td>
 <td>N/A</td>
-<td>generated</td>
-<td>The root of attributes</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-even"><td>host_routes</td>
 <td>attr</td>
@@ -327,7 +327,7 @@
 <td>CRD</td>
 <td>[]</td>
 <td>N/A</td>
-<td>The root of ipam_subnets</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-even"><td>addr_from_start</td>
 <td>ipam_subnets</td>
@@ -335,7 +335,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>true</td>
-<td>{true | false}</td>
+<td>{true|false}</td>
 <td>Specifies whehter the network allocation start from low value or high value</td>
 </tr>
 <tr class="row-odd"><td>allocation_pools</td>
@@ -407,7 +407,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>true</td>
-<td>{true | false}</td>
+<td>{true|false}</td>
 <td>Specifies whether DHCP is enable or not</td>
 </tr>
 <tr class="row-odd"><td>host_routes</td>
@@ -424,9 +424,9 @@
 <td>N/A</td>
 <td>No</td>
 <td>CRD</td>
-<td>generated</td>
 <td>N/A</td>
-<td>The root of subnet</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-odd"><td>ip_prefix</td>
 <td>subnet</td>
@@ -478,9 +478,9 @@
 <td>list(str)</td>
 <td>Yes</td>
 <td>CR</td>
-<td>N/A</td>
-<td>Valid IPAM form &lt;domain&gt;,&lt;tenant&gt;,&lt;IPAM&gt;</td>
-<td>The IPAM which belongs to this subnet</td>
+<td>[]</td>
+<td>Valid IPAM form &lt;domain&gt;,&lt;project&gt;,&lt;IPAM&gt;</td>
+<td>The list of this attribute</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
 <td>network_ipam_refs</td>
@@ -524,17 +524,17 @@
 <td>No</td>
 <td>CRU</td>
 <td>false</td>
-<td>{true | false}</td>
+<td>{true|false}</td>
 <td>Specifies whether the network resouse can be allocated on External network</td>
 </tr>
 <tr class="row-even"><td>routing_instances</td>
 <td>virtual-network</td>
 <td>string</td>
 <td>No</td>
-<td>R</td>
-<td>generated</td>
-<td>generated</td>
-<td>The root of routing_instances</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-odd"><td>href</td>
 <td>routing_instances</td>
@@ -552,7 +552,7 @@
 <td>R</td>
 <td>generated</td>
 <td>N/A</td>
-<td>The location of routeing instance</td>
+<td>The list of this attribute</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
 <td>routing_instances</td>
@@ -579,7 +579,7 @@
 <td>R</td>
 <td>generated</td>
 <td>N/A</td>
-<td>The root of virtual_machine_interface_back_refs</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-even"><td>attr</td>
 <td>virtual_machine_interface_back_refs</td>
@@ -588,7 +588,7 @@
 <td>R</td>
 <td>generated</td>
 <td>N/A</td>
-<td>Refer attribure of the interface</td>
+<td>The list of this attribute</td>
 </tr>
 <tr class="row-odd"><td>href</td>
 <td>virtual_machine_interface_back_refs</td>
@@ -597,7 +597,7 @@
 <td>R</td>
 <td>generated</td>
 <td>N/A</td>
-<td>Refer URI of the interface</td>
+<td>The URI of the interface</td>
 </tr>
 <tr class="row-even"><td>to</td>
 <td>virtual_machine_interface_back_refs</td>
@@ -606,7 +606,7 @@
 <td>R</td>
 <td>generated</td>
 <td>N/A</td>
-<td>Refer tenant which the interface allocates</td>
+<td>The list of this attribute</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
 <td>virtual_machine_interface_back_refs</td>
@@ -615,16 +615,16 @@
 <td>R</td>
 <td>generated</td>
 <td>N/A</td>
-<td>Refer UUID of the interface</td>
+<td>The UUID of this attribute</td>
 </tr>
 <tr class="row-even"><td>virtual_network_properties</td>
 <td>virtual-network</td>
 <td>string</td>
 <td>N/A</td>
-<td>CR</td>
-<td>generated</td>
+<td>CRU</td>
 <td>N/A</td>
-<td>The root of Virtual network properties</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-odd"><td>allow_transit</td>
 <td>virtual_network_properties</td>
@@ -641,7 +641,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>null</td>
-<td>{l2_l3 | l2}</td>
+<td>{l2_l3|l2}</td>
 <td>Forwarding mode for virtual-network</td>
 </tr>
 <tr class="row-odd"><td>network_id</td>
@@ -660,7 +660,7 @@
 <td>CRU</td>
 <td>null</td>
 <td>Valid VNI range</td>
-<td>VNI for the network, configu&lt;name&gt; by user</td>
+<td>VNI for the network, configu&lt;NAME&gt; by user</td>
 </tr>
 </tbody>
 </table>
@@ -781,11 +781,11 @@
 112
 113</pre></div></td><td class="code"><div class="highlight"><pre>{
     &quot;virtual-network&quot;: {
-        &quot;display_name&quot;: &quot;&lt;name&gt;&quot;,
+        &quot;display_name&quot;: &quot;&lt;NAME&gt;&quot;,
         &quot;fq_name&quot;: [
-            &quot;default-domain&quot;,
-            &quot;demo&quot;,
-            &quot;&lt;name&gt;&quot;
+            &quot;&lt;DOMAIN&gt;&quot;,
+            &quot;&lt;PROJECT&gt;&quot;,
+            &quot;&lt;NAME&gt;&quot;
         ],
         &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/virtual-network/&lt;UUID&gt;&quot;,
         &quot;id_perms&quot;: {
@@ -794,10 +794,10 @@
             &quot;enable&quot;: true,
             &quot;last_modified&quot;: &quot;&lt;DATE&gt;&quot;,
             &quot;permissions&quot;: {
-                &quot;group&quot;: &quot;admin&quot;,
+                &quot;group&quot;: &quot;&lt;GROUP&gt;&quot;,
                 &quot;group_access&quot;: 7,
                 &quot;other_access&quot;: 7,
-                &quot;owner&quot;: &quot;admin&quot;,
+                &quot;owner&quot;: &quot;&lt;OWNER&gt;&quot;,
                 &quot;owner_access&quot;: 7
             },
             &quot;user_visible&quot;: true,
@@ -817,7 +817,7 @@
             }
         ],
         &quot;is_shared&quot;: false,
-        &quot;name&quot;: &quot;&lt;name&gt;&quot;,
+        &quot;name&quot;: &quot;&lt;NAME&gt;&quot;,
         &quot;network_ipam_refs&quot;: [
             {
                 &quot;attr&quot;: {
@@ -848,9 +848,9 @@
                 },
                 &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/network-ipam/&lt;UUID&gt;&quot;,
                 &quot;to&quot;: [
-                    &quot;default-domain&quot;,
-                    &quot;default-project&quot;,
-                    &quot;default-network-ipam&quot;
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;PROJECT&gt;&quot;,
+                    &quot;&lt;IPAM&gt;&quot;
                 ],
                 &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
             }
@@ -865,8 +865,8 @@
                 &quot;to&quot;: [
                     &quot;&lt;DOMAIN&gt;&quot;,
                     &quot;&lt;PROJECT&gt;&quot;,
-                    &quot;&lt;name&gt;&quot;,
-                    &quot;&lt;name&gt;&quot;
+                    &quot;&lt;NAME&gt;&quot;,
+                    &quot;&lt;NAME&gt;&quot;
                 ],
                 &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
             }

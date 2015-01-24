@@ -42,6 +42,12 @@ virtual-routers Attributes
    group " permissions" Type "Requ " CRU " Default " Valid " ABCDE
    group_access " permissions" Type "Requ " CRU " Default " Valid " ABCDE
    name " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
+   virtual_machine_refs " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
+   to " virtual_machine_refs" Type "Requ " CRU " Default " Valid " ABCDE
+   href " virtual_machine_refs" Type "Requ " CRU " Default " Valid " ABCDE
+   attr " virtual_machine_refs" Type "Requ " CRU " Default " Valid " ABCDE
+   uuid " virtual_machine_refs" Type "Requ " CRU " Default " Valid " ABCDE
+
 virtual-routers JSON
 ====
 
@@ -49,3 +55,63 @@ virtual-routers JSON
    :linenothreshold: 5
 
 ::
+
+   {
+       "virtual-router": {
+           "display_name": "system003-1", 
+           "fq_name": [
+               "default-global-system-config", 
+               "system003-1"
+           ], 
+           "href": "http://127.0.0.1:8082/virtual-router/2e25cd0e-b0f0-4fc4-868e-c188a502d950", 
+           "id_perms": {
+               "created": "2014-11-25T09:16:19.869944", 
+               "description": null, 
+               "enable": true, 
+               "last_modified": "2014-11-25T09:16:19.869944", 
+               "permissions": {
+                   "group": "admin", 
+                   "group_access": 7, 
+                   "other_access": 7, 
+                   "owner": "admin", 
+                   "owner_access": 7
+               }, 
+               "user_visible": true, 
+               "uuid": {
+                   "uuid_lslong": 9695899840403396944, 
+                   "uuid_mslong": 3325289362864754628
+               }
+           }, 
+           "name": "system003-1", 
+           "parent_href": "http://127.0.0.1:8082/global-system-config/ee6b566c-3d5b-43d2-bd3e-a86bb3b7779b", 
+           "parent_type": "global-system-config", 
+           "parent_uuid": "ee6b566c-3d5b-43d2-bd3e-a86bb3b7779b", 
+           "physical_router_back_refs": [
+               {
+                   "attr": null, 
+                   "href": "http://127.0.0.1:8082/physical-router/703ecc26-73ad-4ba9-8380-c2b4beff1b70", 
+                   "to": [
+                       "default-global-system-config", 
+                       "fuda"
+                   ], 
+                   "uuid": "703ecc26-73ad-4ba9-8380-c2b4beff1b70"
+               }
+           ], 
+           "uuid": "2e25cd0e-b0f0-4fc4-868e-c188a502d950", 
+           "virtual_machine_refs": [
+               {
+                   "attr": null, 
+                   "href": "http://127.0.0.1:8082/virtual-machine/76187277-7b08-4d07-b879-21d5ba32beaf", 
+                   "to": [
+                       "default-domain__admin__9bdadf31-ff39-4c8b-9940-e679d93a2214__2"
+                   ], 
+                   "uuid": "76187277-7b08-4d07-b879-21d5ba32beaf"
+               }
+           ], 
+           "virtual_router_ip_address": "10.84.50.3", 
+           "virtual_router_type": [
+               "tor-agent"
+           ]
+       }
+   }
+

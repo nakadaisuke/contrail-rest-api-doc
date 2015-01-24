@@ -54,3 +54,64 @@ service-templates JSON
    :linenothreshold: 5
 
 ::
+
+   {
+       "service-template": {
+           "display_name": "NFV2", 
+           "fq_name": [
+               "default-domain", 
+               "NFV2"
+           ], 
+           "href": "http://127.0.0.1:8082/service-template/33a7ae4f-ddba-4839-89da-f18939278bbb", 
+           "id_perms": {
+               "created": "2014-12-03T01:56:43.466545", 
+               "description": null, 
+               "enable": true, 
+               "last_modified": "2014-12-03T01:56:43.466545", 
+               "permissions": {
+                   "group": "admin", 
+                   "group_access": 7, 
+                   "other_access": 7, 
+                   "owner": "admin", 
+                   "owner_access": 7
+               }, 
+               "user_visible": true, 
+               "uuid": {
+                   "uuid_lslong": 9933517499790756795, 
+                   "uuid_mslong": 3722135275090626617
+               }
+           }, 
+           "name": "NFV2", 
+           "parent_href": "http://127.0.0.1:8082/domain/11e2ba75-241a-435c-879d-0dcad6253169", 
+           "parent_type": "domain", 
+           "parent_uuid": "11e2ba75-241a-435c-879d-0dcad6253169", 
+           "service_template_properties": {
+               "availability_zone_enable": true, 
+               "flavor": "m1.medium", 
+               "image_name": "ubuntu", 
+               "interface_type": [
+                   {
+                       "service_interface_type": "management", 
+                       "shared_ip": false, 
+                       "static_route_enable": false
+                   }, 
+                   {
+                       "service_interface_type": "left", 
+                       "shared_ip": true, 
+                       "static_route_enable": false
+                   }, 
+                   {
+                       "service_interface_type": "right", 
+                       "shared_ip": true, 
+                       "static_route_enable": false
+                   }
+               ], 
+               "ordered_interfaces": true, 
+               "service_mode": "in-network", 
+               "service_scaling": true, 
+               "service_type": "firewall"
+           }, 
+           "uuid": "33a7ae4f-ddba-4839-89da-f18939278bbb"
+       }
+   }
+

@@ -398,6 +398,125 @@
 </div>
 <div class="section" id="service-templates-json">
 <h2>service-templates JSON<a class="headerlink" href="#service-templates-json" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
+    <span class="nt">&quot;service-template&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;NFV2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;fq_name&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;default-domain&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;NFV2&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/service-template/33a7ae4f-ddba-4839-89da-f18939278bbb&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id_perms&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-12-03T01:56:43.466545&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;last_modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-12-03T01:56:43.466545&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;permissions&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;group_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+                <span class="nt">&quot;other_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;owner_access&quot;</span><span class="p">:</span> <span class="mi">7</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;user_visible&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;uuid_lslong&quot;</span><span class="p">:</span> <span class="mi">9933517499790756795</span><span class="p">,</span>
+                <span class="nt">&quot;uuid_mslong&quot;</span><span class="p">:</span> <span class="mi">3722135275090626617</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;NFV2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parent_href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/domain/11e2ba75-241a-435c-879d-0dcad6253169&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parent_type&quot;</span><span class="p">:</span> <span class="s2">&quot;domain&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parent_uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;11e2ba75-241a-435c-879d-0dcad6253169&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;service_template_properties&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;availability_zone_enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;flavor&quot;</span><span class="p">:</span> <span class="s2">&quot;m1.medium&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;image_name&quot;</span><span class="p">:</span> <span class="s2">&quot;ubuntu&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;interface_type&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;service_interface_type&quot;</span><span class="p">:</span> <span class="s2">&quot;management&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;shared_ip&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                    <span class="nt">&quot;static_route_enable&quot;</span><span class="p">:</span> <span class="kc">false</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;service_interface_type&quot;</span><span class="p">:</span> <span class="s2">&quot;left&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;shared_ip&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                    <span class="nt">&quot;static_route_enable&quot;</span><span class="p">:</span> <span class="kc">false</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;service_interface_type&quot;</span><span class="p">:</span> <span class="s2">&quot;right&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;shared_ip&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                    <span class="nt">&quot;static_route_enable&quot;</span><span class="p">:</span> <span class="kc">false</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;ordered_interfaces&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;service_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;in-network&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;service_scaling&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;service_type&quot;</span><span class="p">:</span> <span class="s2">&quot;firewall&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;33a7ae4f-ddba-4839-89da-f18939278bbb&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 

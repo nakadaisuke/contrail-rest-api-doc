@@ -237,7 +237,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>null</td>
-<td>0-65535</td>
+<td>-1-65535</td>
 <td>The end port of range</td>
 </tr>
 <tr class="row-even"><td>start_port</td>
@@ -246,7 +246,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>null</td>
-<td>0-65535</td>
+<td>-1-65535</td>
 <td>The start port of range</td>
 </tr>
 <tr class="row-odd"><td>protocol</td>
@@ -336,7 +336,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>null</td>
-<td>0-65535</td>
+<td>-1-65535</td>
 <td>The end port of range</td>
 </tr>
 <tr class="row-odd"><td>start_port</td>
@@ -345,7 +345,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>null</td>
-<td>0-65535</td>
+<td>-1-65535</td>
 <td>The start port of range</td>
 </tr>
 <tr class="row-even"><td>rule_uuid</td>
@@ -355,7 +355,7 @@
 <td>CR</td>
 <td>generated</td>
 <td>N/A</td>
-<td>The UUID of the rule</td>
+<td>The UUID of this attribute</td>
 </tr>
 <tr class="row-odd"><td>dynamic</td>
 <td>access_control_list_entries</td>
@@ -380,7 +380,7 @@
 <td>list(str)</td>
 <td>Yes</td>
 <td>CR</td>
-<td>N/A</td>
+<td>[]</td>
 <td>Valid full query name form &lt;domain&gt;,&lt;tenant&gt;,&lt;name&gt;</td>
 <td>The full query name of this attribute</td>
 </tr>
@@ -426,7 +426,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>true</td>
-<td>{true | false}</td>
+<td>{true|false}</td>
 <td>Specifies whethere this attribute is enable or not</td>
 </tr>
 <tr class="row-odd"><td>last_modified</td>
@@ -462,7 +462,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>generated</td>
-<td>Valid access range 0-7</td>
+<td>0-7</td>
 <td>Access type of group</td>
 </tr>
 <tr class="row-odd"><td>other_access</td>
@@ -471,7 +471,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>generated</td>
-<td>Valid access range 0-7</td>
+<td>0-7</td>
 <td>Access type of others</td>
 </tr>
 <tr class="row-even"><td>owner</td>
@@ -489,7 +489,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>generated</td>
-<td>Valid access range 0-7</td>
+<td>0-7</td>
 <td>Access type of the ownter</td>
 </tr>
 <tr class="row-even"><td>user_visible</td>
@@ -498,7 +498,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>true</td>
-<td>{true | false}</td>
+<td>{true|false}</td>
 <td>Specifies whethere this attribute is visible by user or not</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>

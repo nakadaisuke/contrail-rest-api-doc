@@ -44,3 +44,46 @@ virtual-machines JSON
    :linenothreshold: 5
 
 ::
+
+   {
+       "virtual-machine": {
+           "display_name": "7a39517d-8f1c-4c3c-9b89-5fd055f20350", 
+           "fq_name": [
+               "7a39517d-8f1c-4c3c-9b89-5fd055f20350"
+           ], 
+           "href": "http://127.0.0.1:8082/virtual-machine/7a39517d-8f1c-4c3c-9b89-5fd055f20350", 
+           "id_perms": {
+               "created": "2015-01-21T12:16:38.913290", 
+               "description": null, 
+               "enable": true, 
+               "last_modified": "2015-01-21T12:16:38.913290", 
+               "permissions": {
+                   "group": "cloud-admin-group", 
+                   "group_access": 7, 
+                   "other_access": 7, 
+                   "owner": "cloud-admin", 
+                   "owner_access": 7
+               }, 
+               "user_visible": true, 
+               "uuid": {
+                   "uuid_lslong": 11207594496087950160, 
+                   "uuid_mslong": 8807160146013473852
+               }
+           }, 
+           "name": "7a39517d-8f1c-4c3c-9b89-5fd055f20350", 
+           "uuid": "7a39517d-8f1c-4c3c-9b89-5fd055f20350", 
+           "virtual_machine_interface_back_refs": [
+               {
+                   "attr": null, 
+                   "href": "http://127.0.0.1:8082/virtual-machine-interface/1ae35391-f7c3-4b80-9fdc-9963e6568c02", 
+                   "to": [
+                       "default-domain", 
+                       "admin", 
+                       "1ae35391-f7c3-4b80-9fdc-9963e6568c02"
+                   ], 
+                   "uuid": "1ae35391-f7c3-4b80-9fdc-9963e6568c02"
+               }
+           ]
+       }
+   }
+

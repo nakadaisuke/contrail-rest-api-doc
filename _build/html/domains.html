@@ -52,7 +52,8 @@
   <div class="section" id="domain">
 <h1>domain<a class="headerlink" href="#domain" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div>Put here  description of attribute</div></blockquote>
+<div>domain includes namespaces,projects,service templates.
+domain defines which attribute associated with.</div></blockquote>
 <div class="section" id="domains-attributes">
 <h2>domains Attributes<a class="headerlink" href="#domains-attributes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
@@ -80,324 +81,461 @@
 <tbody valign="top">
 <tr class="row-even"><td>fq_name</td>
 <td>domain</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CR</td>
+<td>N/A</td>
+<td>Valid full query name form &lt;domain&gt;</td>
+<td>The full query name of this attribute</td>
 </tr>
-<tr class="row-odd"><td>uuid</td>
+<tr class="row-odd"><td>href</td>
 <td>domain</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
-<tr class="row-even"><td>service_templates</td>
+<tr class="row-even"><td>id_perms</td>
 <td>domain</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
-<tr class="row-odd"><td>to</td>
-<td>service_templates</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>href</td>
-<td>service_templates</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid</td>
-<td>service_templates</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>virtual_DNSs</td>
-<td>domain</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>to</td>
-<td>virtual_DNSs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>href</td>
-<td>virtual_DNSs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid</td>
-<td>virtual_DNSs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>href</td>
-<td>domain</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>id_perms</td>
-<td>domain</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>enable</td>
+<tr class="row-odd"><td>created</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of created date of this attribute</td>
 </tr>
-<tr class="row-odd"><td>description</td>
+<tr class="row-even"><td>description</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>N/A</td>
+<td>Description of this attribute</td>
 </tr>
-<tr class="row-even"><td>created</td>
+<tr class="row-odd"><td>enable</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is enable or not</td>
 </tr>
-<tr class="row-odd"><td>uuid</td>
+<tr class="row-even"><td>last_modified</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of modified date of this attribute</td>
 </tr>
-<tr class="row-even"><td>uuid_mslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid_lslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>user_visible</td>
+<tr class="row-odd"><td>permissions</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(dict)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>last_modified</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>permissions</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>owner</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>owner_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>other_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The owner and access level</td>
 </tr>
 <tr class="row-even"><td>group</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The group of this attribute</td>
 </tr>
 <tr class="row-odd"><td>group_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>Access type of group</td>
+</tr>
+<tr class="row-even"><td>other_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>0-7</td>
+<td>Access type of others</td>
+</tr>
+<tr class="row-odd"><td>owner</td>
+<td>permissions</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of the ownter of this attribute</td>
+</tr>
+<tr class="row-even"><td>owner_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>0-7</td>
+<td>Access type of the ownter</td>
+</tr>
+<tr class="row-odd"><td>user_visible</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is visible by user or not</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>for internal use</td>
+</tr>
+<tr class="row-even"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-odd"><td>name</td>
+<td>domain</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of this attribute</td>
 </tr>
 <tr class="row-even"><td>namespaces</td>
 <td>domain</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(dict)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>[]</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
-<tr class="row-odd"><td>to</td>
+<tr class="row-odd"><td>href</td>
 <td>namespaces</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
-<tr class="row-even"><td>href</td>
+<tr class="row-even"><td>to</td>
 <td>namespaces</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(str)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>[]</td>
+<td>Valid domain form &lt;domain&gt;,&lt;namespace&gt;</td>
+<td>The list of this attribute</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
 <td>namespaces</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The uuid of this attribute</td>
 </tr>
 <tr class="row-even"><td>projects</td>
 <td>domain</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(dict)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>[]</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
-<tr class="row-odd"><td>to</td>
+<tr class="row-odd"><td>href</td>
 <td>projects</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
-<tr class="row-even"><td>href</td>
+<tr class="row-even"><td>to</td>
 <td>projects</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(str)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>[]</td>
+<td>Valid domain form &lt;domain&gt;,&lt;project&gt;</td>
+<td>The list of this attribute</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
 <td>projects</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The uuid of this attribut</td>
 </tr>
-<tr class="row-even"><td>name</td>
+<tr class="row-even"><td>service_templates</td>
 <td>domain</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(dict)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>[]</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>service_templates</td>
+<td>str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>service_templates</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRU</td>
+<td>[]</td>
+<td>Valid domain form &lt;domain&gt;,&lt;service_templates&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>service_templates</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The uuid of this attribut</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>domain</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The uuid of this attribut</td>
+</tr>
+<tr class="row-odd"><td>virtual_DNSs</td>
+<td>domain</td>
+<td>list(dict)</td>
+<td>No</td>
+<td>CRU</td>
+<td>[]</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>virtual_DNSs</td>
+<td>str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-odd"><td>to</td>
+<td>virtual_DNSs</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRU</td>
+<td>[]</td>
+<td>Valid domain form &lt;domain&gt;,&lt;dns&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>virtual_DNSs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The uuid of this attribut</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="domains-json">
 <h2>domains JSON<a class="headerlink" href="#domains-json" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68</pre></div></td><td class="code"><div class="highlight"><pre>{
+    &quot;domain&quot;: {
+        &quot;fq_name&quot;: [
+            &quot;&lt;DOMAIN&gt;&quot;
+        ],
+        &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/domain/&lt;UUID&gt;&quot;,
+        &quot;id_perms&quot;: {
+            &quot;created&quot;:: &quot;&lt;DATE&gt;&quot;,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;last_modified&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;permissions&quot;: {
+                &quot;group&quot;: &quot;&lt;GROUP&gt;&quot;,
+                &quot;group_access&quot;: 7,
+                &quot;other_access&quot;: 7,
+                &quot;owner&quot;: &quot;&lt;OWNER&gt;&quot;,
+                &quot;owner_access&quot;: 7
+            },
+            &quot;user_visible&quot;: true,
+            &quot;uuid&quot;: {
+                &quot;uuid_lslong&quot;: 9771981931291160937,
+                &quot;uuid_mslong&quot;: 1288797455661024092
+            }
+        },
+        &quot;name&quot;: &quot;&lt;DOMAIN&gt;&quot;,
+        &quot;namespaces&quot;: [
+            {
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/namespace/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;NAME&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            }
+        ],
+        &quot;projects&quot;: [
+            {
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/project/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;NAME&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            }, :
+        ],
+        &quot;service_templates&quot;: [
+            {
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/service-template/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;NAME&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            },
+        ],
+        &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;virtual_DNSs&quot;: [
+            {
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/virtual-DNS/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;NAME&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            },
+        ]
+    }
+}
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 

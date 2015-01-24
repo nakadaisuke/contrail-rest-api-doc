@@ -52,7 +52,7 @@
   <div class="section" id="logical-interface">
 <h1>logical-interface<a class="headerlink" href="#logical-interface" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div>Put here  description of attribute</div></blockquote>
+<div>logical-interface includes logical-interface, virtual machine interface and so on</div></blockquote>
 <div class="section" id="logical-interfaces-attributes">
 <h2>logical-interfaces Attributes<a class="headerlink" href="#logical-interfaces-attributes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
@@ -78,268 +78,232 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>fq_name</td>
+<tr class="row-even"><td>display_name</td>
 <td>logical-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>Display name</td>
 </tr>
-<tr class="row-odd"><td>uuid</td>
+<tr class="row-odd"><td>fq_name</td>
 <td>logical-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>logical_interface_vlan_tag</td>
-<td>logical-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>parent_uuid</td>
-<td>logical-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>parent_href</td>
-<td>logical-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>parent_type</td>
-<td>logical-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>virtual_machine_interface_refs</td>
-<td>logical-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>to</td>
-<td>virtual_machine_interface_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CR</td>
+<td>N/A</td>
+<td>Valid form &lt;system-config&gt;,&lt;physical-router&gt;,&lt;physical-interface&gt;,&lt;name&gt;</td>
+<td>The full query name of this attribute</td>
 </tr>
 <tr class="row-even"><td>href</td>
-<td>virtual_machine_interface_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>attr</td>
-<td>virtual_machine_interface_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid</td>
-<td>virtual_machine_interface_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>href</td>
 <td>logical-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
-<tr class="row-even"><td>logical_interface_type</td>
+<tr class="row-odd"><td>id_perms</td>
 <td>logical-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
-<tr class="row-odd"><td>display_name</td>
-<td>logical-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>id_perms</td>
-<td>logical-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>enable</td>
+<tr class="row-even"><td>created</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of created date of this attribute</td>
 </tr>
-<tr class="row-even"><td>description</td>
+<tr class="row-odd"><td>description</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>N/A</td>
+<td>Description of this attribute</td>
 </tr>
-<tr class="row-odd"><td>created</td>
+<tr class="row-even"><td>enable</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is enable or not</td>
 </tr>
-<tr class="row-even"><td>uuid</td>
+<tr class="row-odd"><td>last_modified</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of modified date of this attribute</td>
 </tr>
-<tr class="row-odd"><td>uuid_mslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid_lslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>user_visible</td>
+<tr class="row-even"><td>permissions</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(dict)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>last_modified</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>permissions</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>owner</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>owner_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>other_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The owner and access level</td>
 </tr>
 <tr class="row-odd"><td>group</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The group of this attribute</td>
 </tr>
 <tr class="row-even"><td>group_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>Access type of group</td>
 </tr>
-<tr class="row-odd"><td>name</td>
+<tr class="row-odd"><td>other_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>0-7</td>
+<td>Access type of others</td>
+</tr>
+<tr class="row-even"><td>owner</td>
+<td>permissions</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of the ownter of this attribute</td>
+</tr>
+<tr class="row-odd"><td>owner_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>0-7</td>
+<td>Access type of the ownter</td>
+</tr>
+<tr class="row-even"><td>user_visible</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is visible by user or not</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-odd"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-even"><td>logical_interface_type</td>
+<td>logical-interface</td>
+<td>string</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>{l2|l3}</td>
+<td>The logical interface type</td>
+</tr>
+<tr class="row-odd"><td>logical_interface_vlan_tag</td>
+<td>logical-interface</td>
+<td>integer</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>0-4095</td>
+<td>The logical interface VLAN tag ID</td>
+</tr>
+<tr class="row-even"><td>name</td>
+<td>logical-interface</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of thie attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_href</td>
+<td>logical-interface</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>parent_type</td>
+<td>logical-interface</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>null</td>
+<td>Valid parent name</td>
+<td>The parent attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_uuid</td>
+<td>logical-interface</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>logical-interface</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>virtual_machine_interface_refs</td>
 <td>logical-interface</td>
 <td>Type</td>
 <td>Requ</td>
@@ -347,12 +311,147 @@
 <td>Default</td>
 <td>Valid</td>
 <td>ABCDE</td>
+</tr>
+<tr class="row-even"><td>attr</td>
+<td>virtual_machine_interface_refs</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The attribute of this list</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>virtual_machine_interface_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>virtual_machine_interface_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;port&gt;</td>
+<td>The attribute of this list</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>virtual_machine_interface_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="logical-interfaces-json">
 <h2>logical-interfaces JSON<a class="headerlink" href="#logical-interfaces-json" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49</pre></div></td><td class="code"><div class="highlight"><pre>{
+    &quot;logical-interface&quot;: {
+        &quot;display_name&quot;: &quot;&lt;NAME&gt;&quot;,
+        &quot;fq_name&quot;: [
+            &quot;&lt;SYSTEM-CONFIG&gt;&quot;,
+            &quot;&lt;PHYSICAL-ROUTER&gt;&quot;,
+            &quot;&lt;PHYSICAL-INTERFACE&gt;&quot;,
+            &quot;&lt;NAME&gt;&quot;
+        ],
+        &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/logical-interface/&lt;UUID&gt;&quot;,
+        &quot;id_perms&quot;: {
+            &quot;created&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;last_modified&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;permissions&quot;: {
+                &quot;group&quot;: &quot;&lt;GROUP&gt;&quot;,
+                &quot;group_access&quot;: 7,
+                &quot;other_access&quot;: 7,
+                &quot;owner&quot;: &quot;&lt;OWNER&gt;&quot;,
+                &quot;owner_access&quot;: 7
+            },
+            &quot;user_visible&quot;: true,
+            &quot;uuid&quot;: {
+                &quot;uuid_lslong&quot;: 10676200096649138542,
+                &quot;uuid_mslong&quot;: 1248102854688591220
+            }
+        },
+        &quot;logical_interface_type&quot;: &lt;TYPE&gt;,
+        &quot;logical_interface_vlan_tag&quot;: &lt;TAG&gt;,
+        &quot;name&quot;: &quot;&lt;NAME&gt;&quot;,
+        &quot;parent_href&quot;: &quot;http://&lt;API-SERVER&gt;/physical-interface/&lt;UUID&gt;&quot;,
+        &quot;parent_type&quot;: &quot;physical-interface&quot;,
+        &quot;parent_uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;virtual_machine_interface_refs&quot;: [
+            {
+                &quot;attr&quot;: null,
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/virtual-machine-interface/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;PROJECT&gt;&quot;,
+                    &quot;&lt;NAME&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            }
+        ]
+    }
+}
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 

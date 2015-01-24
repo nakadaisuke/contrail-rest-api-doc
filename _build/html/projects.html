@@ -78,326 +78,1044 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>virtual_networks</td>
+<tr class="row-even"><td>display_name</td>
 <td>project</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The display name</td>
+</tr>
+<tr class="row-odd"><td>floating_ip_back_refs</td>
+<td>project</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The attribute of this list</td>
+</tr>
+<tr class="row-even"><td>attr</td>
+<td>floating_ip_back_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The attribute of this list</td>
 </tr>
 <tr class="row-odd"><td>to</td>
-<td>virtual_networks</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>floating_ip_back_refs</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;network&gt;,&lt;attribute&gt;,&lt;uuid&gt;</td>
+<td>The list of this attribute</td>
 </tr>
 <tr class="row-even"><td>href</td>
-<td>virtual_networks</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>floating_ip_back_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
-<td>virtual_networks</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>floating_ip_back_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
 <tr class="row-even"><td>fq_name</td>
 <td>project</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid</td>
-<td>project</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>parent_uuid</td>
-<td>project</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>parent_href</td>
-<td>project</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>parent_type</td>
-<td>project</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>Yes</td>
+<td>CR</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;name&gt;</td>
+<td>The full query name of this attribute</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>href</td>
 <td>project</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
 <tr class="row-even"><td>id_perms</td>
 <td>project</td>
-<td>Type</td>
-<td>Requ</td>
+<td>N/A</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>enable</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>description</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-odd"><td>created</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of created date of this attribute</td>
 </tr>
-<tr class="row-even"><td>uuid</td>
+<tr class="row-even"><td>description</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>N/A</td>
+<td>The description of this attribute</td>
 </tr>
-<tr class="row-odd"><td>uuid_mslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid_lslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>user_visible</td>
+<tr class="row-odd"><td>enable</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is enable or not</td>
 </tr>
 <tr class="row-even"><td>last_modified</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of modified date of this attribute</td>
 </tr>
 <tr class="row-odd"><td>permissions</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(dict)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The owner and access level</td>
 </tr>
-<tr class="row-even"><td>owner</td>
+<tr class="row-even"><td>group</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The group of this attribute</td>
 </tr>
-<tr class="row-odd"><td>owner_access</td>
+<tr class="row-odd"><td>group_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of group</td>
 </tr>
 <tr class="row-even"><td>other_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of others</td>
 </tr>
-<tr class="row-odd"><td>group</td>
+<tr class="row-odd"><td>owner</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of the ownter of this attribute</td>
 </tr>
-<tr class="row-even"><td>group_access</td>
+<tr class="row-even"><td>owner_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of the ownter</td>
 </tr>
-<tr class="row-odd"><td>virtual_machine_interfaces</td>
-<td>project</td>
-<td>Type</td>
-<td>Requ</td>
+<tr class="row-odd"><td>user_visible</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>to</td>
-<td>virtual_machine_interfaces</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>href</td>
-<td>virtual_machine_interfaces</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is visible by user or not</td>
 </tr>
 <tr class="row-even"><td>uuid</td>
-<td>virtual_machine_interfaces</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
-<tr class="row-odd"><td>display_name</td>
-<td>project</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<tr class="row-odd"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
 </tr>
-<tr class="row-even"><td>security_groups</td>
+<tr class="row-even"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-odd"><td>logical_routers</td>
 <td>project</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The attribute of this list</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>logical_routers</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
 <tr class="row-odd"><td>to</td>
-<td>security_groups</td>
-<td>Type</td>
-<td>Requ</td>
+<td>logical_routers</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>genereted</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>logical_routers</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>name</td>
+<td>project</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of thie attribute</td>
+</tr>
+<tr class="row-even"><td>network_ipams</td>
+<td>project</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The attribute of this list</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>network_ipams</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>network_ipams</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>Valid form &lt;domain&gt;,&lt;network&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>network_ipams</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>network_policys</td>
+<td>project</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The attribute of this list</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>network_policys</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>network_policys</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>Valid form &lt;domain&gt;,&lt;network&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>network_policys</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>parent_href</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_type</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>null</td>
+<td>Valid parent name</td>
+<td>The parent attribute</td>
+</tr>
+<tr class="row-even"><td>parent_uuid</td>
+<td>virtual-network</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>quota</td>
+<td>project</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>access_control_list</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The access control list quota number</td>
+</tr>
+<tr class="row-odd"><td>bgp_router</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The bgp router quota number</td>
+</tr>
+<tr class="row-even"><td>defaults</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The default quota number</td>
+</tr>
+<tr class="row-odd"><td>floating_ip</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>-1</td>
+<td>N/A</td>
+<td>The Floating IP quota number</td>
+</tr>
+<tr class="row-even"><td>floating_ip_pool</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The floating IP pool quota number</td>
+</tr>
+<tr class="row-odd"><td>global_vrouter_config</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The vRouter quota number</td>
+</tr>
+<tr class="row-even"><td>instance_ip</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The instance IP quota number</td>
+</tr>
+<tr class="row-odd"><td>logical_router</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>-1</td>
+<td>N/A</td>
+<td>The logical router quota number</td>
+</tr>
+<tr class="row-even"><td>network_ipam</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The network IPAM quota number</td>
+</tr>
+<tr class="row-odd"><td>security_group</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>-1</td>
+<td>N/A</td>
+<td>The security group quota number</td>
+</tr>
+<tr class="row-even"><td>security_group_rule</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The security groute rule quota number</td>
+</tr>
+<tr class="row-odd"><td>service_instance</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The service instance quota number</td>
+</tr>
+<tr class="row-even"><td>service_template</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The service template quota number</td>
+</tr>
+<tr class="row-odd"><td>subnet</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>-1</td>
+<td>N/A</td>
+<td>The subnet quota number</td>
+</tr>
+<tr class="row-even"><td>virtual_DNS</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The virtual DNS quota number</td>
+</tr>
+<tr class="row-odd"><td>virtual_DNS_record</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The virtual DNS record quota number</td>
+</tr>
+<tr class="row-even"><td>virtual_machine_interface</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>-1</td>
+<td>N/A</td>
+<td>The virtual machine interface quota number</td>
+</tr>
+<tr class="row-odd"><td>virtual_network</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>-1</td>
+<td>N/A</td>
+<td>The virtual network quota number</td>
+</tr>
+<tr class="row-even"><td>virtual_router</td>
+<td>quota</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The virtual router quota number</td>
+</tr>
+<tr class="row-odd"><td>route_tables</td>
+<td>project</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The attribute of this list</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>route_tables</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-odd"><td>to</td>
+<td>route_tables</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>route_tables</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>security_groups</td>
+<td>project</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The attribute of this list</td>
 </tr>
 <tr class="row-even"><td>href</td>
 <td>security_groups</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-odd"><td>to</td>
+<td>security_groups</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>security_groups</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>service_instances</td>
+<td>project</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The attribute of this list</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>service_instances</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-odd"><td>to</td>
+<td>service_instances</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>service_instances</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
-<td>security_groups</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>name</td>
 <td>project</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>virtual_machine_interfaces</td>
+<td>project</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The attribute of this list</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>virtual_machine_interfaces</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>virtual_machine_interfaces</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>virtual_machine_interfaces</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>virtual_networks</td>
+<td>project</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The attribute of this list</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>virtual_networks</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>virtual_networks</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>virtual_networks</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="projects-json">
 <h2>projects JSON<a class="headerlink" href="#projects-json" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
+    <span class="nt">&quot;project&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;PROJECT&gt;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;floating_ip_back_refs&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;attr&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/floating-ip/&lt;UUID&gt;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;&lt;DOMAIN&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;PROJECT&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;NETWORK&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;ATTRIBUTE&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;UUID&gt;&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;fq_name&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;&lt;DOMAIN&gt;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;&lt;PROJECT&gt;&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/project/&lt;UUID&gt;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id_perms&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;DATE&gt;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;last_modified&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;DATE&gt;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;permissions&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;GROUP&gt;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;group_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+                <span class="nt">&quot;other_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;OWNER&gt;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;owner_access&quot;</span><span class="p">:</span> <span class="mi">7</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;user_visible&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;uuid_lslong&quot;</span><span class="p">:</span> <span class="mi">9439552104014199478</span><span class="p">,</span>
+                <span class="nt">&quot;uuid_mslong&quot;</span><span class="p">:</span> <span class="mi">11410895243465736748</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;logical_routers&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/logical-router/&lt;UUID&gt;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;&lt;DOMAIN&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;PROJECT&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;testrt&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;PROJECT&gt;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;network_ipams&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/network-ipam/&lt;UUID&gt;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;&lt;DOMAIN&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;PROJECT&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;NAME&gt;&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;network_policys&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/network-policy/&lt;UUID&gt;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;&lt;DOMAIN&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;PROJECT&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;NAME&gt;&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;parent_href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/domain/&lt;UUID&gt;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parent_type&quot;</span><span class="p">:</span> <span class="s2">&quot;domain&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parent_uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;quota&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;access_control_list&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;bgp_router&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;defaults&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;floating_ip&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;floating_ip_pool&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;global_vrouter_config&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;instance_ip&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;logical_router&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;network_ipam&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;security_group&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;security_group_rule&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;service_instance&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;service_template&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;subnet&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;virtual_DNS&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;virtual_DNS_record&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;virtual_machine_interface&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;virtual_network&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;virtual_router&quot;</span><span class="p">:</span> <span class="kc">null</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;route_tables&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/route-table/&lt;UUID&gt;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;&lt;DOMAIN&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;PROJECT&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;NAME&gt;&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;security_groups&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/security-group/&lt;UUID&gt;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;&lt;DOMAIN&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;PROJECT&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;NAME&gt;&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;service_instances&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/service-instance/&lt;UUID&gt;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;&lt;DOMAIN&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;PROJECT&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;NAME&gt;&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;virtual_machine_interfaces&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/virtual-machine-interface/&lt;UUID&gt;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;&lt;DOMAIN&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;PROJECT&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;NAME&gt;&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;virtual_networks&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/virtual-network/&lt;UUID&gt;&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;:&lt;DOMAIN&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;PROJECT&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;NAME&gt;&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 

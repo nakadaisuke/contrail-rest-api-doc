@@ -344,6 +344,89 @@
 </div>
 <div class="section" id="virtual-dns-records-json">
 <h2>virtual-DNS-records JSON<a class="headerlink" href="#virtual-dns-records-json" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
+    <span class="nt">&quot;virtual-DNS-record&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;fq_name&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;default-domain&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;dns1&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/virtual-DNS-record/67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id_perms&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-12-09T23:23:09.323434&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;last_modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-12-09T23:23:09.323434&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;permissions&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;group_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+                <span class="nt">&quot;other_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;owner_access&quot;</span><span class="p">:</span> <span class="mi">7</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;user_visible&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;uuid_lslong&quot;</span><span class="p">:</span> <span class="mi">11151651069801405736</span><span class="p">,</span>
+                <span class="nt">&quot;uuid_mslong&quot;</span><span class="p">:</span> <span class="mi">7489262023911294091</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parent_href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/virtual-DNS/56e2c4c2-0055-4037-bccd-5bd4c5967344&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parent_type&quot;</span><span class="p">:</span> <span class="s2">&quot;virtual-DNS&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parent_uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;56e2c4c2-0055-4037-bccd-5bd4c5967344&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;virtual_DNS_record_data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;record_class&quot;</span><span class="p">:</span> <span class="s2">&quot;IN&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;record_data&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;record_name&quot;</span><span class="p">:</span> <span class="s2">&quot;testhost1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;record_ttl_seconds&quot;</span><span class="p">:</span> <span class="mi">86400</span><span class="p">,</span>
+            <span class="nt">&quot;record_type&quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 

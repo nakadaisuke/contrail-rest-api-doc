@@ -52,7 +52,7 @@
   <div class="section" id="network-ipam">
 <h1>network-ipam<a class="headerlink" href="#network-ipam" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div>Put here  description of attribute</div></blockquote>
+<div>network-ipam includes IP address,DNS,host route,DHCP and so on</div></blockquote>
 <div class="section" id="network-ipams-attributes">
 <h2>network-ipams Attributes<a class="headerlink" href="#network-ipams-attributes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
@@ -80,387 +80,752 @@
 <tbody valign="top">
 <tr class="row-even"><td>fq_name</td>
 <td>network-ipam</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid</td>
-<td>network-ipam</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>parent_uuid</td>
-<td>network-ipam</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>parent_href</td>
-<td>network-ipam</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>parent_type</td>
-<td>network-ipam</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>virtual_network_back_refs</td>
-<td>network-ipam</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>to</td>
-<td>virtual_network_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>href</td>
-<td>virtual_network_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>attr</td>
-<td>virtual_network_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>ipam_subnets</td>
-<td>attr</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>host_routes</td>
-<td>attr</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid</td>
-<td>virtual_network_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>network_ipam_mgmt</td>
-<td>network-ipam</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>ipam_dns_method</td>
-<td>network_ipam_mgmt</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>ipam_dns_server</td>
-<td>network_ipam_mgmt</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>tenant_dns_server_address</td>
-<td>ipam_dns_server</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>virtual_dns_server_name</td>
-<td>ipam_dns_server</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CR</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;name&gt;</td>
+<td>The full query name of this attribute</td>
 </tr>
 <tr class="row-odd"><td>href</td>
 <td>network-ipam</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
 <tr class="row-even"><td>id_perms</td>
 <td>network-ipam</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>enable</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>description</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-odd"><td>created</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of created date of this attribute</td>
 </tr>
-<tr class="row-even"><td>uuid</td>
+<tr class="row-even"><td>description</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>N/A</td>
+<td>Description of this attribute</td>
 </tr>
-<tr class="row-odd"><td>uuid_mslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid_lslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>user_visible</td>
+<tr class="row-odd"><td>enable</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is enable or not</td>
 </tr>
 <tr class="row-even"><td>last_modified</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of modified date of this attribute</td>
 </tr>
 <tr class="row-odd"><td>permissions</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(dict)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The owner and access level</td>
 </tr>
-<tr class="row-even"><td>owner</td>
+<tr class="row-even"><td>group</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The group of this attribute</td>
 </tr>
-<tr class="row-odd"><td>owner_access</td>
+<tr class="row-odd"><td>group_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>Access type of group</td>
 </tr>
 <tr class="row-even"><td>other_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>Access type of others</td>
 </tr>
-<tr class="row-odd"><td>group</td>
+<tr class="row-odd"><td>owner</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of the ownter of this attribute</td>
 </tr>
-<tr class="row-even"><td>group_access</td>
+<tr class="row-even"><td>owner_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>Access type of the ownter</td>
 </tr>
-<tr class="row-odd"><td>virtual_DNS_refs</td>
-<td>network-ipam</td>
-<td>Type</td>
-<td>Requ</td>
+<tr class="row-odd"><td>user_visible</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>to</td>
-<td>virtual_DNS_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>href</td>
-<td>virtual_DNS_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>attr</td>
-<td>virtual_DNS_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>sequence</td>
-<td>attr</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>major</td>
-<td>sequence</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>minor</td>
-<td>sequence</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is visible by user or not</td>
 </tr>
 <tr class="row-even"><td>uuid</td>
-<td>virtual_DNS_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-even"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
 </tr>
 <tr class="row-odd"><td>name</td>
 <td>network-ipam</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of thie attribute</td>
+</tr>
+<tr class="row-even"><td>network_ipam_mgmt</td>
+<td>network-ipam</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>ipam_dns_method</td>
+<td>network_ipam_mgmt</td>
+<td>string</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>{none|default-dns-server|tenant-dns-serer|virtual-dns-server}</td>
+<td>The IPAM DNS method</td>
+</tr>
+<tr class="row-even"><td>ipam_dns_server</td>
+<td>network_ipam_mgmt</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>tenant_dns_server_address</td>
+<td>ipam_dns_server</td>
+<td>String</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid IP address</td>
+<td>Tenant DNS server IP address</td>
+</tr>
+<tr class="row-even"><td>virtual_dns_server_name</td>
+<td>ipam_dns_server</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>N/A</td>
+<td>The virtual DNS server name</td>
+</tr>
+<tr class="row-odd"><td>parent_href</td>
+<td>network-ipam</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>parent_type</td>
+<td>network-ipam</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>null</td>
+<td>Valid parent name</td>
+<td>The parent attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_uuid</td>
+<td>network-ipam</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>network-ipam</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>virtual_DNS_refs</td>
+<td>network-ipam</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>attr</td>
+<td>virtual_DNS_refs</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>sequence</td>
+<td>attr</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>major</td>
+<td>sequence</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>0</td>
+<td>N/A</td>
+<td>The major sequence</td>
+</tr>
+<tr class="row-odd"><td>minor</td>
+<td>sequence</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>0</td>
+<td>N/A</td>
+<td>The minor sequence</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>virtual_DNS_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-odd"><td>to</td>
+<td>virtual_DNS_refs</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CR</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>virtual_DNS_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>virtual_network_back_refs</td>
+<td>network-ipam</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>attr</td>
+<td>virtual_network_back_refs</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>ipam_subnets</td>
+<td>attr</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>addr_from_start</td>
+<td>ipam_subnets</td>
+<td>bool</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>{true|false}</td>
+<td>Specifies whether the address allocation method is start or end</td>
+</tr>
+<tr class="row-odd"><td>allocation_pools</td>
+<td>ipam_subnets</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>[]</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>end</td>
+<td>allocation_pools</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>Valid IP address</td>
+<td>The end of allocation pool</td>
+</tr>
+<tr class="row-odd"><td>start</td>
+<td>allocation_pools</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>Valid IP address</td>
+<td>The start of allocation pool</td>
+</tr>
+<tr class="row-even"><td>default_gateway</td>
+<td>ipam_subnets</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>Valid IP address</td>
+<td>The default gateway IP address</td>
+</tr>
+<tr class="row-odd"><td>dhcp_option_list</td>
+<td>ipam_subnets</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>[]</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>dhcp_option</td>
+<td>dhcp_option_list</td>
+<td>list(dict)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>[]</td>
+<td>Valid DHCP option</td>
+<td>The DHCP option</td>
+</tr>
+<tr class="row-odd"><td>dns_nameservers</td>
+<td>ipam_subnets</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>N/A</td>
+<td>The DNS namesarver name</td>
+</tr>
+<tr class="row-even"><td>dns_server_address</td>
+<td>ipam_subnets</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>Valid IP address</td>
+<td>The DNC server IP address</td>
+</tr>
+<tr class="row-odd"><td>enable_dhcp</td>
+<td>ipam_subnets</td>
+<td>bool</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>{true|false}</td>
+<td>Specifies whether the DHCP enable or disable</td>
+</tr>
+<tr class="row-even"><td>host_routes</td>
+<td>ipam_subnets</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>null</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>route</td>
+<td>host_routes</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>[]</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>next_hop</td>
+<td>route</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>Valid IP address</td>
+<td>The next hop IP address</td>
+</tr>
+<tr class="row-odd"><td>next_hop_type</td>
+<td>route</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>N/A</td>
+<td>The next hop Type</td>
+</tr>
+<tr class="row-even"><td>prefix</td>
+<td>route</td>
+<td>string</td>
+<td>No</td>
+<td>CRD</td>
+<td>null</td>
+<td>Valid network address</td>
+<td>The network address with prefix</td>
+</tr>
+<tr class="row-odd"><td>subnet</td>
+<td>ipam_subnets</td>
+<td>N/A</td>
+<td>No</td>
+<td>CRD</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>ip_prefix</td>
+<td>subnet</td>
+<td>string</td>
+<td>No</td>
+<td>CRD</td>
+<td>null</td>
+<td>Valid network address</td>
+<td>The network address of the subnet</td>
+</tr>
+<tr class="row-odd"><td>ip_prefix_len</td>
+<td>subnet</td>
+<td>int</td>
+<td>No</td>
+<td>CRD</td>
+<td>null</td>
+<td>Valid IP prefix</td>
+<td>The prefix of the subnet</td>
+</tr>
+<tr class="row-even"><td>subnet_uuid</td>
+<td>ipam_subnets</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>virtual_network_back_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>virtual_network_back_refs</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CR</td>
+<td>[]</td>
+<td>Valid form &lt;uuid&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>virtual_network_back_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="network-ipams-json">
 <h2>network-ipams JSON<a class="headerlink" href="#network-ipams-json" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101</pre></div></td><td class="code"><div class="highlight"><pre>{
+    &quot;network-ipam&quot;: {
+        &quot;fq_name&quot;: [
+            &quot;&lt;DOMAIN&gt;&quot;,
+            &quot;&lt;PROJECT&gt;&quot;,
+            &quot;&lt;NAME&gt;&quot;
+        ],
+        &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/network-ipam/&lt;UUID&gt;&quot;,
+        &quot;id_perms&quot;: {
+            &quot;created&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;last_modified&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;permissions&quot;: {
+                &quot;group&quot;: &quot;&lt;GROUP&gt;&quot;,
+                &quot;group_access&quot;: 7,
+                &quot;other_access&quot;: 7,
+                &quot;owner&quot;: &quot;&lt;OWNER&gt;&quot;,
+                &quot;owner_access&quot;: 7
+            },
+            &quot;user_visible&quot;: true,
+            &quot;uuid&quot;: {
+                &quot;uuid_lslong&quot;: 10709772514233599446,
+                &quot;uuid_mslong&quot;: 13267335360305971946
+            }
+        },
+        &quot;name&quot;: &quot;default-network-ipam&quot;,
+        &quot;network_ipam_mgmt&quot;: {
+            &quot;ipam_dns_method&quot;: &quot;virtual-dns-server&quot;,
+            &quot;ipam_dns_server&quot;: {
+                &quot;tenant_dns_server_address&quot;: null,
+                &quot;virtual_dns_server_name&quot;: &quot;&lt;DOMAIN&gt;:&lt;NAME&gt;&quot;
+            }
+        },
+        &quot;parent_href&quot;: &quot;http://&lt;API-SERVER&gt;/project/&lt;UUID&gt;&quot;,
+        &quot;parent_type&quot;: &quot;project&quot;,
+        &quot;parent_uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;virtual_DNS_refs&quot;: [
+            {
+                &quot;attr&quot;: {
+                    &quot;sequence&quot;: {
+                        &quot;major&quot;: 0,
+                        &quot;minor&quot;: 0
+                    }
+                },
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/virtual-DNS/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;NAME&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            }
+        ],
+        &quot;virtual_network_back_refs&quot;: [
+            {
+                &quot;attr&quot;: {
+                    &quot;ipam_subnets&quot;: [
+                        {
+                            &quot;addr_from_start&quot;: true,
+                            &quot;allocation_pools&quot;: [
+                                {
+                                    &quot;end&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+                                    &quot;start&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;
+                                }
+                            ],
+                            &quot;default_gateway&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+                            &quot;dhcp_option_list&quot;: {
+                                &quot;dhcp_option&quot;: []
+                            },
+                            &quot;dns_nameservers&quot;: [],
+                            &quot;dns_server_address&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+                            &quot;enable_dhcp&quot;: true,
+                            &quot;host_routes&quot;: {
+                                &quot;route&quot;: [
+                                    {
+                                        &quot;next_hop&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+                                        &quot;next_hop_type&quot;: null,
+                                        &quot;prefix&quot;: &quot;&lt;IP_PREFIX&gt;&quot;
+                                    }
+                                ]
+                            },
+                            &quot;subnet&quot;: {
+                                &quot;ip_prefix&quot;: &quot;&lt;NETWORK&gt;&quot;,
+                                &quot;ip_prefix_len&quot;: &lt;PREFIX&gt;
+                            },
+                            &quot;subnet_uuid&quot;: &quot;&lt;UUID&gt;&quot;
+                        }
+                    ]
+                },
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/virtual-network/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;PROJECT&gt;&quot;,
+                    &quot;&lt;NAME&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            }
+        ]
+    }
+}
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 

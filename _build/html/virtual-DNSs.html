@@ -96,7 +96,7 @@
 <td>Valid</td>
 <td>ABCDE</td>
 </tr>
-<tr class="row-even"><td>parent_uuid</td>
+<tr class="row-even"><td>virtual_DNS_records</td>
 <td>virtual-DNS</td>
 <td>Type</td>
 <td>Requ</td>
@@ -105,8 +105,8 @@
 <td>Valid</td>
 <td>ABCDE</td>
 </tr>
-<tr class="row-odd"><td>parent_href</td>
-<td>virtual-DNS</td>
+<tr class="row-odd"><td>to</td>
+<td>virtual_DNS_records</td>
 <td>Type</td>
 <td>Requ</td>
 <td>CRU</td>
@@ -114,116 +114,8 @@
 <td>Valid</td>
 <td>ABCDE</td>
 </tr>
-<tr class="row-even"><td>parent_type</td>
-<td>virtual-DNS</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>href</td>
-<td>virtual-DNS</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>virtual_DNS_data</td>
-<td>virtual-DNS</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>floating_ip_record</td>
-<td>virtual_DNS_data</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>domain_name</td>
-<td>virtual_DNS_data</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>next_virtual_DNS</td>
-<td>virtual_DNS_data</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>dynamic_records_from_client</td>
-<td>virtual_DNS_data</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>default_ttl_seconds</td>
-<td>virtual_DNS_data</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>record_order</td>
-<td>virtual_DNS_data</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>id_perms</td>
-<td>virtual-DNS</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>enable</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>description</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>created</td>
-<td>id_perms</td>
+<tr class="row-even"><td>href</td>
+<td>virtual_DNS_records</td>
 <td>Type</td>
 <td>Requ</td>
 <td>CRU</td>
@@ -232,6 +124,168 @@
 <td>ABCDE</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
+<td>virtual_DNS_records</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-even"><td>parent_href</td>
+<td>virtual-DNS</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-odd"><td>parent_type</td>
+<td>virtual-DNS</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-even"><td>name</td>
+<td>virtual-DNS</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-odd"><td>network_ipam_back_refs</td>
+<td>virtual-DNS</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>network_ipam_back_refs</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>network_ipam_back_refs</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-even"><td>attr</td>
+<td>network_ipam_back_refs</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>network_ipam_back_refs</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>virtual-DNS</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-odd"><td>virtual_DNS_data</td>
+<td>virtual-DNS</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-even"><td>floating_ip_record</td>
+<td>virtual_DNS_data</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-odd"><td>domain_name</td>
+<td>virtual_DNS_data</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-even"><td>next_virtual_DNS</td>
+<td>virtual_DNS_data</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-odd"><td>dynamic_records_from_client</td>
+<td>virtual_DNS_data</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-even"><td>default_ttl_seconds</td>
+<td>virtual_DNS_data</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-odd"><td>record_order</td>
+<td>virtual_DNS_data</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-even"><td>id_perms</td>
+<td>virtual-DNS</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-odd"><td>enable</td>
 <td>id_perms</td>
 <td>Type</td>
 <td>Requ</td>
@@ -240,8 +294,8 @@
 <td>Valid</td>
 <td>ABCDE</td>
 </tr>
-<tr class="row-even"><td>uuid_mslong</td>
-<td>uuid</td>
+<tr class="row-even"><td>description</td>
+<td>id_perms</td>
 <td>Type</td>
 <td>Requ</td>
 <td>CRU</td>
@@ -249,8 +303,8 @@
 <td>Valid</td>
 <td>ABCDE</td>
 </tr>
-<tr class="row-odd"><td>uuid_lslong</td>
-<td>uuid</td>
+<tr class="row-odd"><td>created</td>
+<td>id_perms</td>
 <td>Type</td>
 <td>Requ</td>
 <td>CRU</td>
@@ -330,7 +384,34 @@
 <td>Valid</td>
 <td>ABCDE</td>
 </tr>
-<tr class="row-even"><td>display_name</td>
+<tr class="row-even"><td>uuid</td>
+<td>id_perms</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-odd"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-even"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>Default</td>
+<td>Valid</td>
+<td>ABCDE</td>
+</tr>
+<tr class="row-odd"><td>display_name</td>
 <td>virtual-DNS</td>
 <td>Type</td>
 <td>Requ</td>
@@ -339,7 +420,7 @@
 <td>Valid</td>
 <td>ABCDE</td>
 </tr>
-<tr class="row-odd"><td>name</td>
+<tr class="row-even"><td>parent_uuid</td>
 <td>virtual-DNS</td>
 <td>Type</td>
 <td>Requ</td>
@@ -353,6 +434,165 @@
 </div>
 <div class="section" id="virtual-dnss-json">
 <h2>virtual-DNSs JSON<a class="headerlink" href="#virtual-dnss-json" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
+    <span class="nt">&quot;virtual-DNS&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;dns1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;fq_name&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;default-domain&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;dns1&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/virtual-DNS/56e2c4c2-0055-4037-bccd-5bd4c5967344&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id_perms&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-12-09T21:41:58.578435&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;last_modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-12-09T21:41:58.578435&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;permissions&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;group_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+                <span class="nt">&quot;other_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;owner_access&quot;</span><span class="p">:</span> <span class="mi">7</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;user_visible&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;uuid_lslong&quot;</span><span class="p">:</span> <span class="mi">13604631018762302276</span><span class="p">,</span>
+                <span class="nt">&quot;uuid_mslong&quot;</span><span class="p">:</span> <span class="mi">6260782769506697271</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;dns1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;network_ipam_back_refs&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;attr&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/network-ipam/460728e1-9bf5-47f5-8504-c21605562ba1&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;default-domain&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;ssssss&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;460728e1-9bf5-47f5-8504-c21605562ba1&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;attr&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;sequence&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;major&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                        <span class="nt">&quot;minor&quot;</span><span class="p">:</span> <span class="mi">0</span>
+                    <span class="p">}</span>
+                <span class="p">},</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/network-ipam/b81f0b37-8304-42ea-94a0-c15be022c5d6&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;default-domain&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;default-project&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;default-network-ipam&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;b81f0b37-8304-42ea-94a0-c15be022c5d6&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;parent_href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/domain/11e2ba75-241a-435c-879d-0dcad6253169&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parent_type&quot;</span><span class="p">:</span> <span class="s2">&quot;domain&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parent_uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;11e2ba75-241a-435c-879d-0dcad6253169&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;56e2c4c2-0055-4037-bccd-5bd4c5967344&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;virtual_DNS_data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;default_ttl_seconds&quot;</span><span class="p">:</span> <span class="mi">86400</span><span class="p">,</span>
+            <span class="nt">&quot;domain_name&quot;</span><span class="p">:</span> <span class="s2">&quot;testdomein1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;dynamic_records_from_client&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;floating_ip_record&quot;</span><span class="p">:</span> <span class="s2">&quot;dashed-ip-tenant-name&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;next_virtual_DNS&quot;</span><span class="p">:</span> <span class="s2">&quot;8.8.8.8&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;record_order&quot;</span><span class="p">:</span> <span class="s2">&quot;random&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;virtual_DNS_records&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/virtual-DNS-record/67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;default-domain&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;dns1&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 

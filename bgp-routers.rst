@@ -2,7 +2,7 @@
 bgp-router
 ====================
 
- Put here  description of attribute 
+ BGP-router include BGP peer,attribute,Autonomus system Number and so on. 
 
 bgp-routers Attributes
 ====
@@ -30,23 +30,23 @@ bgp-routers Attributes
    bgp_router " attributes" N/A "No " R " null " N/A " Internal use 
    uuid " session" uuid-str "No " R " generated " N/A " The UUID of this attribute
    href " bgp_router_refs" string "No " R " genereted " N/A " The URI of this attribute
-   to " bgp_router_refs" list(str) "No " CR " generated " Valid to form <domain><project><network><routing instance> " The list of this attribute   
+   to " bgp_router_refs" list(str) "No " CR " [] " Valid to form <domain><project><network><routing instance> " The list of this attribute   
    uuid " bgp_router_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute 
    display_name " bgp-router" tring "No " CR " generated " N/A " Display name
-   fq_name " bgp-router" list(str) "Yes " CR "N/A " Valid full query name form <domain>,<tenant>,<name> " The full query name of this attribute
+   fq_name " bgp-router" list(str) "Yes " CR " [] " Valid full query name form <domain>,<tenant>,<name> " The full query name of this attribute
    href " bgp-router"string "No " R " generated " N/A " The URI of this attribute 
    id_perms " virtual-network" N/A "No " CR "generated " N/A " The root of id_perms
    created " id_perms" datetime "No " R " generated " N/A " The date time of created date of this attribute 
    description " id_perms" string "No " CRU " null " N/A " Description of this attribute
-   enable " id_perms" bool "No " CRU " true "{true | false} " Specifies whethere this attribute is enable or not 
+   enable " id_perms" bool "No " CRU " true "{true|false} " Specifies whethere this attribute is enable or not 
    last_modified " id_perms" datetime "No " R " generated " N/A " The date time of modified date of this attribute  
    permissions " id_perms" list(dict) "No " CRU " generated " N/A " The owner and access level
    group " permissions" string "No " CRU " generated " N/A " The group of this attribute
-   group_access " permissions" int "No " CRU " generated " Valid access range 0-7 " Access type of group 
-   other_access " permissions" int "No " CRU " generated " Valid access range 0-7 " Access type of others
+   group_access " permissions" int "No " CRU " generated " 0-7 " Access type of group 
+   other_access " permissions" int "No " CRU " generated " 0-7 " Access type of others
    owner " permissions" string "No " CRU " generated " N/A  " The name of the ownter of this attribute
-   owner_access " permissions" int "No " CRU " generated " Valid access range 0-7 " Access type of the ownter
-   user_visible " id_perms" bool "No " CRU " true "{true | false} " Specifies whethere this attribute is visible by user or not 
+   owner_access " permissions" int "No " CRU " generated " 0-7 " Access type of the ownter
+   user_visible " id_perms" bool "No " CRU " true "{true|false} " Specifies whethere this attribute is visible by user or not 
    uuid " id_perms" uuid-str "No " R " generated " N/A " The UUID of this attribute
    uuid_lslong " uuid" int "No " R " generated " N/A " for internal use
    uuid_mslong " uuid" int "No " R " generated " N/A " For internal use 
@@ -76,7 +76,7 @@ bgp-routers JSON
                        "erm-vpn"
                    ]
                }, 
-               "autonomous_system": <AS NUMBER>, 
+               "autonomous_system": <AS_NUMBER>, 
                "hold_time": 90, 
                "identifier": "<IP_ADDRESS>", 
                "port": 179, 
@@ -168,7 +168,7 @@ bgp-routers JSON
                    "uuid_mslong": 16195309315277015226
                }
            }, 
-           "name": "<NAME>1", 
+           "name": "<NAME>", 
            "parent_href": "http://<API-SERVER>/routing-instance/<UUID>", 
            "parent_type": "routing-instance", 
            "parent_uuid": "<UUID>", 

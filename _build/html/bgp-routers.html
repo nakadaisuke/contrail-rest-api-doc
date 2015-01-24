@@ -52,7 +52,7 @@
   <div class="section" id="bgp-router">
 <h1>bgp-router<a class="headerlink" href="#bgp-router" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div>Put here  description of attribute</div></blockquote>
+<div>BGP-router include BGP peer,attribute,Autonomus system Number and so on.</div></blockquote>
 <div class="section" id="bgp-routers-attributes">
 <h2>bgp-routers Attributes<a class="headerlink" href="#bgp-routers-attributes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
@@ -245,7 +245,7 @@
 <td>list(str)</td>
 <td>No</td>
 <td>CR</td>
-<td>generated</td>
+<td>[]</td>
 <td>Valid to form &lt;domain&gt;&lt;project&gt;&lt;network&gt;&lt;routing instance&gt;</td>
 <td>The list of this attribute</td>
 </tr>
@@ -272,7 +272,7 @@
 <td>list(str)</td>
 <td>Yes</td>
 <td>CR</td>
-<td>N/A</td>
+<td>[]</td>
 <td>Valid full query name form &lt;domain&gt;,&lt;tenant&gt;,&lt;name&gt;</td>
 <td>The full query name of this attribute</td>
 </tr>
@@ -318,7 +318,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>true</td>
-<td>{true | false}</td>
+<td>{true|false}</td>
 <td>Specifies whethere this attribute is enable or not</td>
 </tr>
 <tr class="row-odd"><td>last_modified</td>
@@ -354,7 +354,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>generated</td>
-<td>Valid access range 0-7</td>
+<td>0-7</td>
 <td>Access type of group</td>
 </tr>
 <tr class="row-odd"><td>other_access</td>
@@ -363,7 +363,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>generated</td>
-<td>Valid access range 0-7</td>
+<td>0-7</td>
 <td>Access type of others</td>
 </tr>
 <tr class="row-even"><td>owner</td>
@@ -381,7 +381,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>generated</td>
-<td>Valid access range 0-7</td>
+<td>0-7</td>
 <td>Access type of the ownter</td>
 </tr>
 <tr class="row-even"><td>user_visible</td>
@@ -390,7 +390,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>true</td>
-<td>{true | false}</td>
+<td>{true|false}</td>
 <td>Specifies whethere this attribute is visible by user or not</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
@@ -585,7 +585,7 @@
                     &quot;erm-vpn&quot;
                 ]
             },
-            &quot;autonomous_system&quot;: &lt;AS NUMBER&gt;,
+            &quot;autonomous_system&quot;: &lt;AS_NUMBER&gt;,
             &quot;hold_time&quot;: 90,
             &quot;identifier&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
             &quot;port&quot;: 179,
@@ -677,7 +677,7 @@
                 &quot;uuid_mslong&quot;: 16195309315277015226
             }
         },
-        &quot;name&quot;: &quot;&lt;NAME&gt;1&quot;,
+        &quot;name&quot;: &quot;&lt;NAME&gt;&quot;,
         &quot;parent_href&quot;: &quot;http://&lt;API-SERVER&gt;/routing-instance/&lt;UUID&gt;&quot;,
         &quot;parent_type&quot;: &quot;routing-instance&quot;,
         &quot;parent_uuid&quot;: &quot;&lt;UUID&gt;&quot;,

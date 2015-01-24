@@ -78,524 +78,771 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>virtual_machine_interface_back_refs</td>
+<tr class="row-even"><td>access_control_lists</td>
 <td>security-group</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>[]</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
-<tr class="row-odd"><td>to</td>
-<td>virtual_machine_interface_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>href</td>
-<td>virtual_machine_interface_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>attr</td>
-<td>virtual_machine_interface_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid</td>
-<td>virtual_machine_interface_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>fq_name</td>
-<td>security-group</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid</td>
-<td>security-group</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>access_control_lists</td>
-<td>security-group</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<tr class="row-odd"><td>href</td>
+<td>access_control_lists</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
 <tr class="row-even"><td>to</td>
 <td>access_control_lists</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CR</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;network&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
 </tr>
-<tr class="row-odd"><td>href</td>
+<tr class="row-odd"><td>uuid</td>
 <td>access_control_lists</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
-<tr class="row-even"><td>uuid</td>
+<tr class="row-even"><td>display_name</td>
+<td>security-group</td>
+<td>string</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The display name</td>
+</tr>
+<tr class="row-odd"><td>fq_name</td>
+<td>security-group</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CR</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;network&gt;,&lt;name&gt;</td>
+<td>The full query name of this attribute</td>
+</tr>
+<tr class="row-even"><td>href</td>
 <td>access_control_lists</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
-<tr class="row-odd"><td>parent_uuid</td>
-<td>security-group</td>
-<td>Type</td>
-<td>Requ</td>
+<tr class="row-odd"><td>id_perms</td>
+<td>access_control_lists</td>
+<td>N/A</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
-<tr class="row-even"><td>parent_href</td>
-<td>security-group</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>parent_type</td>
-<td>security-group</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>security_group_id</td>
-<td>security-group</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>href</td>
-<td>security-group</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>id_perms</td>
-<td>security-group</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>enable</td>
+<tr class="row-even"><td>created</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of created date of this attribute</td>
 </tr>
-<tr class="row-even"><td>uuid</td>
+<tr class="row-odd"><td>description</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>N/A</td>
+<td>The description of this attribute</td>
 </tr>
-<tr class="row-odd"><td>uuid_mslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid_lslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>created</td>
+<tr class="row-even"><td>enable</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>user_visible</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is enable or not</td>
 </tr>
 <tr class="row-odd"><td>last_modified</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of modified date of this attribute</td>
 </tr>
 <tr class="row-even"><td>permissions</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(dict)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The owner and access level</td>
 </tr>
-<tr class="row-odd"><td>owner</td>
+<tr class="row-odd"><td>group</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The group of this attribute</td>
 </tr>
-<tr class="row-even"><td>owner_access</td>
+<tr class="row-even"><td>group_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of group</td>
 </tr>
 <tr class="row-odd"><td>other_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of others</td>
 </tr>
-<tr class="row-even"><td>group</td>
+<tr class="row-even"><td>owner</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of the ownter of this attribute</td>
 </tr>
-<tr class="row-odd"><td>group_access</td>
+<tr class="row-odd"><td>owner_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of the ownter</td>
 </tr>
-<tr class="row-even"><td>description</td>
+<tr class="row-even"><td>user_visible</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is visible by user or not</td>
 </tr>
-<tr class="row-odd"><td>security_group_entries</td>
-<td>security-group</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<tr class="row-odd"><td>uuid</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
-<tr class="row-even"><td>policy_rule</td>
-<td>security_group_entries</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<tr class="row-even"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
 </tr>
-<tr class="row-odd"><td>direction</td>
-<td>policy_rule</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>protocol</td>
-<td>policy_rule</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>dst_addresses</td>
-<td>policy_rule</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>security_group</td>
-<td>dst_addresses</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>subnet</td>
-<td>dst_addresses</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>virtual_network</td>
-<td>dst_addresses</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>network_policy</td>
-<td>dst_addresses</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>action_list</td>
-<td>policy_rule</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>rule_uuid</td>
-<td>policy_rule</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>dst_ports</td>
-<td>policy_rule</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>end_port</td>
-<td>dst_ports</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>start_port</td>
-<td>dst_ports</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>application</td>
-<td>policy_rule</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>src_addresses</td>
-<td>policy_rule</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>security_group</td>
-<td>src_addresses</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>subnet</td>
-<td>src_addresses</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>virtual_network</td>
-<td>src_addresses</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>network_policy</td>
-<td>src_addresses</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>rule_sequence</td>
-<td>policy_rule</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>src_ports</td>
-<td>policy_rule</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>end_port</td>
-<td>src_ports</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>start_port</td>
-<td>src_ports</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>display_name</td>
-<td>security-group</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<tr class="row-odd"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
 </tr>
 <tr class="row-even"><td>name</td>
 <td>security-group</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of thie attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_href</td>
+<td>security-group</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>parent_type</td>
+<td>security-group</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>null</td>
+<td>Valid parent name</td>
+<td>The parent attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_uuid</td>
+<td>security-group</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>security_group_entries</td>
+<td>security-group</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>policy_rule</td>
+<td>security_group_entries</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The network policy rule</td>
+</tr>
+<tr class="row-even"><td>action_list</td>
+<td>policy_rule</td>
+<td>list(dict)</td>
+<td>No</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The policy action list</td>
+</tr>
+<tr class="row-odd"><td>apply_service</td>
+<td>action_list</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid ervice name</td>
+<td>The apply service</td>
+</tr>
+<tr class="row-even"><td>direction</td>
+<td>policy_rule</td>
+<td>string</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>{&gt;|&lt;&gt;}</td>
+<td>The direction of traffic</td>
+</tr>
+<tr class="row-odd"><td>dst_addresses</td>
+<td>policy_rule</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root od this attribute</td>
+</tr>
+<tr class="row-even"><td>network_policy</td>
+<td>dst_addresses</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid network policy name</td>
+<td>The network policy</td>
+</tr>
+<tr class="row-odd"><td>security_group</td>
+<td>dst_addresses</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid security group name</td>
+<td>The security group</td>
+</tr>
+<tr class="row-even"><td>subnet</td>
+<td>dst_addresses</td>
 <td>Type</td>
 <td>Requ</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>ip_prefix</td>
+<td>subnet</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>Valid network address</td>
+<td>The network address of the subnet</td>
+</tr>
+<tr class="row-even"><td>ip_prefix_len</td>
+<td>subnet</td>
+<td>int</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>Valid IP prefix</td>
+<td>The prefix of the subnet</td>
+</tr>
+<tr class="row-odd"><td>virtual_network</td>
+<td>dst_addresses</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid virtual network</td>
+<td>The virtual network name</td>
+</tr>
+<tr class="row-even"><td>dst_ports</td>
+<td>policy_rule</td>
+<td>list(dict)</td>
+<td>No</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The destination port range</td>
+</tr>
+<tr class="row-odd"><td>end_port</td>
+<td>dst_ports</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>-1-65535</td>
+<td>The end port of range</td>
+</tr>
+<tr class="row-even"><td>start_port</td>
+<td>dst_ports</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>-1-65535</td>
+<td>The start port of range</td>
+</tr>
+<tr class="row-odd"><td>protocol</td>
+<td>policy_rule</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>any</td>
+<td>{tcp|udp|icmp|any}</td>
+<td>The protocol name</td>
+</tr>
+<tr class="row-even"><td>rule_sequence</td>
+<td>policy_rule</td>
+<td>list(dict)</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>major</td>
+<td>rule_sequence</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>-1</td>
+<td>N/A</td>
+<td>The major rule sequence</td>
+</tr>
+<tr class="row-even"><td>minor</td>
+<td>rule_sequence</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>-1</td>
+<td>N/A</td>
+<td>The minor rule sequence</td>
+</tr>
+<tr class="row-odd"><td>rule_uuid</td>
+<td>policy_rule</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>src_addresses</td>
+<td>policy_rule</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root od this attribute</td>
+</tr>
+<tr class="row-odd"><td>network_policy</td>
+<td>src_addresses</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid network policy name</td>
+<td>The network policy</td>
+</tr>
+<tr class="row-even"><td>security_group</td>
+<td>src_addresses</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid security group name</td>
+<td>The security group</td>
+</tr>
+<tr class="row-odd"><td>subnet</td>
+<td>src_addresses</td>
+<td>Type</td>
+<td>Requ</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>virtual_network</td>
+<td>src_addresses</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid virtual network</td>
+<td>The virtual network name</td>
+</tr>
+<tr class="row-odd"><td>src_ports</td>
+<td>policy_rule</td>
+<td>list(dict)</td>
+<td>No</td>
+<td>CRU</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The destination port range</td>
+</tr>
+<tr class="row-even"><td>end_port</td>
+<td>src_ports</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>-1-65535</td>
+<td>The end port of range</td>
+</tr>
+<tr class="row-odd"><td>start_port</td>
+<td>src_ports</td>
+<td>integer</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>-1-65535</td>
+<td>The start port of range</td>
+</tr>
+<tr class="row-even"><td>security_group_id</td>
+<td>security-group</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>null</td>
+<td>N/A</td>
+<td>The security group ID</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>security-group</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>virtual_machine_interface_back_refs</td>
+<td>security-group</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>to</td>
+<td>virtual_machine_interface_back_refs</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CR</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;network&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>virtual_machine_interface_back_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-odd"><td>attr</td>
+<td>virtual_machine_interface_back_refs</td>
+<td>list(dict)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>virtual_machine_interface_back_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="security-groups-json">
 <h2>security-groups JSON<a class="headerlink" href="#security-groups-json" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105</pre></div></td><td class="code"><div class="highlight"><pre>{
+    &quot;security-group&quot;: {
+        &quot;access_control_lists&quot;: [
+            {
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/access-control-list/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;PROJECT&gt;&quot;,
+                    &quot;&lt;NAME&gt;&quot;,
+                    &quot;&lt;ACL_NAME&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            }
+        ],
+        &quot;display_name&quot;: &quot;&lt;NAME&gt;&quot;,
+        &quot;fq_name&quot;: [
+            &quot;&lt;DOMAIN&gt;&quot;,
+            &quot;&lt;PROJECT&gt;&quot;,
+            &quot;&lt;NAME&gt;&quot;
+        ],
+        &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/security-group/&lt;UUID&gt;&quot;,
+        &quot;id_perms&quot;: {
+            &quot;created&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;last_modified&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;permissions&quot;: {
+                &quot;group&quot;: &quot;&lt;GROUP&gt;&quot;,
+                &quot;group_access&quot;: 7,
+                &quot;other_access&quot;: 7,
+                &quot;owner&quot;: &quot;&lt;OWNER&gt;&quot;,
+                &quot;owner_access&quot;: 7
+            },
+            &quot;user_visible&quot;: true,
+            &quot;uuid&quot;: {
+                &quot;uuid_lslong&quot;: 10165588832123798848,
+                &quot;uuid_mslong&quot;: 4042981921413877472
+            }
+        },
+        &quot;name&quot;: &quot;&lt;NAME&gt;&quot;,
+        &quot;parent_href&quot;: &quot;http://&lt;API-SERVER&gt;/project/&lt;UUID&gt;&quot;,
+        &quot;parent_type&quot;: &quot;project&quot;,
+        &quot;parent_uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;security_group_entries&quot;: {
+            &quot;policy_rule&quot;: [
+                {
+                    &quot;action_list&quot;: null,
+                    &quot;application&quot;: [],
+                    &quot;direction&quot;: &quot;&gt;&quot;,
+                    &quot;dst_addresses&quot;: [
+                        {
+                            &quot;network_policy&quot;: null,
+                            &quot;security_group&quot;: null,
+                            &quot;subnet&quot;: {
+                                &quot;ip_prefix&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+                                &quot;ip_prefix_len&quot;: &lt;PREFIX&gt;
+                            },
+                            &quot;virtual_network&quot;: null
+                        }
+                    ],
+                    &quot;dst_ports&quot;: [
+                        {
+                            &quot;end_port&quot;: &lt;PORT&gt;,
+                            &quot;start_port&quot;: &lt;PORT&gt;
+                        }
+                    ],
+                    &quot;protocol&quot;: &quot;icmp&quot;,
+                    &quot;rule_sequence&quot;: null,
+                    &quot;rule_uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+                    &quot;src_addresses&quot;: [
+                        {
+                            &quot;network_policy&quot;: null,
+                            &quot;security_group&quot;: &quot;local&quot;,
+                            &quot;subnet&quot;: {
+                                &quot;ip_prefix&quot;: &quot;&lt;IP_ADDRESS&gt;&quot;,
+                                &quot;ip_prefix_len&quot;: &lt;PREFIX&gt;
+                            },
+                            &quot;virtual_network&quot;: null
+                        }
+                    ],
+                    &quot;src_ports&quot;: [
+                        {
+                            &quot;end_port&quot;: &lt;PORT&gt;,
+                            &quot;start_port&quot;: &lt;PORT&gt;
+                        }
+                    ]
+                }
+            ]
+        },
+        &quot;security_group_id&quot;: 1,
+        &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;virtual_machine_interface_back_refs&quot;: [
+            {
+                &quot;attr&quot;: null,
+                &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/virtual-machine-interface/&lt;UUID&gt;&quot;,
+                &quot;to&quot;: [
+                    &quot;&lt;DOMAIN&gt;&quot;,
+                    &quot;&lt;NETWORK&gt;&quot;,
+                    &quot;&lt;NAME&gt;&quot;
+                ],
+                &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+            }
+        ]
+    }
+}
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 
