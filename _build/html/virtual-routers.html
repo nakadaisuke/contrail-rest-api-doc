@@ -74,320 +74,320 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>fq_name</td>
+<tr class="row-even"><td>display_name</td>
 <td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The display name</td>
 </tr>
-<tr class="row-odd"><td>uuid</td>
+<tr class="row-odd"><td>fq_name</td>
 <td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CR</td>
+<td>[]</td>
+<td>Valid form &lt;system-config&gt;,&lt;name&gt;</td>
+<td>The full query name of this attribute</td>
 </tr>
-<tr class="row-even"><td>parent_uuid</td>
+<tr class="row-even"><td>href</td>
 <td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of the interface</td>
 </tr>
-<tr class="row-odd"><td>parent_href</td>
+<tr class="row-odd"><td>id_perms</td>
 <td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
+<td>N/A</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
-<tr class="row-even"><td>parent_type</td>
-<td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>href</td>
-<td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>virtual_router_type</td>
-<td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>display_name</td>
-<td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>virtual_router_ip_address</td>
-<td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>physical_router_back_refs</td>
-<td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>to</td>
-<td>physical_router_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>href</td>
-<td>physical_router_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>attr</td>
-<td>physical_router_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid</td>
-<td>physical_router_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>id_perms</td>
-<td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>enable</td>
+<tr class="row-even"><td>created</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of created date of this attribute</td>
 </tr>
-<tr class="row-even"><td>description</td>
+<tr class="row-odd"><td>description</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>N/A</td>
+<td>The description of this attribute</td>
 </tr>
-<tr class="row-odd"><td>created</td>
+<tr class="row-even"><td>enable</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is enable or not</td>
 </tr>
-<tr class="row-even"><td>uuid</td>
+<tr class="row-odd"><td>last_modified</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of modified date of this attribute</td>
 </tr>
-<tr class="row-odd"><td>uuid_mslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid_lslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>user_visible</td>
+<tr class="row-even"><td>permissions</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(dict)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>last_modified</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>permissions</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>owner</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>owner_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>other_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The owner and access level</td>
 </tr>
 <tr class="row-odd"><td>group</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The group of this attribute</td>
 </tr>
 <tr class="row-even"><td>group_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of group</td>
 </tr>
-<tr class="row-odd"><td>name</td>
-<td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
+<tr class="row-odd"><td>other_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of others</td>
+</tr>
+<tr class="row-even"><td>owner</td>
+<td>permissions</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of the ownter of this attribute</td>
+</tr>
+<tr class="row-odd"><td>owner_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of the ownter</td>
+</tr>
+<tr class="row-even"><td>user_visible</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is visible by user or not</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-odd"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-even"><td>name</td>
+<td>virtual-router</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of thie attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_href</td>
+<td>routing-instance</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>parent_type</td>
+<td>routing-instance</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>null</td>
+<td>Valid parent name</td>
+<td>The parent attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_uuid</td>
+<td>routing-instance</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>physical_router_back_refs</td>
+<td>virtual-router</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>attr</td>
+<td>physical_router_back_refs</td>
+<td>N/A</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>physical_router_back_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of the interface</td>
+</tr>
+<tr class="row-odd"><td>to</td>
+<td>physical_router_back_refs</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>[]</td>
+<td>Valid form &lt;system-config&gt;,&lt;pyhsical-router&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>physical_router_back_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>virtual-router</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
 <tr class="row-even"><td>virtual_machine_refs</td>
 <td>virtual-router</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>to</td>
-<td>virtual_machine_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>href</td>
-<td>virtual_machine_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-odd"><td>attr</td>
 <td>virtual_machine_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>virtual_machine_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of the interface</td>
+</tr>
+<tr class="row-odd"><td>to</td>
+<td>virtual_machine_refs</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CRD</td>
+<td>[]</td>
+<td>Valid form &lt;name&gt;</td>
+<td>The list of this attribute</td>
 </tr>
 <tr class="row-even"><td>uuid</td>
 <td>virtual_machine_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>virtual_router_ip_address</td>
+<td>virtual-router</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>N/A</td>
+<td>The virtual router IP address</td>
+</tr>
+<tr class="row-even"><td>virtual_router_type</td>
+<td>virtual-router</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>Valid form {embedded|tor-agent|tor-service-node}</td>
+<td>The virtual router type</td>
 </tr>
 </tbody>
 </table>
@@ -453,17 +453,17 @@
 57
 58</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
     <span class="nt">&quot;virtual-router&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;system003-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;NAME&gt;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;fq_name&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;default-global-system-config&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;system003-1&quot;</span>
+            <span class="s2">&quot;&lt;SYSTEM-CONFIG&gt;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;&lt;NAME&gt;&quot;</span>
         <span class="p">],</span>
-        <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/virtual-router/2e25cd0e-b0f0-4fc4-868e-c188a502d950&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/virtual-router/&lt;UUID&gt;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;id_perms&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-11-25T09:16:19.869944&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;DATE&gt;&quot;</span><span class="p">,</span>
             <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
             <span class="nt">&quot;enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;last_modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-11-25T09:16:19.869944&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;last_modified&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;DATE&gt;&quot;</span><span class="p">,</span>
             <span class="nt">&quot;permissions&quot;</span><span class="p">:</span> <span class="p">{</span>
                 <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;group_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
@@ -477,35 +477,35 @@
                 <span class="nt">&quot;uuid_mslong&quot;</span><span class="p">:</span> <span class="mi">3325289362864754628</span>
             <span class="p">}</span>
         <span class="p">},</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;system003-1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;parent_href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/global-system-config/ee6b566c-3d5b-43d2-bd3e-a86bb3b7779b&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;NAME&gt;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parent_href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/global-system-config/&lt;UUID&gt;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;parent_type&quot;</span><span class="p">:</span> <span class="s2">&quot;global-system-config&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;parent_uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;ee6b566c-3d5b-43d2-bd3e-a86bb3b7779b&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;parent_uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;physical_router_back_refs&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
                 <span class="nt">&quot;attr&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/physical-router/703ecc26-73ad-4ba9-8380-c2b4beff1b70&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/physical-router/&lt;UUID&gt;&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
-                    <span class="s2">&quot;default-global-system-config&quot;</span><span class="p">,</span>
-                    <span class="s2">&quot;fuda&quot;</span>
+                    <span class="s2">&quot;&lt;SYSTEM-CONFIG&gt;&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;&lt;NAME&gt;&quot;</span>
                 <span class="p">],</span>
-                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;703ecc26-73ad-4ba9-8380-c2b4beff1b70&quot;</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span>
             <span class="p">}</span>
         <span class="p">],</span>
-        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;2e25cd0e-b0f0-4fc4-868e-c188a502d950&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;virtual_machine_refs&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
                 <span class="nt">&quot;attr&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/virtual-machine/76187277-7b08-4d07-b879-21d5ba32beaf&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://&lt;API-SERVER&gt;/virtual-machine/&lt;UUID&gt;&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span>
-                    <span class="s2">&quot;default-domain__admin__9bdadf31-ff39-4c8b-9940-e679d93a2214__2&quot;</span>
+                    <span class="s2">&quot;&lt;NAME&gt;&quot;</span>
                 <span class="p">],</span>
-                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;76187277-7b08-4d07-b879-21d5ba32beaf&quot;</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;UUID&gt;&quot;</span>
             <span class="p">}</span>
         <span class="p">],</span>
-        <span class="nt">&quot;virtual_router_ip_address&quot;</span><span class="p">:</span> <span class="s2">&quot;10.84.50.3&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;virtual_router_ip_address&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;IP_ADDRESS&gt;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;virtual_router_type&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;tor-agent&quot;</span>
+            <span class="s2">&quot;&lt;TYPE&gt;&quot;</span>
         <span class="p">]</span>
     <span class="p">}</span>
 <span class="p">}</span>

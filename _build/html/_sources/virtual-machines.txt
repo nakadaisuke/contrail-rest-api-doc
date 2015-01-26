@@ -12,31 +12,32 @@ virtual-machines Attributes
    :widths: 10, 10, 8, 3, 4, 9, 10, 20
    :delim: " 
 
-   display_name " virtual-machine" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid " virtual-machine" Type "Requ " CRU " Default " Valid " ABCDE
-   virtual_machine_interface_back_refs " virtual-machine" Type "Requ " CRU " Default " Valid " ABCDE
-   to " virtual_machine_interface_back_refs" Type "Requ " CRU " Default " Valid " ABCDE
-   href " virtual_machine_interface_back_refs" Type "Requ " CRU " Default " Valid " ABCDE
-   attr " virtual_machine_interface_back_refs" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid " virtual_machine_interface_back_refs" Type "Requ " CRU " Default " Valid " ABCDE
-   href " virtual-machine" Type "Requ " CRU " Default " Valid " ABCDE
-   id_perms " virtual-machine" Type "Requ " CRU " Default " Valid " ABCDE
-   enable " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   description " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   created " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid_mslong " uuid" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid_lslong " uuid" Type "Requ " CRU " Default " Valid " ABCDE
-   user_visible " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   last_modified " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   permissions " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   owner " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   owner_access " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   other_access " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   group " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   group_access " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   fq_name " virtual-machine" Type "Requ " CRU " Default " Valid " ABCDE
-   name " virtual-machine" Type "Requ " CRU " Default " Valid " ABCDE
+   display_name " virtual-machine" string "No " CR " generated " N/A " The display name  
+   fq_name " virtual-machine" list(str) "Yes " CR " [] " Valid form <name>" The full query name of this attribute 
+   href " virtual-machine" string "No " R " generated " N/A " The URI of the interface  
+   id_perms " virtual-machine" N/A "No " CRU "N/A " N/A " The root of this attribute
+   created " id_perms" datetime "No " R " generated " N/A " The date time of created date of this attribute 
+   description " id_perms" string "No " CRU " null " N/A " The description of this attribute
+   enable " id_perms" bool "No " CRU " true "{true|false} " Specifies whethere this attribute is enable or not 
+   last_modified " id_perms" datetime "No " R " generated " N/A " The date time of modified date of this attribute  
+   permissions " id_perms" list(dict) "No " CRU " generated " N/A " The owner and access level
+   group " permissions" string "No " CRU " generated " N/A " The group of this attribute
+   group_access " permissions" int "No " CRU " generated " 0-7 " The access type of group 
+   other_access " permissions" int "No " CRU " generated " 0-7 " The access type of others
+   owner " permissions" string "No " CRU " generated " N/A  " The name of the ownter of this attribute
+   owner_access " permissions" int "No " CRU " generated " 0-7 " The access type of the ownter
+   user_visible " id_perms" bool "No " CRU " true "{true|false} " Specifies whethere this attribute is visible by user or not 
+   uuid " id_perms" uuid-str "No " R " generated " N/A " The UUID of this attribute
+   uuid_lslong " uuid" int "No " R " generated " N/A " For internal use
+   uuid_mslong " uuid" int "No " R " generated " N/A " For internal use 
+   name " virtual-machine" string "No " CRU " generated " N/A " The name of thie attribute 
+   uuid " virtual-machine" uuid-str "No " R " generated " N/A " The UUID of this attribute 
+   virtual_machine_interface_back_refs " virtual-machine" list(str) "No " R "generated " N/A " The root of this attribute 
+   attr " virtual_machine_interface_back_refs" N/A "No " R "generated " N/A " The root of this attribute  
+   href " virtual_machine_interface_back_refs" string "No " R " generated " N/A " The URI of the interface 
+   to " virtual_machine_interface_back_refs" list(str) "Yes " CRD " [] "  Valid IPAM form <domain>,<project>,<network>,<name>  " The list of this attribute 
+   uuid " virtual_machine_interface_back_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute
+
 virtual-machines JSON
 ====
 
@@ -47,21 +48,21 @@ virtual-machines JSON
 
    {
        "virtual-machine": {
-           "display_name": "7a39517d-8f1c-4c3c-9b89-5fd055f20350", 
+           "display_name": "<NAME>", 
            "fq_name": [
-               "7a39517d-8f1c-4c3c-9b89-5fd055f20350"
+               "<NAME>"
            ], 
-           "href": "http://127.0.0.1:8082/virtual-machine/7a39517d-8f1c-4c3c-9b89-5fd055f20350", 
+           "href": "http://<API-SERVER>/virtual-machine/<UUID>", 
            "id_perms": {
-               "created": "2015-01-21T12:16:38.913290", 
+               "created": "<DATE>", 
                "description": null, 
                "enable": true, 
-               "last_modified": "2015-01-21T12:16:38.913290", 
+               "last_modified": "<DATE>", 
                "permissions": {
-                   "group": "cloud-admin-group", 
+                   "group": "<GROUP>", 
                    "group_access": 7, 
                    "other_access": 7, 
-                   "owner": "cloud-admin", 
+                   "owner": "<OWNER>", 
                    "owner_access": 7
                }, 
                "user_visible": true, 
@@ -70,18 +71,18 @@ virtual-machines JSON
                    "uuid_mslong": 8807160146013473852
                }
            }, 
-           "name": "7a39517d-8f1c-4c3c-9b89-5fd055f20350", 
-           "uuid": "7a39517d-8f1c-4c3c-9b89-5fd055f20350", 
+           "name": "<NAME>", 
+           "uuid": "<UUID>", 
            "virtual_machine_interface_back_refs": [
                {
                    "attr": null, 
-                   "href": "http://127.0.0.1:8082/virtual-machine-interface/1ae35391-f7c3-4b80-9fdc-9963e6568c02", 
+                   "href": "http://<API-SERVER>/virtual-machine-interface/<UUID>", 
                    "to": [
-                       "default-domain", 
-                       "admin", 
-                       "1ae35391-f7c3-4b80-9fdc-9963e6568c02"
+                       "<DOMAIN>", 
+                       "<NETWORK>", 
+                       "<NAME>"
                    ], 
-                   "uuid": "1ae35391-f7c3-4b80-9fdc-9963e6568c02"
+                   "uuid": "<UUID>"
                }
            ]
        }

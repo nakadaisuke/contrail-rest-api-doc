@@ -55,7 +55,7 @@ routing-instances Attributes
    src_mac " attr" string "No " R " null " Valid MAC address " The source MAC address
    vlan_tag " attr" integer "No " R " null " Valid MAC address " The VLAN ID
    href " virtual_machine_interface_back_refs"  string "No " R " null " Valid MAC address " The destination MAC address 
-   to " virtual_machine_interface_back_refs" ist(str) "Yes " R " [] "  Valid IPAM form <domain>,<project>,<name>  " The list of this attribute
+   to " virtual_machine_interface_back_refs" list(str) "Yes " R " [] "  Valid IPAM form <domain>,<project>,<name>  " The list of this attribute
    uuid " virtual_machine_interface_back_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute
 
 routing-instances JSON

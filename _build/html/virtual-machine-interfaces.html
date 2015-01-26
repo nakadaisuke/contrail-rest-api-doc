@@ -78,608 +78,680 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>routing_instance_refs</td>
+<tr class="row-even"><td>display_name</td>
 <td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The display name</td>
 </tr>
-<tr class="row-odd"><td>to</td>
-<td>routing_instance_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>href</td>
-<td>routing_instance_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>attr</td>
-<td>routing_instance_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>dst_mac</td>
-<td>attr</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>protocol</td>
-<td>attr</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>direction</td>
-<td>attr</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>mpls_label</td>
-<td>attr</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>vlan_tag</td>
-<td>attr</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>src_mac</td>
-<td>attr</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>service_chain_address</td>
-<td>attr</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid</td>
-<td>routing_instance_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>parent_uuid</td>
+<tr class="row-odd"><td>floating_ip_back_refs</td>
 <td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>security_group_refs</td>
-<td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>to</td>
-<td>security_group_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>href</td>
-<td>security_group_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-even"><td>attr</td>
-<td>security_group_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>floating_ip_back_refs</td>
+<td>N/A</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>floating_ip_back_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The destination MAC address</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>floating_ip_back_refs</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>[]</td>
+<td>Valid IPAM form &lt;domain&gt;,&lt;project&gt;,&lt;network&gt;,&lt;attribute&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
-<td>security_group_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>floating_ip_back_refs</td>
-<td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>to</td>
 <td>floating_ip_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
-<tr class="row-even"><td>href</td>
-<td>floating_ip_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>attr</td>
-<td>floating_ip_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid</td>
-<td>floating_ip_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>parent_href</td>
+<tr class="row-even"><td>fq_name</td>
 <td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>parent_type</td>
-<td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid</td>
-<td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>name</td>
-<td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CR</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;name&gt;</td>
+<td>The full query name of this attribute</td>
 </tr>
 <tr class="row-odd"><td>href</td>
 <td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The destination MAC address</td>
 </tr>
-<tr class="row-even"><td>virtual_machine_refs</td>
+<tr class="row-even"><td>id_perms</td>
 <td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
+<td>N/A</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
-<tr class="row-odd"><td>to</td>
-<td>virtual_machine_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>href</td>
-<td>virtual_machine_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>attr</td>
-<td>virtual_machine_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid</td>
-<td>virtual_machine_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>id_perms</td>
-<td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>enable</td>
+<tr class="row-odd"><td>created</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of created date of this attribute</td>
 </tr>
-<tr class="row-odd"><td>uuid</td>
+<tr class="row-even"><td>description</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>N/A</td>
+<td>The description of this attribute</td>
 </tr>
-<tr class="row-even"><td>uuid_mslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid_lslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>created</td>
+<tr class="row-odd"><td>enable</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>user_visible</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>true</td>
+<td>Valid form {true|false}</td>
+<td>Specifies whethere this attribute is enable or not</td>
 </tr>
 <tr class="row-even"><td>last_modified</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of modified date of this attribute</td>
 </tr>
 <tr class="row-odd"><td>permissions</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(dict)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The owner and access level</td>
 </tr>
-<tr class="row-even"><td>owner</td>
+<tr class="row-even"><td>group</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The group of this attribute</td>
 </tr>
-<tr class="row-odd"><td>owner_access</td>
+<tr class="row-odd"><td>group_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of group</td>
 </tr>
 <tr class="row-even"><td>other_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of others</td>
 </tr>
-<tr class="row-odd"><td>group</td>
+<tr class="row-odd"><td>owner</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of the ownter of this attribute</td>
 </tr>
-<tr class="row-even"><td>group_access</td>
+<tr class="row-even"><td>owner_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of the ownter</td>
 </tr>
-<tr class="row-odd"><td>description</td>
+<tr class="row-odd"><td>user_visible</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>virtual_machine_interface_device_owner</td>
-<td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>fq_name</td>
-<td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>display_name</td>
-<td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>virtual_network_refs</td>
-<td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>to</td>
-<td>virtual_network_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>href</td>
-<td>virtual_network_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>attr</td>
-<td>virtual_network_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid</td>
-<td>virtual_network_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>instance_ip_back_refs</td>
-<td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>to</td>
-<td>instance_ip_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>href</td>
-<td>instance_ip_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>attr</td>
-<td>instance_ip_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>true</td>
+<td>Valid form {true|false}</td>
+<td>Specifies whethere this attribute is visible by user or not</td>
 </tr>
 <tr class="row-even"><td>uuid</td>
-<td>instance_ip_back_refs</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
-<tr class="row-odd"><td>virtual_machine_interface_mac_addresses</td>
+<tr class="row-odd"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-even"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-odd"><td>instance_ip_back_refs</td>
 <td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>attr</td>
+<td>instance_ip_back_refs</td>
+<td>N/A</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>instance_ip_back_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The destination MAC address</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>instance_ip_back_refs</td>
+<td>list(str)</td>
+<td>No</td>
+<td>R</td>
+<td>[]</td>
+<td>Valid IPAM form &lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>instance_ip_back_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>name</td>
+<td>virtual-machine-interface</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of thie attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_href</td>
+<td>virtual-DNS</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>parent_type</td>
+<td>virtual-DNS</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>null</td>
+<td>Valid parent name</td>
+<td>The parent attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_uuid</td>
+<td>virtual-DNS</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>routing_instance_refs</td>
+<td>virtual-machine-interface</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>attr</td>
+<td>routing_instance_refs</td>
+<td>N/A</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>direction</td>
+<td>attr</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>{ingress|egress|both}</td>
+<td>The direction type</td>
+</tr>
+<tr class="row-odd"><td>dst_mac</td>
+<td>attr</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The destination MAC address</td>
+</tr>
+<tr class="row-even"><td>mpls_label</td>
+<td>attr</td>
+<td>integer</td>
+<td>No</td>
+<td>R</td>
+<td>Null</td>
+<td>N/A</td>
+<td>The MPLS label value</td>
+</tr>
+<tr class="row-odd"><td>protocol</td>
+<td>attr</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>Null</td>
+<td>{tcp|udp|icmp|any}</td>
+<td>The protocol type</td>
+</tr>
+<tr class="row-even"><td>service_chain_address</td>
+<td>attr</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>Null</td>
+<td>Valid IP address</td>
+<td>The service chain address</td>
+</tr>
+<tr class="row-odd"><td>src_mac</td>
+<td>attr</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The source MAC address</td>
+</tr>
+<tr class="row-even"><td>vlan_tag</td>
+<td>attr</td>
+<td>integer</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The VLAN ID</td>
+</tr>
+<tr class="row-odd"><td>direction</td>
+<td>attr</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>{ingress|egress|both}</td>
+<td>The direction type</td>
+</tr>
+<tr class="row-even"><td>dst_mac</td>
+<td>attr</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The destination MAC address</td>
+</tr>
+<tr class="row-odd"><td>mpls_label</td>
+<td>attr</td>
+<td>integer</td>
+<td>No</td>
+<td>R</td>
+<td>Null</td>
+<td>N/A</td>
+<td>The MPLS label value</td>
+</tr>
+<tr class="row-even"><td>protocol</td>
+<td>attr</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>Null</td>
+<td>{tcp|udp|icmp|any}</td>
+<td>The protocol type</td>
+</tr>
+<tr class="row-odd"><td>service_chain_address</td>
+<td>attr</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>Null</td>
+<td>Valid IP address</td>
+<td>The service chain address</td>
+</tr>
+<tr class="row-even"><td>src_mac</td>
+<td>attr</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The source MAC address</td>
+</tr>
+<tr class="row-odd"><td>vlan_tag</td>
+<td>attr</td>
+<td>integer</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The VLAN ID</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>routing_instance_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The destination MAC address</td>
+</tr>
+<tr class="row-odd"><td>to</td>
+<td>routing_instance_refs</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>R</td>
+<td>[]</td>
+<td>Valid IPAM form &lt;domain&gt;,&lt;project&gt;,&lt;network&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>routing_instance_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>security_group_refs</td>
+<td>virtual-machine-interface</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>security_group_refs</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>security_group_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The destination MAC address</td>
+</tr>
+<tr class="row-even"><td>attr</td>
+<td>security_group_refs</td>
+<td>N/A</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>security_group_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>virtual-machine-interface</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>virtual_machine_interface_device_owner</td>
+<td>virtual-machine-interface</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>N/A</td>
+<td>Valid AZ</td>
+<td>The virtual machine interface AZ</td>
+</tr>
+<tr class="row-even"><td>virtual_machine_interface_mac_addresses</td>
+<td>virtual-machine-interface</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>mac_address</td>
+<td>virtual_machine_interface_mac_addresses</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>[]</td>
+<td>Valid MAC address</td>
+<td>The MAC address list</td>
 </tr>
 <tr class="row-even"><td>virtual_machine_interface_properties</td>
 <td>virtual-machine-interface</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
-<tr class="row-odd"><td>local_preference</td>
+<tr class="row-odd"><td>interface_mirror</td>
 <td>virtual_machine_interface_properties</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>N/A</td>
+<td>The interface mirror destination</td>
 </tr>
-<tr class="row-even"><td>interface_mirror</td>
+<tr class="row-even"><td>local_preference</td>
 <td>virtual_machine_interface_properties</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>integer</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>N/A</td>
+<td>The local preference</td>
 </tr>
 <tr class="row-odd"><td>service_interface_type</td>
 <td>virtual_machine_interface_properties</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>{management|left|right|other}</td>
+<td>The service interface type</td>
 </tr>
-<tr class="row-even"><td>mac_address</td>
-<td>virtual_machine_interface_mac_addresses</td>
-<td>Type</td>
-<td>Requ</td>
+<tr class="row-even"><td>sub-interface-vlan-tag</td>
+<td>virtual_machine_interface_properties</td>
+<td>integer</td>
+<td>No</td>
+<td>CRUD</td>
+<td>null</td>
+<td>N/A</td>
+<td>The vlan tag of sub interface</td>
+</tr>
+<tr class="row-odd"><td>virtual_machine_refs</td>
+<td>virtual-machine-interface</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>attr</td>
+<td>virtual_machine_refs</td>
+<td>N/A</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>href</td>
+<td>virtual_machine_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The destination MAC address</td>
+</tr>
+<tr class="row-even"><td>to</td>
+<td>virtual_machine_refs</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>virtual_machine_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>virtual_network_refs</td>
+<td>virtual-machine-interface</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-odd"><td>attr</td>
+<td>virtual_network_refs</td>
+<td>N/A</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>virtual_network_refs</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>null</td>
+<td>Valid MAC address</td>
+<td>The destination MAC address</td>
+</tr>
+<tr class="row-odd"><td>to</td>
+<td>virtual_network_refs</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;project&gt;,&lt;name&gt;</td>
+<td>The list of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>virtual_network_refs</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
 </tbody>
 </table>

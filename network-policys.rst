@@ -74,7 +74,7 @@ network-policys Attributes
    minor " sequence" integer "No " R " generated " N/A " The minor rule sequence
    timer " attr" string "No " R " generated " N/A " The time of this attribute
    href " virtual_network_back_refs" string "No " R " generated " N/A " The URI of this attribute
-   to " virtual_network_back_refs" list(str) "No " CR " [] " Valid form <domain>,<project>,<network> " The list of this attribute
+   to " virtual_network_back_refs" list(str) "No " R " [] " Valid form <domain>,<project>,<network> " The list of this attribute
    uuid " virtual_network_back_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute
 
 network-policys JSON

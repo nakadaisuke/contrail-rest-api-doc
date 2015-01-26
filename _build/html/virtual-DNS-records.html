@@ -78,266 +78,266 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>fq_name</td>
+<tr class="row-even"><td>display_name</td>
 <td>virtual-DNS-record</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The display name</td>
 </tr>
-<tr class="row-odd"><td>uuid</td>
+<tr class="row-odd"><td>fq_name</td>
 <td>virtual-DNS-record</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CR</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;dns&gt;,&lt;name&gt;</td>
+<td>The full query name of this attribute</td>
 </tr>
-<tr class="row-even"><td>virtual_DNS_record_data</td>
+<tr class="row-even"><td>href</td>
 <td>virtual-DNS-record</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
-<tr class="row-odd"><td>record_type</td>
-<td>virtual_DNS_record_data</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>record_ttl_seconds</td>
-<td>virtual_DNS_record_data</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>record_name</td>
-<td>virtual_DNS_record_data</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>record_class</td>
-<td>virtual_DNS_record_data</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>record_data</td>
-<td>virtual_DNS_record_data</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>parent_uuid</td>
+<tr class="row-odd"><td>id_perms</td>
 <td>virtual-DNS-record</td>
-<td>Type</td>
-<td>Requ</td>
+<td>N/A</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
-<tr class="row-odd"><td>parent_href</td>
-<td>virtual-DNS-record</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>parent_type</td>
-<td>virtual-DNS-record</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>href</td>
-<td>virtual-DNS-record</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>id_perms</td>
-<td>virtual-DNS-record</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>enable</td>
+<tr class="row-even"><td>created</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of created date of this attribute</td>
 </tr>
-<tr class="row-even"><td>description</td>
+<tr class="row-odd"><td>description</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>N/A</td>
+<td>The description of this attribute</td>
 </tr>
-<tr class="row-odd"><td>created</td>
+<tr class="row-even"><td>enable</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>true</td>
+<td>Valid form {true|false}</td>
+<td>Specifies whethere this attribute is enable or not</td>
 </tr>
-<tr class="row-even"><td>uuid</td>
+<tr class="row-odd"><td>last_modified</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of modified date of this attribute</td>
 </tr>
-<tr class="row-odd"><td>uuid_mslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid_lslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>user_visible</td>
+<tr class="row-even"><td>permissions</td>
 <td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
+<td>list(dict)</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>last_modified</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>permissions</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>owner</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>owner_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>other_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The owner and access level</td>
 </tr>
 <tr class="row-odd"><td>group</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The group of this attribute</td>
 </tr>
 <tr class="row-even"><td>group_access</td>
 <td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of group</td>
 </tr>
-<tr class="row-odd"><td>display_name</td>
-<td>virtual-DNS-record</td>
-<td>Type</td>
-<td>Requ</td>
+<tr class="row-odd"><td>other_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of others</td>
+</tr>
+<tr class="row-even"><td>owner</td>
+<td>permissions</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of the ownter of this attribute</td>
+</tr>
+<tr class="row-odd"><td>owner_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of the ownter</td>
+</tr>
+<tr class="row-even"><td>user_visible</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>Valid form {true|false}</td>
+<td>Specifies whethere this attribute is visible by user or not</td>
+</tr>
+<tr class="row-odd"><td>uuid</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-odd"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
 </tr>
 <tr class="row-even"><td>name</td>
 <td>virtual-DNS-record</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of thie attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_href</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-even"><td>parent_type</td>
+<td>virtual-network</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>null</td>
+<td>Valid parent name</td>
+<td>The parent attribute</td>
+</tr>
+<tr class="row-odd"><td>parent_uuid</td>
+<td>virtual-network</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-even"><td>uuid</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
+</tr>
+<tr class="row-odd"><td>virtual_DNS_record_data</td>
+<td>virtual-DNS-record</td>
+<td>N/A</td>
+<td>No</td>
+<td>CR</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>record_class</td>
+<td>virtual_DNS_record_data</td>
+<td>string</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid form  {IN}</td>
+<td>The record class</td>
+</tr>
+<tr class="row-odd"><td>record_data</td>
+<td>virtual_DNS_record_data</td>
+<td>string</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The record data</td>
+</tr>
+<tr class="row-even"><td>record_name</td>
+<td>virtual_DNS_record_data</td>
+<td>string</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The record name</td>
+</tr>
+<tr class="row-odd"><td>record_ttl_seconds</td>
+<td>virtual_DNS_record_data</td>
+<td>integer</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The record TTL</td>
+</tr>
+<tr class="row-even"><td>record_type</td>
+<td>virtual_DNS_record_data</td>
+<td>string</td>
+<td>Yes</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid form  {A|AAAA|CNAME|PTR|NS}</td>
+<td>The record class</td>
 </tr>
 </tbody>
 </table>
@@ -384,47 +384,47 @@
 38
 39
 40
-41</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
-    <span class="nt">&quot;virtual-DNS-record&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;fq_name&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;default-domain&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;dns1&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/virtual-DNS-record/67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;id_perms&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-12-09T23:23:09.323434&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-            <span class="nt">&quot;enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;last_modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-12-09T23:23:09.323434&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;permissions&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;group_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
-                <span class="nt">&quot;other_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
-                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;owner_access&quot;</span><span class="p">:</span> <span class="mi">7</span>
-            <span class="p">},</span>
-            <span class="nt">&quot;user_visible&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;uuid_lslong&quot;</span><span class="p">:</span> <span class="mi">11151651069801405736</span><span class="p">,</span>
-                <span class="nt">&quot;uuid_mslong&quot;</span><span class="p">:</span> <span class="mi">7489262023911294091</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;parent_href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/virtual-DNS/56e2c4c2-0055-4037-bccd-5bd4c5967344&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;parent_type&quot;</span><span class="p">:</span> <span class="s2">&quot;virtual-DNS&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;parent_uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;56e2c4c2-0055-4037-bccd-5bd4c5967344&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;67ef3421-850e-448b-9ac2-9f90629e1d28&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;virtual_DNS_record_data&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;record_class&quot;</span><span class="p">:</span> <span class="s2">&quot;IN&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;record_data&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;record_name&quot;</span><span class="p">:</span> <span class="s2">&quot;testhost1&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;record_ttl_seconds&quot;</span><span class="p">:</span> <span class="mi">86400</span><span class="p">,</span>
-            <span class="nt">&quot;record_type&quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+41</pre></div></td><td class="code"><div class="highlight"><pre>{
+    &quot;virtual-DNS-record&quot;: {
+        &quot;display_name&quot;: &quot;&lt;NAME&gt;&quot;,
+        &quot;fq_name&quot;: [
+            &quot;&lt;DOMAIN&gt;&quot;,
+            &quot;&lt;DNS&gt;&quot;,
+            &quot;&lt;NAME&gt;&quot;
+        ],
+        &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/virtual-DNS-record/&lt;UUID&gt;&quot;,
+        &quot;id_perms&quot;: {
+            &quot;created&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;last_modified&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;permissions&quot;: {
+                &quot;group&quot;: &quot;&lt;GROUP&gt;&quot;,
+                &quot;group_access&quot;: 7,
+                &quot;other_access&quot;: 7,
+                &quot;owner&quot;: &quot;&lt;OWNER&gt;&quot;,
+                &quot;owner_access&quot;: 7
+            },
+            &quot;user_visible&quot;: true,
+            &quot;uuid&quot;: {
+                &quot;uuid_lslong&quot;: 11151651069801405736,
+                &quot;uuid_mslong&quot;: 7489262023911294091
+            }
+        },
+        &quot;name&quot;: &quot;&lt;NAME&gt;&quot;,
+        &quot;parent_href&quot;: &quot;http://&lt;API-SERVER&gt;/virtual-DNS/&lt;UUID&gt;&quot;,
+        &quot;parent_type&quot;: &quot;virtual-DNS&quot;,
+        &quot;parent_uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;virtual_DNS_record_data&quot;: {
+            &quot;record_class&quot;: &quot;&lt;CLASS&gt;&quot;,
+            &quot;record_data&quot;: &quot;&lt;DATA&gt;&quot;,
+            &quot;record_name&quot;: &quot;&lt;NAME&gt;&quot;,
+            &quot;record_ttl_seconds&quot;: &lt;TTL&gt;,
+            &quot;record_type&quot;: &quot;&lt;TYPE&gt;&quot;
+        }
+    }
+}
 </pre></div>
 </td></tr></table></div>
 </div>

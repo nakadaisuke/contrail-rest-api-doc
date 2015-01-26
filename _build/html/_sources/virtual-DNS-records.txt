@@ -12,35 +12,36 @@ virtual-DNS-records Attributes
    :widths: 10, 10, 8, 3, 4, 9, 10, 20
    :delim: " 
 
-   fq_name " virtual-DNS-record" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid " virtual-DNS-record" Type "Requ " CRU " Default " Valid " ABCDE
-   virtual_DNS_record_data " virtual-DNS-record" Type "Requ " CRU " Default " Valid " ABCDE
-   record_type " virtual_DNS_record_data" Type "Requ " CRU " Default " Valid " ABCDE
-   record_ttl_seconds " virtual_DNS_record_data" Type "Requ " CRU " Default " Valid " ABCDE
-   record_name " virtual_DNS_record_data" Type "Requ " CRU " Default " Valid " ABCDE
-   record_class " virtual_DNS_record_data" Type "Requ " CRU " Default " Valid " ABCDE
-   record_data " virtual_DNS_record_data" Type "Requ " CRU " Default " Valid " ABCDE
-   parent_uuid " virtual-DNS-record" Type "Requ " CRU " Default " Valid " ABCDE
-   parent_href " virtual-DNS-record" Type "Requ " CRU " Default " Valid " ABCDE
-   parent_type " virtual-DNS-record" Type "Requ " CRU " Default " Valid " ABCDE
-   href " virtual-DNS-record" Type "Requ " CRU " Default " Valid " ABCDE
-   id_perms " virtual-DNS-record" Type "Requ " CRU " Default " Valid " ABCDE
-   enable " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   description " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   created " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid_mslong " uuid" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid_lslong " uuid" Type "Requ " CRU " Default " Valid " ABCDE
-   user_visible " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   last_modified " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   permissions " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   owner " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   owner_access " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   other_access " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   group " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   group_access " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   display_name " virtual-DNS-record" Type "Requ " CRU " Default " Valid " ABCDE
-   name " virtual-DNS-record" Type "Requ " CRU " Default " Valid " ABCDE
+   display_name " virtual-DNS-record" string "No " CR " generated " N/A " The display name 
+   fq_name " virtual-DNS-record" list(str) "Yes " CR " [] " Valid form <domain>,<dns>,<name>" The full query name of this attribute 
+   href " virtual-DNS-record" string "No " R " generated " N/A " The URI of this attribute 
+   id_perms " virtual-DNS-record" N/A "No " CRU "N/A " N/A " The root of this attribute
+   created " id_perms" datetime "No " R " generated " N/A " The date time of created date of this attribute 
+   description " id_perms" string "No " CRU " null " N/A " The description of this attribute
+   enable " id_perms" bool "No " CRU " true "Valid form {true|false} " Specifies whethere this attribute is enable or not 
+   last_modified " id_perms" datetime "No " R " generated " N/A " The date time of modified date of this attribute  
+   permissions " id_perms" list(dict) "No " CRU " generated " N/A " The owner and access level
+   group " permissions" string "No " CRU " generated " N/A " The group of this attribute
+   group_access " permissions" int "No " CRU " generated " 0-7 " The access type of group 
+   other_access " permissions" int "No " CRU " generated " 0-7 " The access type of others
+   owner " permissions" string "No " CRU " generated " N/A  " The name of the ownter of this attribute
+   owner_access " permissions" int "No " CRU " generated " 0-7 " The access type of the ownter
+   user_visible " id_perms" bool "No " CRU " true "Valid form {true|false} " Specifies whethere this attribute is visible by user or not 
+   uuid " id_perms" uuid-str "No " R " generated " N/A " The UUID of this attribute
+   uuid_lslong " uuid" int "No " R " generated " N/A " For internal use
+   uuid_mslong " uuid" int "No " R " generated " N/A " For internal use 
+   name " virtual-DNS-record" string "No " CRU " generated " N/A " The name of thie attribute  
+   parent_href " virtual-network" string "No " R " generated " N/A " The URI of this attribute
+   parent_type " virtual-network" string "Yes " CR " null " Valid parent name " The parent attribute 
+   parent_uuid " virtual-network" uuid-str "No " R " generated " N/A " The UUID of this attribute
+   uuid " id_perms" uuid-str "No " R " generated " N/A " The UUID of this attribute  
+   virtual_DNS_record_data " virtual-DNS-record" N/A "No " CR " N/A " N/A " The root of this attribute 
+   record_class " virtual_DNS_record_data" string "Yes " CRU " null "Valid form  {IN} " The record class
+   record_data " virtual_DNS_record_data" string "Yes " CRU " null " N/A " The record data
+   record_name " virtual_DNS_record_data" string "Yes " CRU " null " N/A " The record name
+   record_ttl_seconds " virtual_DNS_record_data" integer "Yes " CRU " null " N/A " The record TTL
+   record_type " virtual_DNS_record_data" string "Yes " CRU " null "Valid form  {A|AAAA|CNAME|PTR|NS} " The record class 
+
 virtual-DNS-records JSON
 ====
 
@@ -51,23 +52,23 @@ virtual-DNS-records JSON
 
    {
        "virtual-DNS-record": {
-           "display_name": "67ef3421-850e-448b-9ac2-9f90629e1d28", 
+           "display_name": "<NAME>", 
            "fq_name": [
-               "default-domain", 
-               "dns1", 
-               "67ef3421-850e-448b-9ac2-9f90629e1d28"
+               "<DOMAIN>", 
+               "<DNS>", 
+               "<NAME>"
            ], 
-           "href": "http://127.0.0.1:8082/virtual-DNS-record/67ef3421-850e-448b-9ac2-9f90629e1d28", 
+           "href": "http://<API-SERVER>/virtual-DNS-record/<UUID>", 
            "id_perms": {
-               "created": "2014-12-09T23:23:09.323434", 
+               "created": "<DATE>", 
                "description": null, 
                "enable": true, 
-               "last_modified": "2014-12-09T23:23:09.323434", 
+               "last_modified": "<DATE>", 
                "permissions": {
-                   "group": "admin", 
+                   "group": "<GROUP>", 
                    "group_access": 7, 
                    "other_access": 7, 
-                   "owner": "admin", 
+                   "owner": "<OWNER>", 
                    "owner_access": 7
                }, 
                "user_visible": true, 
@@ -76,17 +77,17 @@ virtual-DNS-records JSON
                    "uuid_mslong": 7489262023911294091
                }
            }, 
-           "name": "67ef3421-850e-448b-9ac2-9f90629e1d28", 
-           "parent_href": "http://127.0.0.1:8082/virtual-DNS/56e2c4c2-0055-4037-bccd-5bd4c5967344", 
+           "name": "<NAME>", 
+           "parent_href": "http://<API-SERVER>/virtual-DNS/<UUID>", 
            "parent_type": "virtual-DNS", 
-           "parent_uuid": "56e2c4c2-0055-4037-bccd-5bd4c5967344", 
-           "uuid": "67ef3421-850e-448b-9ac2-9f90629e1d28", 
+           "parent_uuid": "<UUID>", 
+           "uuid": "<UUID>", 
            "virtual_DNS_record_data": {
-               "record_class": "IN", 
-               "record_data": "10.0.0.1", 
-               "record_name": "testhost1", 
-               "record_ttl_seconds": 86400, 
-               "record_type": "A"
+               "record_class": "<CLASS>", 
+               "record_data": "<DATA>", 
+               "record_name": "<NAME>", 
+               "record_ttl_seconds": <TTL>, 
+               "record_type": "<TYPE>"
            }
        }
    }

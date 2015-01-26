@@ -17,7 +17,7 @@ virtual-networks Attributes
    id_perms " virtual-network" N/A "No " CRU "N/A " N/A " The root of this attribute
    created " id_perms" datetime "No " R " generated " N/A " The date time of created date of this attribute 
    description " id_perms" string "No " CRU " null " N/A " The description of this attribute
-   enable " id_perms" bool "No " CRU " true "{true|false} " Specifies whethere this attribute is enable or not 
+   enable " id_perms" bool "No " CRU " true "Valid form {true|false} " Specifies whethere this attribute is enable or not 
    last_modified " id_perms" datetime "No " R " generated " N/A " The date time of modified date of this attribute  
    permissions " id_perms" list(dict) "No " CRU " generated " N/A " The owner and access level
    group " permissions" string "No " CRU " generated " N/A " The group of this attribute
@@ -25,7 +25,7 @@ virtual-networks Attributes
    other_access " permissions" int "No " CRU " generated " 0-7 " The access type of others
    owner " permissions" string "No " CRU " generated " N/A  " The name of the ownter of this attribute
    owner_access " permissions" int "No " CRU " generated " 0-7 " The access type of the ownter
-   user_visible " id_perms" bool "No " CRU " true "{true|false} " Specifies whethere this attribute is visible by user or not 
+   user_visible " id_perms" bool "No " CRU " true "Valid form {true|false} " Specifies whethere this attribute is visible by user or not 
    uuid " id_perms" uuid-str "No " R " generated " N/A " The UUID of this attribute
    uuid_lslong " uuid" int "No " R " generated " N/A " For internal use
    uuid_mslong " uuid" int "No " R " generated " N/A " For internal use 
@@ -34,13 +34,13 @@ virtual-networks Attributes
    href " instance_ip_back_refs" string "No " R " generated " N/A " The URI of this attribute
    to " instance_ip_back_refs" list(str) "No " CR " [] " Valid form <uuid> " The list of this attribute
    uuid " instance_ip_back_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute
-   is_shaerd " virtual-network" bool "No " CRU " false " {true|false} " Specifies whether the network resource can be accessed by any project or not
+   is_shaerd " virtual-network" bool "No " CRU " false " Valid form {true|false} " Specifies whether the network resource can be accessed by any project or not
    name " virtual-network" string "No " CRU " generated " N/A " The name of thie attribute 
    network_ipam_refs " virtual-network" N/A "No " CR " N/A " N/A " The root of this attribute
    attr " network_ipam_refs" N/A "No " CRUD " null " N/A " The root of this attribute
    host_routes " attr" list(route table) "No " CRU " [] " Valid route table type " The host route list
    ipam_subnets " attr" N/A "No " CRD " [] " N/A " The root of this attribute
-   addr_from_start " ipam_subnets" bool "No " CRU " true " {true|false} " Specifies whehter the network allocation start from low value or high value
+   addr_from_start " ipam_subnets" bool "No " CRU " true " Valid form {true|false} " Specifies whehter the network allocation start from low value or high value
    allocation_pools " ipam_subnets" list(dict) "No " CRU " [] " N/A " The IP address pool
    end " allocation_pools" string "No " CRUD " null " Valid IP address " The end of IP address of allocation pool
    start " allocation_pools" string "No " CRUD " null " Valid IP address " The start of IP address of allocation pool
@@ -48,7 +48,7 @@ virtual-networks Attributes
    dhcp_option_list " ipam_subnets" string "No " CRU " null " N/A " For internal use
    dns_nameservers " ipam_subnets" list(str) "No " CRU " [] " Valid IP address " The list of DNS servers
    dns_server_address " ipam_subnets" string "No " CRUD " generated " Valid IP address " The DNS proxy IP address
-   enable_dhcp " ipam_subnets" bool "No " CRU " true " {true|false} " Specifies whether DHCP is enable or not 
+   enable_dhcp " ipam_subnets" bool "No " CRU " true " Valid form {true|false} " Specifies whether DHCP is enable or not 
    host_routes " ipam_subnets" list(str) "No " CRUD " null " Valit list of IP address " The list of route which is published by DHCP server
    subnet " ipam_subnets" N/A "No " CRD " N/A " N/A " The root of this attribute
    ip_prefix " subnet" string "No " CRD " null " Valid network address " The network address of the subnet
@@ -61,7 +61,7 @@ virtual-networks Attributes
    parent_href " virtual-network" string "No " R " generated " N/A " The URI of this attribute
    parent_type " virtual-network" string "Yes " CR " null " Valid parent name " The parent attribute 
    parent_uuid " virtual-network" uuid-str "No " R " generated " N/A " The UUID of this attribute
-   router_external " virtual-network" bool "No " CRU " false "{true|false}  " Specifies whether the network resouse can be allocated on External network 
+   router_external " virtual-network" bool "No " CRU " false "Valid form  {true|false}  " Specifies whether the network resouse can be allocated on External network 
    routing_instances " virtual-network" string "No " CR " N/A " N/A " The root of this attribute
    href " routing_instances" string "No " R " generated " N/A " The URI of this attribute
    to " routing_instances" list(str) "No " R " generated " N/A " The list of this attribute
@@ -74,9 +74,9 @@ virtual-networks Attributes
    uuid " virtual_machine_interface_back_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute 
    virtual_network_properties " virtual-network" string "N/A " CRU " N/A " N/A " The root of this attribute
    allow_transit " virtual_network_properties" bool "No " CRU " null " N/A " Virtula network is either Transit or not 
-   forwarding_mode " virtual_network_properties" string "No " CRU " null " {l2_l3|l2} " Forwarding mode for virtual-network 
+   forwarding_mode " virtual_network_properties" string "No " CRU " null " Valid form {l2_l3|l2} " Forwarding mode for virtual-network 
    network_id " virtual_network_properties" int "No " R " generated "N/A " A unique id for the network, auto generated 
-   vxlan_network_identifier " virtual_network_properties" Int "No " CRU " null " Valid VNI range " VNI for the network, configu<NAME> by user 
+   vxlan_network_identifier " virtual_network_properties" integer "No " CRU " null " Valid VNI range " VNI for the network 
 
 virtual-networks JSON  
 ====

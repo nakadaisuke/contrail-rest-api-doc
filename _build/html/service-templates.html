@@ -78,59 +78,203 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>fq_name</td>
+<tr class="row-even"><td>display_name</td>
 <td>service-template</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
+<td>CR</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The display name</td>
+</tr>
+<tr class="row-odd"><td>fq_name</td>
+<td>service-template</td>
+<td>list(str)</td>
+<td>Yes</td>
+<td>CR</td>
+<td>[]</td>
+<td>Valid form &lt;domain&gt;,&lt;name&gt;</td>
+<td>The full query name of this attribute</td>
+</tr>
+<tr class="row-even"><td>href</td>
+<td>service-template</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
+</tr>
+<tr class="row-odd"><td>id_perms</td>
+<td>service-template</td>
+<td>N/A</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
+</tr>
+<tr class="row-even"><td>created</td>
+<td>id_perms</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of created date of this attribute</td>
+</tr>
+<tr class="row-odd"><td>description</td>
+<td>id_perms</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>N/A</td>
+<td>The description of this attribute</td>
+</tr>
+<tr class="row-even"><td>enable</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is enable or not</td>
+</tr>
+<tr class="row-odd"><td>last_modified</td>
+<td>id_perms</td>
+<td>datetime</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The date time of modified date of this attribute</td>
+</tr>
+<tr class="row-even"><td>permissions</td>
+<td>id_perms</td>
+<td>list(dict)</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The owner and access level</td>
+</tr>
+<tr class="row-odd"><td>group</td>
+<td>permissions</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The group of this attribute</td>
+</tr>
+<tr class="row-even"><td>group_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of group</td>
+</tr>
+<tr class="row-odd"><td>other_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of others</td>
+</tr>
+<tr class="row-even"><td>owner</td>
+<td>permissions</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of the ownter of this attribute</td>
+</tr>
+<tr class="row-odd"><td>owner_access</td>
+<td>permissions</td>
+<td>int</td>
+<td>No</td>
+<td>CRU</td>
+<td>generated</td>
+<td>0-7</td>
+<td>The access type of the ownter</td>
+</tr>
+<tr class="row-even"><td>user_visible</td>
+<td>id_perms</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>true</td>
+<td>{true|false}</td>
+<td>Specifies whethere this attribute is visible by user or not</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
-<td>service-template</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>id_perms</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
-<tr class="row-even"><td>parent_uuid</td>
+<tr class="row-even"><td>uuid_lslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-odd"><td>uuid_mslong</td>
+<td>uuid</td>
+<td>int</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>For internal use</td>
+</tr>
+<tr class="row-even"><td>name</td>
 <td>service-template</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The name of thie attribute</td>
 </tr>
 <tr class="row-odd"><td>parent_href</td>
 <td>service-template</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The URI of this attribute</td>
 </tr>
 <tr class="row-even"><td>parent_type</td>
 <td>service-template</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>string</td>
+<td>Yes</td>
+<td>CR</td>
+<td>null</td>
+<td>Valid parent name</td>
+<td>The parent attribute</td>
 </tr>
-<tr class="row-odd"><td>href</td>
+<tr class="row-odd"><td>parent_uuid</td>
 <td>service-template</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
 <tr class="row-even"><td>service_template_properties</td>
 <td>service-template</td>
@@ -143,255 +287,111 @@
 </tr>
 <tr class="row-odd"><td>availability_zone_enable</td>
 <td>service_template_properties</td>
-<td>Type</td>
-<td>Requ</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>false</td>
+<td>{true|false}</td>
+<td>Specifies whehter the availability zone is enable or not</td>
+</tr>
+<tr class="row-even"><td>flavor</td>
+<td>service_template_properties</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid flavor name</td>
+<td>The flavor name</td>
+</tr>
+<tr class="row-odd"><td>image_name</td>
+<td>service_template_properties</td>
+<td>string</td>
+<td>No</td>
+<td>CRU</td>
+<td>null</td>
+<td>Valid image name</td>
+<td>The image name</td>
 </tr>
 <tr class="row-even"><td>interface_type</td>
 <td>service_template_properties</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>static_route_enable</td>
-<td>interface_type</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>shared_ip</td>
-<td>interface_type</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>list(str)</td>
+<td>No</td>
+<td>CRUD</td>
+<td>[]</td>
+<td>N/A</td>
+<td>The root of this attribute</td>
 </tr>
 <tr class="row-odd"><td>service_interface_type</td>
 <td>interface_type</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>{management|left|right|other}</td>
+<td>The interface type</td>
 </tr>
-<tr class="row-even"><td>image_name</td>
-<td>service_template_properties</td>
-<td>Type</td>
-<td>Requ</td>
+<tr class="row-even"><td>static_route_enable</td>
+<td>interface_type</td>
+<td>bool</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>false</td>
+<td>{true|false}</td>
+<td>Specifies whehter the static route is enable or not</td>
+</tr>
+<tr class="row-odd"><td>shared_ip</td>
+<td>interface_type</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>false</td>
+<td>{true|false}</td>
+<td>Specifies whehter the shared IP is enable or not</td>
+</tr>
+<tr class="row-even"><td>ordered_interfaces</td>
+<td>service_template_properties</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>false</td>
+<td>{true|false}</td>
+<td>Specifies whehter the orderd interface is enable or not</td>
 </tr>
 <tr class="row-odd"><td>service_mode</td>
 <td>service_template_properties</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>service_type</td>
-<td>service_template_properties</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>flavor</td>
-<td>service_template_properties</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>{transparent|in-network|in-network-nat}</td>
+<td>The service mode type</td>
 </tr>
 <tr class="row-even"><td>service_scaling</td>
+<td>bool</td>
+<td>No</td>
+<td>CRU</td>
+<td>false</td>
+<td>{true|false}</td>
+<td>Specifies whehter the service scaling is enable or not</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>service_type</td>
 <td>service_template_properties</td>
-<td>Type</td>
-<td>Requ</td>
+<td>string</td>
+<td>No</td>
 <td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>null</td>
+<td>{firewall|analyzer|source-nat|loadbalancer}</td>
+<td>The service mode type</td>
 </tr>
-<tr class="row-odd"><td>ordered_interfaces</td>
-<td>service_template_properties</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>display_name</td>
+<tr class="row-even"><td>uuid</td>
 <td>service-template</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>id_perms</td>
-<td>service-template</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>enable</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>description</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>created</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>uuid_mslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>uuid_lslong</td>
-<td>uuid</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>user_visible</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>last_modified</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>permissions</td>
-<td>id_perms</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>owner</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>owner_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>other_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>group</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-odd"><td>group_access</td>
-<td>permissions</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
-</tr>
-<tr class="row-even"><td>name</td>
-<td>service-template</td>
-<td>Type</td>
-<td>Requ</td>
-<td>CRU</td>
-<td>Default</td>
-<td>Valid</td>
-<td>ABCDE</td>
+<td>uuid-str</td>
+<td>No</td>
+<td>R</td>
+<td>generated</td>
+<td>N/A</td>
+<td>The UUID of this attribute</td>
 </tr>
 </tbody>
 </table>
@@ -446,75 +446,55 @@
 46
 47
 48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
-    <span class="nt">&quot;service-template&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;NFV2&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;fq_name&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;default-domain&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;NFV2&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/service-template/33a7ae4f-ddba-4839-89da-f18939278bbb&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;id_perms&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-12-03T01:56:43.466545&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-            <span class="nt">&quot;enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;last_modified&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-12-03T01:56:43.466545&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;permissions&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;group_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
-                <span class="nt">&quot;other_access&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
-                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;owner_access&quot;</span><span class="p">:</span> <span class="mi">7</span>
-            <span class="p">},</span>
-            <span class="nt">&quot;user_visible&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;uuid_lslong&quot;</span><span class="p">:</span> <span class="mi">9933517499790756795</span><span class="p">,</span>
-                <span class="nt">&quot;uuid_mslong&quot;</span><span class="p">:</span> <span class="mi">3722135275090626617</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;NFV2&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;parent_href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://127.0.0.1:8082/domain/11e2ba75-241a-435c-879d-0dcad6253169&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;parent_type&quot;</span><span class="p">:</span> <span class="s2">&quot;domain&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;parent_uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;11e2ba75-241a-435c-879d-0dcad6253169&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;service_template_properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;availability_zone_enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;flavor&quot;</span><span class="p">:</span> <span class="s2">&quot;m1.medium&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;image_name&quot;</span><span class="p">:</span> <span class="s2">&quot;ubuntu&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;interface_type&quot;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span>
-                    <span class="nt">&quot;service_interface_type&quot;</span><span class="p">:</span> <span class="s2">&quot;management&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;shared_ip&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-                    <span class="nt">&quot;static_route_enable&quot;</span><span class="p">:</span> <span class="kc">false</span>
-                <span class="p">},</span>
-                <span class="p">{</span>
-                    <span class="nt">&quot;service_interface_type&quot;</span><span class="p">:</span> <span class="s2">&quot;left&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;shared_ip&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                    <span class="nt">&quot;static_route_enable&quot;</span><span class="p">:</span> <span class="kc">false</span>
-                <span class="p">},</span>
-                <span class="p">{</span>
-                    <span class="nt">&quot;service_interface_type&quot;</span><span class="p">:</span> <span class="s2">&quot;right&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;shared_ip&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                    <span class="nt">&quot;static_route_enable&quot;</span><span class="p">:</span> <span class="kc">false</span>
-                <span class="p">}</span>
-            <span class="p">],</span>
-            <span class="nt">&quot;ordered_interfaces&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;service_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;in-network&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;service_scaling&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;service_type&quot;</span><span class="p">:</span> <span class="s2">&quot;firewall&quot;</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;33a7ae4f-ddba-4839-89da-f18939278bbb&quot;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+49</pre></div></td><td class="code"><div class="highlight"><pre>{
+    &quot;service-template&quot;: {
+        &quot;display_name&quot;: &quot;&lt;NAME&gt;&quot;,
+        &quot;fq_name&quot;: [
+            &quot;&lt;DOMAIN&gt;&quot;,
+            &quot;&lt;NAME&gt;&quot;
+        ],
+        &quot;href&quot;: &quot;http://&lt;API-SERVER&gt;/service-template/&lt;UUID&gt;&quot;,
+        &quot;id_perms&quot;: {
+            &quot;created&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;last_modified&quot;: &quot;&lt;DATE&gt;&quot;,
+            &quot;permissions&quot;: {
+                &quot;group&quot;: &quot;admin&quot;,
+                &quot;group_access&quot;: 7,
+                &quot;other_access&quot;: 7,
+                &quot;owner&quot;: &quot;admin&quot;,
+                &quot;owner_access&quot;: 7
+            },s
+            &quot;user_visible&quot;: true,
+            &quot;uuid&quot;: {
+                &quot;uuid_lslong&quot;: 9933517499790756795,
+                &quot;uuid_mslong&quot;: 3722135275090626617
+            }
+        },
+        &quot;name&quot;: &quot;&lt;NAME&gt;&quot;,
+        &quot;parent_href&quot;: &quot;http://&lt;API-SERVER&gt;/domain/&lt;UUID&gt;&quot;,
+        &quot;parent_type&quot;: &quot;domain&quot;,
+        &quot;parent_uuid&quot;: &quot;&lt;UUID&gt;&quot;,
+        &quot;service_template_properties&quot;: {
+            &quot;availability_zone_enable&quot;: true,
+            &quot;flavor&quot;: &quot;&lt;FLAVOR&gt;&quot;,
+            &quot;image_name&quot;: &quot;&lt;IMAGE&gt;&quot;,
+            &quot;interface_type&quot;: [
+                {
+                    &quot;service_interface_type&quot;: &quot;&lt;TYPE&gt;&quot;,
+                    &quot;shared_ip&quot;: true,
+                    &quot;static_route_enable&quot;: false
+                }
+            ],
+            &quot;ordered_interfaces&quot;: true,
+            &quot;service_mode&quot;: &quot;&lt;MODE&gt;&quot;,
+            &quot;service_scaling&quot;: true,
+            &quot;service_type&quot;: &quot;&lt;TYPE&gt;&quot;
+        },
+        &quot;uuid&quot;: &quot;&lt;UUID&gt;&quot;
+    }
+}
 </pre></div>
 </td></tr></table></div>
 </div>

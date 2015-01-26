@@ -12,41 +12,41 @@ virtual-routers Attributes
    :widths: 10, 10, 8, 3, 4, 9, 10, 20
    :delim: " 
 
-   fq_name " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   parent_uuid " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   parent_href " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   parent_type " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   href " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   virtual_router_type " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   display_name " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   virtual_router_ip_address " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   physical_router_back_refs " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   to " physical_router_back_refs" Type "Requ " CRU " Default " Valid " ABCDE
-   href " physical_router_back_refs" Type "Requ " CRU " Default " Valid " ABCDE
-   attr " physical_router_back_refs" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid " physical_router_back_refs" Type "Requ " CRU " Default " Valid " ABCDE
-   id_perms " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   enable " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   description " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   created " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid_mslong " uuid" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid_lslong " uuid" Type "Requ " CRU " Default " Valid " ABCDE
-   user_visible " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   last_modified " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   permissions " id_perms" Type "Requ " CRU " Default " Valid " ABCDE
-   owner " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   owner_access " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   other_access " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   group " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   group_access " permissions" Type "Requ " CRU " Default " Valid " ABCDE
-   name " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   virtual_machine_refs " virtual-router" Type "Requ " CRU " Default " Valid " ABCDE
-   to " virtual_machine_refs" Type "Requ " CRU " Default " Valid " ABCDE
-   href " virtual_machine_refs" Type "Requ " CRU " Default " Valid " ABCDE
-   attr " virtual_machine_refs" Type "Requ " CRU " Default " Valid " ABCDE
-   uuid " virtual_machine_refs" Type "Requ " CRU " Default " Valid " ABCDE
+   display_name " virtual-router" string "No " CR " generated " N/A " The display name  
+   fq_name " virtual-router" list(str) "Yes " CR " [] " Valid form <system-config>,<name>" The full query name of this attribute 
+   href " virtual-router" string "No " R " generated " N/A " The URI of the interface
+   id_perms " virtual-router" N/A "No " CRU "N/A " N/A " The root of this attribute
+   created " id_perms" datetime "No " R " generated " N/A " The date time of created date of this attribute 
+   description " id_perms" string "No " CRU " null " N/A " The description of this attribute
+   enable " id_perms" bool "No " CRU " true "{true|false} " Specifies whethere this attribute is enable or not 
+   last_modified " id_perms" datetime "No " R " generated " N/A " The date time of modified date of this attribute  
+   permissions " id_perms" list(dict) "No " CRU " generated " N/A " The owner and access level
+   group " permissions" string "No " CRU " generated " N/A " The group of this attribute
+   group_access " permissions" int "No " CRU " generated " 0-7 " The access type of group 
+   other_access " permissions" int "No " CRU " generated " 0-7 " The access type of others
+   owner " permissions" string "No " CRU " generated " N/A  " The name of the ownter of this attribute
+   owner_access " permissions" int "No " CRU " generated " 0-7 " The access type of the ownter
+   user_visible " id_perms" bool "No " CRU " true "{true|false} " Specifies whethere this attribute is visible by user or not 
+   uuid " id_perms" uuid-str "No " R " generated " N/A " The UUID of this attribute
+   uuid_lslong " uuid" int "No " R " generated " N/A " For internal use
+   uuid_mslong " uuid" int "No " R " generated " N/A " For internal use 
+   name " virtual-router" string "No " CRU " generated " N/A " The name of thie attribute   
+   parent_href " routing-instance" string "No " R " generated " N/A " The URI of this attribute
+   parent_type " routing-instance" string "Yes " CR " null " Valid parent name " The parent attribute 
+   parent_uuid " routing-instance" uuid-str "No " R " generated " N/A " The UUID of this attribute
+   physical_router_back_refs " virtual-router" list(str) "No " R "generated " N/A " The root of this attribute 
+   attr " physical_router_back_refs" N/A "No " R "generated " N/A " The root of this attribute 
+   href " physical_router_back_refs" string "No " R " generated " N/A " The URI of the interface    
+   to " physical_router_back_refs" list(str) "No " R " [] "  Valid form <system-config>,<pyhsical-router>  " The list of this attribute 
+   uuid " physical_router_back_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute   
+   uuid " virtual-router" uuid-str "No " R " generated " N/A " The UUID of this attribute  
+   virtual_machine_refs " virtual-router" list(str)" No " CR "N/A " N/A " The root of this attribute 
+   attr " virtual_machine_refs" N/A "No " CR "N/A " N/A " The root of this attribute 
+   href " virtual_machine_refs" string "No " R " generated " N/A " The URI of the interface 
+   to " virtual_machine_refs"  list(str) "Yes " CRD " [] "  Valid form <name>  " The list of this attribute 
+   uuid " virtual_machine_refs"uuid-str "No " R " generated " N/A " The UUID of this attribute   
+   virtual_router_ip_address " virtual-router" string "No " CRUD " null " N/A " The virtual router IP address
+   virtual_router_type " virtual-router" list(str) "No " CRUD " null " Valid form {embedded|tor-agent|tor-service-node} " The virtual router type 
 
 virtual-routers JSON
 ====
@@ -58,17 +58,17 @@ virtual-routers JSON
 
    {
        "virtual-router": {
-           "display_name": "system003-1", 
+           "display_name": "<NAME>", 
            "fq_name": [
-               "default-global-system-config", 
-               "system003-1"
+               "<SYSTEM-CONFIG>", 
+               "<NAME>"
            ], 
-           "href": "http://127.0.0.1:8082/virtual-router/2e25cd0e-b0f0-4fc4-868e-c188a502d950", 
+           "href": "http://<API-SERVER>/virtual-router/<UUID>", 
            "id_perms": {
-               "created": "2014-11-25T09:16:19.869944", 
+               "created": "<DATE>", 
                "description": null, 
                "enable": true, 
-               "last_modified": "2014-11-25T09:16:19.869944", 
+               "last_modified": "<DATE>", 
                "permissions": {
                    "group": "admin", 
                    "group_access": 7, 
@@ -82,35 +82,35 @@ virtual-routers JSON
                    "uuid_mslong": 3325289362864754628
                }
            }, 
-           "name": "system003-1", 
-           "parent_href": "http://127.0.0.1:8082/global-system-config/ee6b566c-3d5b-43d2-bd3e-a86bb3b7779b", 
+           "name": "<NAME>", 
+           "parent_href": "http://<API-SERVER>/global-system-config/<UUID>", 
            "parent_type": "global-system-config", 
-           "parent_uuid": "ee6b566c-3d5b-43d2-bd3e-a86bb3b7779b", 
+           "parent_uuid": "<UUID>", 
            "physical_router_back_refs": [
                {
                    "attr": null, 
-                   "href": "http://127.0.0.1:8082/physical-router/703ecc26-73ad-4ba9-8380-c2b4beff1b70", 
+                   "href": "http://<API-SERVER>/physical-router/<UUID>", 
                    "to": [
-                       "default-global-system-config", 
-                       "fuda"
+                       "<SYSTEM-CONFIG>", 
+                       "<NAME>"
                    ], 
-                   "uuid": "703ecc26-73ad-4ba9-8380-c2b4beff1b70"
+                   "uuid": "<UUID>"
                }
            ], 
-           "uuid": "2e25cd0e-b0f0-4fc4-868e-c188a502d950", 
+           "uuid": "<UUID>", 
            "virtual_machine_refs": [
                {
                    "attr": null, 
-                   "href": "http://127.0.0.1:8082/virtual-machine/76187277-7b08-4d07-b879-21d5ba32beaf", 
+                   "href": "http://<API-SERVER>/virtual-machine/<UUID>", 
                    "to": [
-                       "default-domain__admin__9bdadf31-ff39-4c8b-9940-e679d93a2214__2"
+                       "<NAME>"
                    ], 
-                   "uuid": "76187277-7b08-4d07-b879-21d5ba32beaf"
+                   "uuid": "<UUID>"
                }
            ], 
-           "virtual_router_ip_address": "10.84.50.3", 
+           "virtual_router_ip_address": "<IP_ADDRESS>", 
            "virtual_router_type": [
-               "tor-agent"
+               "<TYPE>"
            ]
        }
    }
