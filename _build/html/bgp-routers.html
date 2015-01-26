@@ -52,7 +52,7 @@
   <div class="section" id="bgp-router">
 <h1>bgp-router<a class="headerlink" href="#bgp-router" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div>BGP-router include BGP peer,attribute,Autonomus system Number and so on.</div></blockquote>
+<div>bgp-router include BGP peer,attribute,Autonomus system Number and so on.</div></blockquote>
 <div class="section" id="bgp-routers-attributes">
 <h2>bgp-routers Attributes<a class="headerlink" href="#bgp-routers-attributes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
@@ -111,7 +111,7 @@
 <td>No</td>
 <td>CRUD</td>
 <td>null</td>
-<td>{inet-vpn|inet6-vpn|route-target|e-vpn|erm-vpn}</td>
+<td>Valid form {inet-vpn|inet6-vpn|route-target|e-vpn|erm-vpn}</td>
 <td>Set BGP address families</td>
 </tr>
 <tr class="row-even"><td>autonomous_system</td>
@@ -210,7 +210,7 @@
 <td>No</td>
 <td>CRUD</td>
 <td>[]</td>
-<td>{inet-vpn|inet6-vpn|route-target|e-vpn|erm-vpn}</td>
+<td>Valid form {inet-vpn|inet6-vpn|route-target|e-vpn|erm-vpn}</td>
 <td>Set BGP address families</td>
 </tr>
 <tr class="row-odd"><td>bgp_router</td>
@@ -273,7 +273,7 @@
 <td>Yes</td>
 <td>CR</td>
 <td>[]</td>
-<td>Valid full query name form &lt;domain&gt;,&lt;tenant&gt;,&lt;name&gt;</td>
+<td>Valid from &lt;domain&gt;,&lt;tenant&gt;,&lt;name&gt;</td>
 <td>The full query name of this attribute</td>
 </tr>
 <tr class="row-even"><td>href</td>
@@ -318,7 +318,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>true</td>
-<td>{true|false}</td>
+<td>Valid form {true|false}</td>
 <td>Specifies whethere this attribute is enable or not</td>
 </tr>
 <tr class="row-odd"><td>last_modified</td>
@@ -390,7 +390,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>true</td>
-<td>{true|false}</td>
+<td>Valid form {true|false}</td>
 <td>Specifies whethere this attribute is visible by user or not</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>

@@ -2,7 +2,7 @@
 virtual-machine-interface
 ====================
 
- Put here  description of attribute
+ virtual-machine-interface includes instance IP,routing instance,service chain and so on
 
 virtual-machine-interfaces Attributes
 ====
@@ -12,81 +12,81 @@ virtual-machine-interfaces Attributes
    :widths: 10, 10, 8, 3, 4, 9, 10, 20
    :delim: "
 
-   display_name " virtual-machine-interface" string "No " CR " generated " N/A " The display name  
-   floating_ip_back_refs " virtual-machine-interface"  list(str) "No " R "generated " N/A " The root of this attribute 
-   attr " floating_ip_back_refs" N/A "No " R "generated " N/A " The root of this attribute  
-   href " floating_ip_back_refs" string "No " R " null " Valid MAC address " The destination MAC address 
-   to " floating_ip_back_refs" list(str) "No " R " [] "  Valid IPAM form <domain>,<project>,<network>,<attribute>,<name>  " The list of this attribute
-   uuid " floating_ip_back_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute  
-   fq_name " virtual-machine-interface" list(str) "Yes " CR " [] " Valid form <domain>,<project>,<name>" The full query name of this attribute  
-   href " virtual-machine-interface"string "No " R " null " Valid MAC address " The destination MAC address 
-   id_perms " virtual-machine-interface" N/A "No " CRU "N/A " N/A " The root of this attribute
-   created " id_perms" datetime "No " R " generated " N/A " The date time of created date of this attribute
-   description " id_perms" string "No " CRU " null " N/A " The description of this attribute
-   enable " id_perms" bool "No " CRU " true "Valid form {true|false} " Specifies whethere this attribute is enable or not
-   last_modified " id_perms" datetime "No " R " generated " N/A " The date time of modified date of this attribute
-   permissions " id_perms" list(dict) "No " CRU " generated " N/A " The owner and access level
-   group " permissions" string "No " CRU " generated " N/A " The group of this attribute
-   group_access " permissions" int "No " CRU " generated " 0-7 " The access type of group
-   other_access " permissions" int "No " CRU " generated " 0-7 " The access type of others
-   owner " permissions" string "No " CRU " generated " N/A  " The name of the ownter of this attribute
-   owner_access " permissions" int "No " CRU " generated " 0-7 " The access type of the ownter
-   user_visible " id_perms" bool "No " CRU " true "Valid form {true|false} " Specifies whethere this attribute is visible by user or not
-   uuid " id_perms" uuid-str "No " R " generated " N/A " The UUID of this attribute
-   uuid_lslong " uuid" int "No " R " generated " N/A " For internal use
-   uuid_mslong " uuid" int "No " R " generated " N/A " For internal use
-   instance_ip_back_refs " virtual-machine-interface"list(str) "No " R "generated " N/A " The root of this attribute   
-   attr " instance_ip_back_refs"  N/A "No " R "generated " N/A " The root of this attribute               
-   href " instance_ip_back_refs"  string "No " R " null " Valid MAC address " The destination MAC address 
-   to " instance_ip_back_refs" list(str) "No " R " [] "  Valid IPAM form <name>  " The list of this attribute  
-   uuid " instance_ip_back_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute  
-   name " virtual-machine-interface" string "No " CRU " generated " N/A " The name of thie attribute 
-   parent_href " virtual-DNS" string "No " R " generated " N/A " The URI of this attribute
-   parent_type " virtual-DNS" string "Yes " CR " null " Valid parent name " The parent attribute
-   parent_uuid " virtual-DNS" uuid-str "No " R " generated " N/A " The UUID of this attribute
-   routing_instance_refs " virtual-machine-interface" list(str)"No " CR "N/A " N/A " The root of this attribute  
-   attr " routing_instance_refs" N/A "No " CRU "null " N/A " The root of this attribute   
-   direction " attr" string "No " R "generated " {ingress|egress|both} " The direction type 
-   dst_mac " attr" string "No " R " null " Valid MAC address " The destination MAC address
-   mpls_label " attr" integer "No " R " Null " N/A " The MPLS label value
-   protocol " attr" string "No " R " Null " {tcp|udp|icmp|any} " The protocol type 
-   service_chain_address "attr" string "No " R " Null " Valid IP address" The service chain address
-   src_mac " attr" string "No " R " null " Valid MAC address " The source MAC address
-   vlan_tag " attr" integer "No " R " null " Valid MAC address " The VLAN ID
-   direction " attr" string "No " R "generated " {ingress|egress|both} " The direction type 
-   dst_mac " attr" string "No " R " null " Valid MAC address " The destination MAC address
-   mpls_label " attr" integer "No " R " Null " N/A " The MPLS label value
-   protocol " attr" string "No " R " Null " {tcp|udp|icmp|any} " The protocol type 
-   service_chain_address "attr" string "No " R " Null " Valid IP address" The service chain address
-   src_mac " attr" string "No " R " null " Valid MAC address " The source MAC address
-   vlan_tag " attr" integer "No " R " null " Valid MAC address " The VLAN ID
-   href " routing_instance_refs"  string "No " R " null " Valid MAC address " The destination MAC address  
-   to " routing_instance_refs" list(str) "Yes " R " [] "  Valid IPAM form <domain>,<project>,<network>,<name>  " The list of this attribute 
-   uuid " routing_instance_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute  
-   security_group_refs " virtual-machine-interface" list(str)"No " CR "N/A " N/A " The root of this attribute      
-   to " security_group_refs" list(str) "Yes " CRU " [] "  Valid form <domain>,<project>,<name>  " The list of this attribute   
-   href " security_group_refs"  string "No " R " null " Valid MAC address " The destination MAC address  
-   attr " security_group_refs" N/A "No " CRU "null " N/A " The root of this attribute  
-   uuid " security_group_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute  
-   uuid " virtual-machine-interface" uuid-str "No " R " generated " N/A " The UUID of this attribute  
-   virtual_machine_interface_device_owner " virtual-machine-interface" string "Yes " CR " N/A " Valid AZ " The virtual machine interface AZ
-   virtual_machine_interface_mac_addresses " virtual-machine-interface" N/A"No " CR "N/A " N/A " The root of this attribute
-   mac_address " virtual_machine_interface_mac_addresses" list(str) "No " CRUD " [] " Valid MAC address " The MAC address list
-   virtual_machine_interface_properties " virtual-machine-interface" N/A"No " CR "N/A " N/A " The root of this attribute  
-   interface_mirror " virtual_machine_interface_properties" string "No " CRUD " null " N/A " The interface mirror destination
-   local_preference " virtual_machine_interface_properties" integer "No " CRUD " null " N/A " The local preference
-   service_interface_type " virtual_machine_interface_properties" string "No " CRUD " null " {management|left|right|other} " The service interface type
-   sub-interface-vlan-tag" virtual_machine_interface_properties" integer "No " CRUD " null " N/A " The vlan tag of sub interface  
-   virtual_machine_refs " virtual-machine-interface" list(str)"No " CR "N/A " N/A " The root of this attribute  
-   attr " virtual_machine_refs" N/A "No " CRU "null " N/A " The root of this attribute 
-   href " virtual_machine_refs"  string "No " R " null " Valid MAC address " The destination MAC address  
-   to " virtual_machine_refs" list(str) "Yes " CRU " [] "  Valid form <domain>,<project>,<name>  " The list of this attribute 
-   uuid " virtual_machine_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute  
-   virtual_network_refs " virtual-machine-interface"  list(str)"No " CR "N/A " N/A " The root of this attribute
-   attr " virtual_network_refs" N/A "No " CRU "null " N/A " The root of this attribute   
-   href " virtual_network_refs" string "No " R " null " Valid MAC address " The destination MAC address 
-   to " virtual_network_refs" list(str) "Yes " CRU " [] "  Valid form <domain>,<project>,<name>  " The list of this attribute  
-   uuid " virtual_network_refs" uuid-str "No " R " generated " N/A " The UUID of this attribute  
+   display_name " virtual-machine-interface " string " No " CR " generated " N/A " The display name
+   floating_ip_back_refs " virtual-machine-interface " list(str) " No " R " generated " N/A " The root of this attribute
+   attr " floating_ip_back_refs " N/A " No " R " generated " N/A " The root of this attribute
+   href " floating_ip_back_refs " string " No " R " null " Valid MAC address " The destination MAC address
+   to " floating_ip_back_refs " list(str) " No " R " [] " Valid IPAM form <domain>,<project>,<network>,<attribute>,<name> " The list of this attribute
+   uuid " floating_ip_back_refs " uuid-str " No " R " generated " N/A " The UUID of this attribute
+   fq_name " virtual-machine-interface " list(str) " Yes " CR " [] " Valid form <domain>,<project>,<name> " The full query name of this attribute
+   href " virtual-machine-interface " string " No " R " null " Valid MAC address " The destination MAC address
+   id_perms " virtual-machine-interface " N/A " No " CRU " N/A " N/A " The root of this attribute
+   created " id_perms " datetime " No " R " generated " N/A " The date time of created date of this attribute
+   description " id_perms " string " No " CRU " null " N/A " The description of this attribute
+   enable " id_perms " bool " No " CRU " true " Valid form {true|false} " Specifies whethere this attribute is enable or not
+   last_modified " id_perms " datetime " No " R " generated " N/A " The date time of modified date of this attribute
+   permissions " id_perms " list(dict) " No " CRU " generated " N/A " The owner and access level
+   group " permissions " string " No " CRU " generated " N/A " The group of this attribute
+   group_access " permissions " int " No " CRU " generated " 0-7 " The access type of group
+   other_access " permissions " int " No " CRU " generated " 0-7 " The access type of others
+   owner " permissions " string " No " CRU " generated " N/A " The name of the ownter of this attribute
+   owner_access " permissions " int " No " CRU " generated " 0-7 " The access type of the ownter
+   user_visible " id_perms " bool " No " CRU " true " Valid form {true|false} " Specifies whethere this attribute is visible by user or not
+   uuid " id_perms " uuid-str " No " R " generated " N/A " The UUID of this attribute
+   uuid_lslong " uuid " int " No " R " generated " N/A " For internal use
+   uuid_mslong " uuid " int " No " R " generated " N/A " For internal use
+   instance_ip_back_refs " virtual-machine-interface " list(str) " No " R " generated " N/A " The root of this attribute
+   attr " instance_ip_back_refs " N/A " No " R " generated " N/A " The root of this attribute
+   href " instance_ip_back_refs " string " No " R " null " Valid MAC address " The destination MAC address
+   to " instance_ip_back_refs " list(str) " No " R " [] " Valid IPAM form <name> " The list of this attribute
+   uuid " instance_ip_back_refs " uuid-str " No " R " generated " N/A " The UUID of this attribute
+   name " virtual-machine-interface " string " No " CRU " generated " N/A " The name of thie attribute
+   parent_href " virtual-DNS " string " No " R " generated " N/A " The URI of this attribute
+   parent_type " virtual-DNS " string " Yes " CR " null " Valid parent name " The parent attribute
+   parent_uuid " virtual-DNS " uuid-str " No " R " generated " N/A " The UUID of this attribute
+   routing_instance_refs " virtual-machine-interface " list(str) " No " CR " N/A " N/A " The root of this attribute
+   attr " routing_instance_refs " N/A " No " CRU " null " N/A " The root of this attribute
+   direction " attr " string " No " R " generated " Valid form {ingress|egress|both} " The direction type
+   dst_mac " attr " string " No " R " null " Valid MAC address " The destination MAC address
+   mpls_label " attr " integer " No " R " Null " N/A " The MPLS label value
+   protocol " attr " string " No " R " Null " Valid form {tcp|udp|icmp|any} " The protocol type
+   service_chain_address " attr " string " No " R " Null " Valid IP address " The service chain address
+   src_mac " attr " string " No " R " null " Valid MAC address " The source MAC address
+   vlan_tag " attr " integer " No " R " null " Valid MAC address " The VLAN ID
+   direction " attr " string " No " R " generated " Valid form {ingress|egress|both} " The direction type
+   dst_mac " attr " string " No " R " null " Valid MAC address " The destination MAC address
+   mpls_label " attr " integer " No " R " Null " N/A " The MPLS label value
+   protocol " attr " string " No " R " Null " Valid form {tcp|udp|icmp|any} " The protocol type
+   service_chain_address " attr " string " No " R " Null " Valid IP address " The service chain address
+   src_mac " attr " string " No " R " null " Valid MAC address " The source MAC address
+   vlan_tag " attr " integer " No " R " null " Valid MAC address " The VLAN ID
+   href " routing_instance_refs " string " No " R " null " Valid MAC address " The destination MAC address
+   to " routing_instance_refs " list(str) " Yes " R " [] " Valid IPAM form <domain>,<project>,<network>,<name> " The list of this attribute
+   uuid " routing_instance_refs " uuid-str " No " R " generated " N/A " The UUID of this attribute
+   security_group_refs " virtual-machine-interface " list(str) " No " CR " N/A " N/A " The root of this attribute
+   to " security_group_refs " list(str) " Yes " CRU " [] " Valid form <domain>,<project>,<name> " The list of this attribute
+   href " security_group_refs " string " No " R " null " Valid MAC address " The destination MAC address
+   attr " security_group_refs " N/A " No " CRU " null " N/A " The root of this attribute
+   uuid " security_group_refs " uuid-str " No " R " generated " N/A " The UUID of this attribute
+   uuid " virtual-machine-interface " uuid-str " No " R " generated " N/A " The UUID of this attribute
+   virtual_machine_interface_device_owner " virtual-machine-interface " string " Yes " CR " N/A " Valid AZ " The virtual machine interface AZ
+   virtual_machine_interface_mac_addresses " virtual-machine-interface " N/A " No " CR " N/A " N/A " The root of this attribute
+   mac_address " virtual_machine_interface_mac_addresses " list(str) " No " CRUD " [] " Valid MAC address " The MAC address list
+   virtual_machine_interface_properties " virtual-machine-interface " N/A " No " CR " N/A " N/A " The root of this attribute
+   interface_mirror " virtual_machine_interface_properties " string " No " CRUD " null " N/A " The interface mirror destination
+   local_preference " virtual_machine_interface_properties " integer " No " CRUD " null " N/A " The local preference
+   service_interface_type " virtual_machine_interface_properties " string " No " CRUD " null " Valid form {management|left|right|other} " The service interface type
+   sub-interface-vlan-tag " virtual_machine_interface_properties " integer " No " CRUD " null " N/A " The vlan tag of sub interface
+   virtual_machine_refs " virtual-machine-interface " list(str) " No " CR " N/A " N/A " The root of this attribute
+   attr " virtual_machine_refs " N/A " No " CRU " null " N/A " The root of this attribute
+   href " virtual_machine_refs " string " No " R " null " Valid MAC address " The destination MAC address
+   to " virtual_machine_refs " list(str) " Yes " CRU " [] " Valid form <domain>,<project>,<name> " The list of this attribute
+   uuid " virtual_machine_refs " uuid-str " No " R " generated " N/A " The UUID of this attribute
+   virtual_network_refs " virtual-machine-interface " list(str) " No " CR " N/A " N/A " The root of this attribute
+   attr " virtual_network_refs " N/A " No " CRU " null " N/A " The root of this attribute
+   href " virtual_network_refs " string " No " R " null " Valid MAC address " The destination MAC address
+   to " virtual_network_refs " list(str) " Yes " CRU " [] " Valid form <domain>,<project>,<name> " The list of this attribute
+   uuid " virtual_network_refs " uuid-str " No " R " generated " N/A " The UUID of this attribute
 
 virtual-machine-interfaces JSON
 ====

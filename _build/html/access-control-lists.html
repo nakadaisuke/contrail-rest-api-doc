@@ -52,7 +52,7 @@
   <div class="section" id="access-control-list">
 <h1>access-control-list<a class="headerlink" href="#access-control-list" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div>Put here  description of attribute</div></blockquote>
+<div>access-control-list includes ACL attributes</div></blockquote>
 <div class="section" id="access-control-lists-attributes">
 <h2>access-control-lists Attributes<a class="headerlink" href="#access-control-lists-attributes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
@@ -147,7 +147,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>pass</td>
-<td>{alert|drop|deny|log|pass|reject}</td>
+<td>Valid form {alert|drop|deny|log|pass|reject}</td>
 <td>Specifies action for the packet</td>
 </tr>
 <tr class="row-even"><td>match_condition</td>
@@ -174,7 +174,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>null</td>
-<td>{sequence|timer}</td>
+<td>Valid form {sequence|timer}</td>
 <td>The network policy time</td>
 </tr>
 <tr class="row-odd"><td>security_group</td>
@@ -255,7 +255,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>any</td>
-<td>{tcp|udp|icmp|any}</td>
+<td>Valid form {tcp|udp|icmp|any}</td>
 <td>The protocol name</td>
 </tr>
 <tr class="row-even"><td>src_address</td>
@@ -273,7 +273,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>null</td>
-<td>{sequence|timer}</td>
+<td>Valid form {sequence|timer}</td>
 <td>The network policy time</td>
 </tr>
 <tr class="row-even"><td>security_group</td>
@@ -363,7 +363,7 @@
 <td>No</td>
 <td>CRUD</td>
 <td>null</td>
-<td>{true|false}</td>
+<td>Valid form {true|false}</td>
 <td>Specifies whether access list is dynamic or not.</td>
 </tr>
 <tr class="row-even"><td>display_name</td>
@@ -381,7 +381,7 @@
 <td>Yes</td>
 <td>CR</td>
 <td>[]</td>
-<td>Valid full query name form &lt;domain&gt;,&lt;tenant&gt;,&lt;name&gt;</td>
+<td>Valid from &lt;domain&gt;,&lt;tenant&gt;,&lt;name&gt;</td>
 <td>The full query name of this attribute</td>
 </tr>
 <tr class="row-even"><td>href</td>
@@ -426,7 +426,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>true</td>
-<td>{true|false}</td>
+<td>Valid form {true|false}</td>
 <td>Specifies whethere this attribute is enable or not</td>
 </tr>
 <tr class="row-odd"><td>last_modified</td>
@@ -498,7 +498,7 @@
 <td>No</td>
 <td>CRU</td>
 <td>true</td>
-<td>{true|false}</td>
+<td>Valid form {true|false}</td>
 <td>Specifies whethere this attribute is visible by user or not</td>
 </tr>
 <tr class="row-odd"><td>uuid</td>
